@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Урок 4. Bootstrap 4</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<section id="mainsection">`
+		<div class="container">
+			<div class="col-md-12">
+				<input class="addOptionInput" type="text" placeholder="Вариант 1, Вариант 2.." value="Mango, Kiwi, Orange, Dragon Fruit  , Lemon, Orange ">
+				<button class="btn btn-success addOptionBtn">Нарисовать график</button>
+				<button class="btn btn-success startButton">Викторина</button>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-10">
+				<canvas id="myChart" width="400" height="400"></canvas>
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+	</section>
+<div class="modal" id="superModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p id="winner"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
+
+

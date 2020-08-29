@@ -1,0 +1,30 @@
+FTP
+
+host: 	onix.myjino.ru
+port: 21
+login: onix_alisa
+pass: alice2019
+
+DB (DtaBase)
+name: onix_alice
+user: 032249004_alice
+pass: alice2019
+
+
+ModX
+user: alisa
+pass: alice2019
+
+
+
+
+
+--------
+Цель: Превратить статичный сайт в динамичный (под управлением какой-нибудь CMS)
+
+План:
+1. Зарегистрировать домен (создать домен)
+2. Создать базу данных для сайта (у нас - MySQL)
+3. Скачать CMS ModX
+4. Установка МОДХ
+5. Настройка МодХ и страниц
