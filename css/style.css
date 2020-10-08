@@ -264,3 +264,13 @@ h2 {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
+
+.panel a {
+    color: forestgreen;
+    font-weight: 600;
+}
+
+.panel a:hover {
+    color: forestgreen;
+    font-weight: 600;
+}
