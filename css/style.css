@@ -654,6 +654,8 @@ h2 {
 .closeWindClose {
     opacity: 0;
     transition: 0.4s ease-in-out;
+    width: 0;
+    height: 0;
 }
 
 .preloader {
