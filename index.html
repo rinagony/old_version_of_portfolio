@@ -7,167 +7,450 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@200;300;500;700;800&display=swap" rel="stylesheet">
-    <base target="_blank">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@200;300;500;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 
 <body>
-    <section id="mainSection">
-        <div class="row">
-            <div class="col-12">
-                <div class="wrpVue">
-                    <div class="wrpAbout">
-                        <h2>Обо мне</h2>
-                        <button class="accordion">Вкратце обо мне</button>
-                        <div class="panel">
-                            <p> <span id="hello">Меня зовут Алиса</span>, мне 22 года и это мое портфолио. Я изучаю веб-разработку уже 2 года, 10 месяцев из которых стажировалась и работала в 2 компаниях.</p>
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
+    <div class="windowCool closeWindClose">
+        <p>Сообщение успешно отправлено!</p>
+        <button id="closeWindow">x</button>
+    </div>
+    <section id="mainsection">
+        <nav>
+            <div class="navbarMain" id="menu">
+                <a href="#about">About me</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contacts">Contacts</a>
+            </div>
+        </nav>
+        <div class="wrpBlockName">
+            <div class="wrpNamePhoto">
+                <div class="wrpNameBlockName">
+                    <img src="image/me.png" alt="">
+                    <p>Алиса Наумычева</p>
+                    <h1 class="nameOFJob">Front-end разработчик</h1>
+                </div>
+            </div>
+            <button type="button" class="mainButton" data-toggle="modal" data-target="#mymodal">Связаться со
+                мной</button>
+            <div class="modal fade" id="mymodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="exampleModalLabel">Связаться со мной</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="contactForm">
+                                <div class="form-group">
+                                    <label for="yourName">Ваше имя</label>
+                                    <input class="inputConnectMe" type="text" required id="yourName"
+                                        placeholder="Введите имя">
+                                </div>
+                                <div class="form-group">
+                                    <label for="yourEmail">Email</label>
+                                    <input class="inputConnectMe" type="email" required id="yourEmail"
+                                        placeholder="Введите email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="yourMessage">Ваше сообщение</label>
+                                    <textarea class="inputConnectMe" id="yourMessage" rows="2"></textarea>
+                                </div>
+                                <button type="submit" class="mainButton mb-2">Confirm identity</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btnPreMain" data-dismiss="modal">Close</button>
                         </div>
 
-                        <button class="accordion">Опыт работы и образование</button>
-                        <div class="panel">
-                            <p><b>Smart Conversion Group</b> - позиция html верстальщик. технологии: html, javascript, css, Bootstrap Studio. (6 месяцев) <br> <b>Компания МАКС</b> - позиция junior веб-разработчик. технологии: vue.js, html, javascript, sass.
-                                (4 месяца).
-                            </p>
-                            <p>
-                                Я закончила электромашиностроительный колледж по специальности чертежник-конструктор, проходила стажировку на предприятии в качестве чертежника. Два года училась в университете <b>СПБГУПТД</b> на направлении прикладная
-                                информатика в дизайне, проходила онлайн курсы по JavaScript.
-                            </p>
+                    </div>
+                </div>
+            </div>
+            <a class="downScroll" href="#about">
+                &#10095;
+            </a>
+        </div>
+    </section>
+    <section id="about" name="about">
+        <div class="container">
+            <div class="wrpAbout">
+                <h2>О себе</h2>
+                <div class="aboutWrp">
+                    <div class="aboutMe">
+                        <div class="right">
+                            <div class="specBlock">
+                                <div class="wrpTitleBlock">
+                                    <h4>Здравствуйте</h4>
+                                </div>
+                                <p> <span id="hello">Меня зовут Алиса</span>, мне 22 года и это мое портфолио. Я изучаю
+                                    веб-разработку 2 года, 10 месяцев из которых стажировалась и работала в 2
+                                    компаниях.
+                                </p>
+                            </div>
+                            <div class="specBlock">
+                                <div class="wrpTitleBlock">
+                                    <h4>Образовние</h4>
+                                </div>
+                                <p>
+                                    Я закончила электромашиностроительный колледж по специальности
+                                    чертежник-конструктор,
+                                    проходила стажировку на предприятии в качестве чертежника. Два года училась в
+                                    университете <b>СПБГУПТД</b> на направлении прикладная
+                                    информатика в дизайне, а также прошла значительное количество онлайн-курсов,
+                                    связанных с
+                                    веб-разработкой.
+                                </p>
+                            </div>
                         </div>
+                        <div class="left">
+                            <div class="specBlock">
+                                <div class="wrpTitleBlock">
+                                    <h4>Опыт</h4>
+                                </div>
+                                <p><b>Smart Conversion Group</b> - html верстальщик. технологии: html,
+                                    javascript,
+                                    css, Bootstrap Studio. (6 месяцев) <br> <b>Компания МАКС</b> - junior
+                                    веб-разработчик. технологии: vue.js, html, javascript, sass.
+                                    (4 месяца).
+                                </p>
+                            </div>
+                            <div class="specBlock">
+                                <div class="wrpTitleBlock">
+                                    <h4>Стек</h4>
+                                </div>
+                                <p>JavaScript, JQuery, VUE.js, HTML(HTML5), CSS(CSS3), npm, Git, Ajax, API, WordPress,
+                                    Firebase, MongoDB
+                                    PUG, Bootstrap 3-4, SASS, CSS-flex/grid, webpack. Владею навыками адаптивной,
+                                    кроссбраузерной вёрстки, использую методологию БЕМ. <br> Имею средний уровень
+                                    английского языка, есть
+                                    опыт
+                                    работы в Adobe Photoshop/Illustrator и в Figma,
+                                    а также опыт в создании макетов.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrp">
+                <a class="downScroll" style="color: rgb(83, 83, 83); margin: 0 auto;" href="#portfolio">
+                    &#10095;
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="myWorks">
+                        <h2>Мои работы</h2>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                    aria-controls="home" aria-selected="true">Все работы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                    aria-controls="profile" aria-selected="false">VUE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                    aria-controls="contact" aria-selected="false">Landing Pages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="script-tab" data-toggle="tab" href="#scriptJs" role="tab"
+                                    aria-controls="scriptJs" aria-selected="false">Java Script projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="additional-tab" data-toggle="tab" href="#additional" role="tab"
+                                    aria-controls="additional" aria-selected="false">Дополнительно</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="bootstrapStudio-tab" data-toggle="tab" href="#bootstrapStudio"
+                                    role="tab" aria-controls="bootstrapStudio" aria-selected="false">Bootstrap
+                                    Studio</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="wrpAllContent">
+                                    <div class="landingItem">
+                                        <img src="image/vue2.jpg" alt="">
+                                        <p>Online clothe store <span style="font-weight: 500;">(vuejs, vuex, firebase,
+                                                axios,
+                                                vuelidate, api, vue-router, scss, materialize..)</span></p>
+                                        <a href="https://rinagony.herokuapp.com/" class="buttonMore">Open</a>
+                                    </div>
+                                    <div class="landingItem" id="secondVue">
+                                        <img src="image/vue1.jpg" alt="">
+                                        <p>Online build store <span style="font-weight: 500;">(vuejs, vue-router,
+                                                scss..)</span>
+                                        </p>
+                                        <a href="https://build-store.herokuapp.com/" class="buttonMore">Open</a>
+                                    </div>
+                                    <div class="landingItem" id="secondVue">
+                                        <img src="image/vue3.jpg" alt="">
+                                        <p>NeedToDo<span style="font-weight: 500;">(vuejs, firebase, vue-router,
+                                                localStorage,
+                                                scss, vuelidate..)</span></p>
+                                        <a href="https://needtodoo.herokuapp.com/" class="buttonMore">Open</a>
+                                    </div>
+                                    <div class="landingItem">
+                                        <img class="imgApple" src="image/apple1.jpg" alt="">
+                                        <a href="http://alice.qoobeo.ru/todolist/" class="buttonMore">Open</a>
+                                        <p>Todolist (Software Development Kit, localStorage, api, javascript..)</p>
+                                    </div>
+                                    <div class="landingItem">
+                                        <img class="imgApple" src="image/apple2.jpg" alt="">
+                                        <a href="projects/dragDrop/index.html" class="buttonMore">Open</a>
+                                        <p>Figure creation (Drag and Drop, DataSet, javascript..)</p>
+                                    </div>
+                                    <div class="landingItem">
+                                        <img class="imgApple" src="image/apple3.jpg" alt="">
+                                        <a href="projects/test/index.html" class="buttonMore">Open</a>
+                                        <p>Test (javascript, html, css..)</p>
+                                    </div>
+                                    <div class="landingItem">
+                                        <img class="imgApple" src="image/apple4.jpg" alt="">
+                                        <a href="projects/quiz/index.html" class="buttonMore">Open</a>
+                                        <p>Quiz (javascript)</p>
+                                    </div>
+                                    <div class="landingItem">
+                                        <img class="imgApple" src="image/apple5.jpg" alt="">
+                                        <a href="projects/canvas/index.html" class="buttonMore">Open</a>
+                                        <p>Paddle game(javascript, canvas, localStorage)</p>
+                                    </div>
+                                    <div class="landingItem">
+                                        <img src="image/landing6.jpg" alt="">
+                                        <p>Adaptive landing page(javascript, html, css)</p>
+                                        <a href="sites/mavris/index.html" class="buttonMore">Open</a>
+                                    </div>
+                                    <div class="landingItem">
+                                        <img src="image/landing1.jpg" alt="">
+                                        <p>Adaptive landing page(javascript, html, css)</p>
+                                        <a href="sites/suspects/index.html" class="buttonMore">Open</a>
+                                    </div>
+                                    <div class="landingItem">
+                                        <img src="image/landing5.jpg" alt="">
+                                        <p>Adaptive landing page(javascript, html, css)</p>
+                                        <a href="sites/journey/index.html" class="buttonMore">Open</a>
+                                    </div>
+                                    <div class="landingItem">
+                                        <img src="image/landing2.jpg" alt="">
+                                        <p>Adaptive landing page(javascript, html, css)</p>
+                                        <a href="sites/accord/index.html" class="buttonMore">Open</a>
+                                    </div>
+                                    <div class="landingItem">
+                                        <img src="image/landing3.jpg" alt="">
+                                        <p>Adaptive landing page(javascript, html, css)</p>
+                                        <a href="sites/cerousel/index.html" class="buttonMore">Open</a>
+                                    </div>
+                                    <div class="landingItem">
+                                        <img src="image/landing4.jpg" alt="">
+                                        <p>Adaptive landing page(javascript, html, css)</p>
+                                        <a href="sites/education/index.html" class="buttonMore">Open</a>
+                                    </div>
+                                    <div class="landingItem">
+                                        <img src="image/appleBoot1.jpg" alt="">
+                                        <p>Bootstrap Studio</p>
+                                        <a href="https://zavesov.ru" class="buttonMore">Open</a>
+                                    </div>
+                                    <div class="landingItem">
+                                        <img src="image/appleBoot2.jpg" alt="">
+                                        <p>Bootstrap Studio</p>
+                                        <a href="https://kogtetochka-iz-kartona.ru" class="buttonMore">Open</a>
+                                    </div>
+                                </div>
 
-                        <button class="accordion">Практические навыки и технологии</button>
-                        <div class="panel">
-                            <p>Владею знаниями: javascript, JQuery, VUE, html, css, npm, git, ajax, api, firebase, pug, bootstrap, sass, css-flex/grid. <br> Имею средний уровень английского языка, есть опыт работы в Adobe Photoshop/Illustrator и в Figma,
-                                а также опыт в создании макетов</p>
-                        </div>
-                        <button class="accordion">Связь со мной</button>
-                        <div class="panel">
-                            <span>Почта: </span><a href="mailto:alisanaumycheva@yandex.ru">alisanaumycheva@yandex.ru</a>
-                        </div>
-                    </div>
-                    <h2>Vue-projects</h2>
-                    <div class="landingItemVue">
-                        <div class="landingItem">
-                            <img src="image/vue2.jpg" alt="">
-                            <p>Online clothe store <span style="font-weight: 500;">(vuejs, vuex, firebase, axios,
-									vuelidate, api, vue-router, scss, materialize..)</span></p>
-                            <a href="https://rinagony.herokuapp.com/" class="buttonMore">Open</a>
-                        </div>
-                        <div class="landingItem" id="secondVue">
-                            <img src="image/vue1.jpg" alt="">
-                            <p>Online build store <span style="font-weight: 500;">(vuejs, vue-router, scss..)</span></p>
-                            <a href="https://build-store.herokuapp.com/" class="buttonMore">Open</a>
-                        </div>
-                        <div class="landingItem" id="secondVue">
-                            <img src="image/vue3.jpg" alt="">
-                            <p>NeedToDo<span style="font-weight: 500;">(vuejs, firebase, vue-router, localStorage,
-									scss, vuelidate..)</span></p>
-                            <a href="https://needtodoo.herokuapp.com/" class="buttonMore">Open</a>
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="wrpVue">
+                                    <div class="landingItem">
+                                        <img src="image/vue2.jpg" alt="">
+                                        <p>Online clothe store <span style="font-weight: 500;">(vuejs, vuex, firebase,
+                                                axios,
+                                                vuelidate, api, vue-router, scss, materialize..)</span></p>
+                                        <a href="https://rinagony.herokuapp.com/" class="buttonMore">Open</a>
+                                    </div>
+                                    <div class="landingItem" id="secondVue">
+                                        <img src="image/vue1.jpg" alt="">
+                                        <p>Online build store <span style="font-weight: 500;">(vuejs, vue-router,
+                                                scss..)</span>
+                                        </p>
+                                        <a href="https://build-store.herokuapp.com/" class="buttonMore">Open</a>
+                                    </div>
+                                    <div class="landingItem" id="secondVue">
+                                        <img src="image/vue3.jpg" alt="">
+                                        <p>NeedToDo<span style="font-weight: 500;">(vuejs, firebase, vue-router,
+                                                localStorage,
+                                                scss, vuelidate..)</span></p>
+                                        <a href="https://needtodoo.herokuapp.com/" class="buttonMore">Open</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                <div class="wrpLandingPage">
+                                    <div class="landingItem">
+                                        <img src="image/landing6.jpg" alt="">
+                                        <p>Adaptive landing page(javascript, html, css)</p>
+                                        <a href="sites/mavris/index.html" class="buttonMore">Open</a>
+                                    </div>
+                                    <div class="landingItem">
+                                        <img src="image/landing1.jpg" alt="">
+                                        <p>Adaptive landing page(javascript, html, css)</p>
+                                        <a href="sites/suspects/index.html" class="buttonMore">Open</a>
+                                    </div>
+                                    <div class="landingItem">
+                                        <img src="image/landing5.jpg" alt="">
+                                        <p>Adaptive landing page(javascript, html, css)</p>
+                                        <a href="sites/journey/index.html" class="buttonMore">Open</a>
+                                    </div>
+                                    <div class="landingItem">
+                                        <img src="image/landing2.jpg" alt="">
+                                        <p>Adaptive landing page(javascript, html, css)</p>
+                                        <a href="sites/accord/index.html" class="buttonMore">Open</a>
+                                    </div>
+                                    <div class="landingItem">
+                                        <img src="image/landing3.jpg" alt="">
+                                        <p>Adaptive landing page(javascript, html, css)</p>
+                                        <a href="sites/cerousel/index.html" class="buttonMore">Open</a>
+                                    </div>
+                                    <div class="landingItem">
+                                        <img src="image/landing4.jpg" alt="">
+                                        <p>Adaptive landing page(javascript, html, css)</p>
+                                        <a href="sites/education/index.html" class="buttonMore">Open</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="scriptJs" role="tabpanel" aria-labelledby="script-tab">
+                                <div class="wrpJsProjects">
+                                    <div class="landingItem">
+                                        <img class="imgApple" src="image/apple1.jpg" alt="">
+                                        <a href="http://alice.qoobeo.ru/todolist/" class="buttonMore">Open</a>
+                                        <p>Todolist (Software Development Kit, localStorage, api, javascript..)</p>
+                                    </div>
+                                    <div class="landingItem">
+                                        <img class="imgApple" src="image/apple2.jpg" alt="">
+                                        <a href="projects/dragDrop/index.html" class="buttonMore">Open</a>
+                                        <p>Figure creation (Drag and Drop, DataSet, javascript..)</p>
+                                    </div>
+                                    <div class="landingItem">
+                                        <img class="imgApple" src="image/apple3.jpg" alt="">
+                                        <a href="projects/test/index.html" class="buttonMore">Open</a>
+                                        <p>Test (javascript, html, css..)</p>
+                                    </div>
+                                    <div class="landingItem">
+                                        <img class="imgApple" src="image/apple4.jpg" alt="">
+                                        <a href="projects/quiz/index.html" class="buttonMore">Open</a>
+                                        <p>Quiz (javascript)</p>
+                                    </div>
+                                    <div class="landingItem">
+                                        <img class="imgApple" src="image/apple5.jpg" alt="">
+                                        <a href="projects/canvas/index.html" class="buttonMore">Open</a>
+                                        <p>Paddle game(javascript, canvas, localStorage)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="additional" role="tabpanel" aria-labelledby="additional-tab">
+                                <div class="wrpAdditional">
+                                    <div class="wrpitemJs">
+                                        <a><span class="fatNumber">1.</span> XMLHttpRequest and online search</a>
+                                        <a href="projects/ajax/index.html" class="btnProject" role="button"
+                                            aria-pressed="true">Open</a>
+                                    </div>
+                                    <div class="wrpitemJs">
+                                        <a><span class="fatNumber">2.</span>BOM, cookies</a>
+                                        <a href="http://qoobeo.ru/alice/ck" class="btnProject" role="button"
+                                            aria-pressed="true">Open</a>
+                                    </div>
+                                    <div class="wrpitemJs">
+                                        <a><span class="fatNumber">3.</span>Local, session storage, fileAPI</a>
+                                        <a href="projects/localStorage/index.html" class="btnProject" role="button"
+                                            aria-pressed="true">Open</a>
+                                    </div>
+                                    <div class="wrpitemJs">
+                                        <a><span class="fatNumber">4.</span>Geolocation</a>
+                                        <a href="projects/geolocation/index.html" class="btnProject" role="button"
+                                            aria-pressed="true">Open</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="bootstrapStudio" role="tabpanel"
+                                aria-labelledby="bootstrapStudio-tab">
+                                <div class="wrpBootstrap">
+                                    <div class="landingItem">
+                                        <img src="image/appleBoot1.jpg" alt="">
+                                        <p>Bootstrap Studio</p>
+                                        <a href="https://zavesov.ru" class="buttonMore">Open</a>
+                                    </div>
+                                    <div class="landingItem">
+                                        <img src="image/appleBoot2.jpg" alt="">
+                                        <p>Bootstrap Studio</p>
+                                        <a href="https://kogtetochka-iz-kartona.ru" class="buttonMore">Open</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="wrapperApple">
-                    <h2>Mini-projects</h2>
-                    <div class="wrpItemMain">
-                        <div class="landingItem">
-                            <img class="imgApple" src="image/apple1.jpg" alt="">
-                            <a href="http://alice.qoobeo.ru/todolist/" class="buttonMore">Open</a>
-                            <p>Todolist (Software Development Kit, localStorage, api, javascript..)</p>
-                        </div>
-                        <div class="landingItem">
-                            <img class="imgApple" src="image/apple2.jpg" alt="">
-                            <a href="projects/dragDrop/index.html" class="buttonMore">Open</a>
-                            <p>Figure creation (Drag and Drop, DataSet, javascript..)</p>
-                        </div>
-                        <div class="landingItem">
-                            <img class="imgApple" src="image/apple3.jpg" alt="">
-                            <a href="projects/test/index.html" class="buttonMore">Open</a>
-                            <p>Test (javascript, html, css..)</p>
-                        </div>
-                        <div class="landingItem">
-                            <img class="imgApple" src="image/apple4.jpg" alt="">
-                            <a href="projects/quiz/index.html" class="buttonMore">Open</a>
-                            <p>Quiz (javascript)</p>
-                        </div>
-                        <div class="landingItem">
-                            <img class="imgApple" src="image/apple5.jpg" alt="">
-                            <a href="projects/canvas/index.html" class="buttonMore">Open</a>
-                            <p>Paddle game(javascript, canvas, localStorage)</p>
-                        </div>
+            </div>
+    </section>
+    <section id="contacts">
+        <div class="container">
+            <div class="wrpContacts">
+                <h3>Со мной можно связаться по почте или через форму заявки</h3>
+                <div class="wrpFormEmail">
+                    <div class="wrpForm">
+                        <form id="contactFormTwo">
+                            <div class="form-group">
+                                <label for="name">Ваше имя</label>
+                                <input class="inputConnectMe" type="text" required id="name" placeholder="Введите имя">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input class="inputConnectMe" type="email" required id="email"
+                                    placeholder="Введите email">
+                            </div>
+                            <div class="form-group">
+                                <label for="yourMessageSEc">Ваше сообщение</label>
+                                <textarea class="inputConnectMe" id="yourMessageSEc" rows="2"></textarea>
+                            </div>
+                            <button type="submit" class="mainButton mb-2">Confirm identity</button>
+                        </form>
                     </div>
-                </div>
-                <div class="wrapperJS">
-                    <h2 class="titleH">Java-script</h2>
-                    <div class="wrpitemJs">
-                        <a><span class="fatNumber">1.</span> XMLHttpRequest and online search</a>
-                        <a href="projects/ajax/index.html" class="btnProject" role="button" aria-pressed="true">Open</a>
-                    </div>
-                    <div class="wrpitemJs">
-                        <a><span class="fatNumber">2.</span>BOM, cookies</a>
-                        <a href="http://qoobeo.ru/alice/ck" class="btnProject" role="button" aria-pressed="true">Open</a>
-                    </div>
-                    <div class="wrpitemJs">
-                        <a><span class="fatNumber">3.</span>Local, session storage, fileAPI</a>
-                        <a href="projects/localStorage/index.html" class="btnProject" role="button" aria-pressed="true">Open</a>
-                    </div>
-                    <div class="wrpitemJs">
-                        <a><span class="fatNumber">4.</span>Geolocation</a>
-                        <a href="projects/geolocation/index.html" class="btnProject" role="button" aria-pressed="true">Open</a>
-                    </div>
-                </div>
-                <div class="wrapperUtp">
-                    <h2>Landing Pages</h2>
-                    <div class="wrpItemMain">
-                        <div class="landingItem">
-                            <img src="image/landing6.jpg" alt="">
-                            <p>Adaptive landing page(javascript, html, css)</p>
-                            <a href="sites/mavris/index.html" class="buttonMore">Open</a>
-                        </div>
-                        <div class="landingItem">
-                            <img src="image/landing1.jpg" alt="">
-                            <p>Adaptive landing page(javascript, html, css)</p>
-                            <a href="sites/suspects/index.html" class="buttonMore">Open</a>
-                        </div>
-                        <div class="landingItem">
-                            <img src="image/landing5.jpg" alt="">
-                            <p>Adaptive landing page(javascript, html, css)</p>
-                            <a href="sites/journey/index.html" class="buttonMore">Open</a>
-                        </div>
-                        <div class="landingItem">
-                            <img src="image/landing2.jpg" alt="">
-                            <p>Adaptive landing page(javascript, html, css)</p>
-                            <a href="sites/accord/index.html" class="buttonMore">Open</a>
-                        </div>
-                        <div class="landingItem">
-                            <img src="image/landing3.jpg" alt="">
-                            <p>Adaptive landing page(javascript, html, css)</p>
-                            <a href="sites/cerousel/index.html" class="buttonMore">Open</a>
-                        </div>
-                        <div class="landingItem">
-                            <img src="image/landing4.jpg" alt="">
-                            <p>Adaptive landing page(javascript, html, css)</p>
-                            <a href="sites/education/index.html" class="buttonMore">Open</a>
-                        </div>
-                    </div>
-                    <h2 class="titleH">Многостраничная верстка, Bootstrap Studio</h2>
-                    <div class="wrpItemSecond">
-                        <div class="landingItem">
-                            <img src="image/appleBoot1.jpg" alt="">
-                            <p>Bootstrap Studio</p>
-                            <a href="https://zavesov.ru" class="buttonMore">Open</a>
-                        </div>
-                        <div class="landingItem">
-                            <img src="image/appleBoot2.jpg" alt="">
-                            <p>Bootstrap Studio</p>
-                            <a href="https://kogtetochka-iz-kartona.ru" class="buttonMore">Open</a>
-                        </div>
+                    <div class="wrpMyEmail">
+                        <p>Почта: </p>
+                        <a href="mailto:alisanaumycheva@yandex.ru">alisanaumycheva@yandex.ru</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
