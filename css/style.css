@@ -68,6 +68,10 @@ h2 {
     width: 264px;
     height: 124px;
     opacity: 0.9;
+    border: 4px solid #2d93a1;
+    transition: 0.3s ease-in-out;
+    animation: shadowTwo 1s infinite alternate;
+    transform: skew( -176deg);
 }
 
 #mainSection {
@@ -87,6 +91,7 @@ h2 {
 #about, #portfolio {
     background: rgb(240, 240, 240);
 }
+
 .wrpItemMain {
     margin-top: 30px;
     margin-bottom: 50px;
@@ -94,24 +99,20 @@ h2 {
 
 .landingItem {
     border-radius: 8px;
+    padding: 1rem 0 2rem 0;
+    width: 264px;
 }
 
 .landingItem img {
     border-radius: 6px;
 }
 
-.landingItem {
-    border: 4px solid #2d93a1;
-    transition: 0.3s ease-in-out;
-    animation: shadowTwo 1s infinite alternate;
-    transform: skew(-176deg);
-}
 
 .landingItem img:hover {
     background: rgba(0, 0, 0, 0.9);
 }
 
-.landingItem a {
+.buttonMore {
     text-decoration: none;
     font-size: 18px;
     outline: none;
@@ -127,16 +128,13 @@ h2 {
     display: inline-block;
     position: absolute;
     right: 17%;
-    top: 19%;
+    top: 10%;
     z-index: 2;
     transform: skew(176deg);
 }
 
-.landingItem p {
-    transform: skew(176deg);
-}
 
-.landingItem a:hover {
+.buttonMore:hover {
     color: #fff;
     text-decoration: none;
     transition: 0.3s ease-in-out;
@@ -155,14 +153,12 @@ h2 {
     display: inline-block;
     position: absolute;
     right: 35%;
-    top: 19%;
+    top: 13%;
     z-index: 2;
     opacity: 1;
 }
 
 .landingItem {
-    width: 270px;
-    height: 130px;
     position: relative;
 }
 
@@ -258,6 +254,13 @@ h2 {
     font-weight: 600;
 }
 
+.wrpContentItem p {
+    margin-top: 15px;
+}
+
+.wrpContentItem a {
+    display: inline-block;
+}
 .wrpItemSecond .landingItem {
     margin-top: 40px;
 }
@@ -548,7 +551,7 @@ h2 {
     justify-items: center;
     grid-gap: 5px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: repeat(5, 220px);
+    grid-template-rows: repeat(5, 260px);
     margin-top: 2rem;
 }
 
@@ -728,4 +731,10 @@ h2 {
 
 .loaded .preloader {
     display: none;
+}
+
+.titleOfProject {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
 }
