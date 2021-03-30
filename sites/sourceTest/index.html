@@ -54,6 +54,7 @@
 
                         <div class="wrapperHeader__item__navigation">
                             <ul>
+                                <li><a href="default.asp">Tests</a></li>
                                 <li><a href="default.asp">Words porn</a></li>
                                 <li><a href="news.asp">Songs</a></li>
                                 <li><a href="contact.asp">Memes</a></li>
@@ -138,19 +139,21 @@
                         interpreter. On this page, you'll
                         see my works in different languages. Check it out.
                     </p>
-                    <button class="btnBasic">Contact me</button>
-                    <div class="wrapperAbout__item__socials">
-                        <p>Share:</p>
-                        <div class="wrapperAbout__item__social">
-                            <a href="#">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-whatsapp"></i>
-                            </a>
+                    <div class="wrpAboutButtonSocials">
+                        <button class="btnBasic">Contact me</button>
+                        <div class="wrapperAbout__item__socials">
+                            <p>Share:</p>
+                            <div class="wrapperAbout__item__social">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -314,7 +317,16 @@
                         <span class="optionDescribeTxt">Learn more</span>
                     </div>
                 </div>
-                <div class="resourcesOptionsItem" id="cooperationBlock">
+                <div class="resourcesOptionsItem" id="testsBlock">
+                    <a href="#" class="descriptionOptionTitle resourcesOptionsItemSpecial">Tests</a>
+                    <div class="resourcesOptionsQuadre">
+                        <div class="optionsItemWrpImage">
+                            <img class="resourcesOptionsQuadreImage" src="./images/category5.png" alt="">
+                        </div>
+                        <span class="optionDescribeTxt">Which language is right for you⁣⁣ ⠀</span>
+                    </div>
+                </div>
+                <!-- <div class="resourcesOptionsItem" id="cooperationBlock">
                     <h4 class="descriptionOptionTitle">Cooperation</h4>
                     <div class="wrpHrOrangeResouces">
                         <div class="hrOrangeResources"></div>
@@ -327,9 +339,19 @@
                             <button class="btnBasic" type="submit">Hire me</button>
                         </form>
                     </div>
+                </div> -->
+            </div>
+            <div class="descriptionOptionTitleTestMob">
+                <a href="#" class="descriptionOptionTitleTestMobTitle">Tests</a>
+                <div class="descriptionOptionTitleTestMobQuadre">
+                    <div class="descriptionOptionTitleTestMobImage">
+                    </div>
+                    <div id="wrpDescriptionOptionTitleTestMobTxt" class="wrpDescriptionOptionTitleTestMobTxt">
+                        <p class="descriptionOptionTitleTestMobTxt">Which language is right for you⁣⁣</p>
+                    </div>
                 </div>
             </div>
-            <div class="wrpFormBlockMob">
+            <!-- <div class="wrpFormBlockMob">
                 <form class="formSmall">
                     <h4 class="wrpFormBlockMobTitle">Have a questions?</h4>
                     <label for="fname">Name:</label>
@@ -340,7 +362,7 @@
                     <input placeholder="Text" type="text" id="lname" name="lname">
                     <button class="btnBasic">Send a letter</button>
                 </form>
-            </div>
+            </div> -->
         </div>
     </section>
     <section id="cooperation">
@@ -356,7 +378,7 @@
                             <div class="hrOrangeOption"></div>
                         </div>
                         <div class="wrpFormOptions">
-                            <form class="formSmall">
+                            <form class="formCooperationNormal">
                                 <label for="fname">Name:</label>
                                 <input placeholder="Name" type="text" id="fname" name="fname">
                                 <label for="lname">Email:</label>
@@ -373,12 +395,19 @@
     </section>
     <section id="cooperationSectionMob">
         <div class="wrapperCooperationSectionMob">
-            <h3>Cooperation</h3>
-            <div class="hrOrangeCooperation"></div>
-            <p>Ask me for translation by mail</p>
-            <form class="cooperationMobForm">
-                <input type="email">
-                <button class="btnBasic" type="submit">Hire me</button>
+            <h3>Have a questions?</h3>
+            <!-- <div class="hrOrangeCooperation"></div>
+            <p>Ask me for translation by mail</p> -->
+            <form class="formSmallMob">
+                <label for="fname">Name:</label>
+                <input placeholder="Name" type="text" id="fname" name="fname">
+                <label for="lname">Email:</label>
+                <input placeholder="Email" type="text" id="lname" name="lname">
+                <label for="lname">Text:</label>
+                <input placeholder="Text" type="text" id="lname" name="lname">
+                <div class="wrpBtnMobForm">
+                    <button class="btnBasic">Send a letter</button>
+                </div>
             </form>
         </div>
     </section>
@@ -397,7 +426,7 @@
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M13.768 12.7518L10.3216 9.28631C11.2077 8.26788 11.6932 6.98648 11.6932 5.65249C11.6932 2.53576 9.07039 0 5.84662 0C2.62284 0 0 2.53576 0 5.65249C0 8.76923 2.62284 11.305 5.84662 11.305C7.05687 11.305 8.21018 10.9521 9.19622 10.2821L12.6689 13.7739C12.814 13.9196 13.0092 14 13.2184 14C13.4165 14 13.6043 13.927 13.7469 13.7943C14.0499 13.5124 14.0596 13.045 13.768 12.7518ZM5.84662 1.47456C8.2295 1.47456 10.168 3.34873 10.168 5.65249C10.168 7.95625 8.2295 9.83043 5.84662 9.83043C3.46374 9.83043 1.5252 7.95625 1.5252 5.65249C1.5252 3.34873 3.46374 1.47456 5.84662 1.47456Z"
-                                        fill="#333333" />
+                                        fill="#FFFF" />
                                 </svg>
 
                             </button>
@@ -406,6 +435,7 @@
 
                     <div class="wrapperFooter__item__navigation">
                         <ul>
+                            <li><a href="default.asp">Tests</a></li>
                             <li><a href="default.asp">Words porn</a></li>
                             <li><a href="news.asp">Songs</a></li>
                             <li><a href="contact.asp">Memes</a></li>
