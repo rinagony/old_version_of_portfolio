@@ -182,6 +182,10 @@
         padding-top: 2rem;
         padding-bottom: 1rem;
     }
+
+    .wrapperAbout .wrapperAbout__item__content h1 {
+        font-size: 32px;
+    }
     #aboutSection .wrapperAbout .btnBasic {
         padding: 10px 8px;
     }
@@ -200,6 +204,9 @@
     .resourcesOptionsQuadre .optionsItemWrpImage {
         width: 212px;
         height: 193px;
+    }
+    body #aboutSection .btnBasic {
+        padding: 10px 35px;
     }
     .descriptionOptionTitleTestMob {
         display: none;
@@ -268,7 +275,7 @@ a {
 }
 
 #aboutSection .btnBasic {
-    padding: 10px 35px;
+    padding: 10px 25px;
 }
 
 .btnBasic {
@@ -721,35 +728,6 @@ a {
     transform: rotate(-135deg);
 }
 
-/* #menuicon .bar.bar1 {
-	-webkit-transform: translateY(0px) rotate(0deg);
-	transform: translateY(0px) rotate(0deg);
-}
-#menuicon .bar.bar2 {
-	-webkit-transform: translateY(6px) rotate(0deg);
-	transform: translateY(6px) rotate(0deg);
-}
-.menu-open .icon-container {
-	-webkit-transform: rotate(90deg);
-	transform: rotate(90deg);
-}
-
-.menu-open .icon-container #menuicon .bar.bar3 {
-    display: none;
-}
-.menu-open .icon-container #menuicon .bar {
-	transition: all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-	transition-delay: 0.1s;
-}
-.menu-open .icon-container #menuicon .bar.bar1 {
-	-webkit-transform: translateY(4px) rotate(45deg);
-	transform: translateY(4px) rotate(45deg);
-}
-.menu-open .icon-container #menuicon .bar.bar2 {
-	-webkit-transform: translateY(3px) rotate(-45deg);
-	transform: translateY(3px) rotate(-45deg);
-} */
-
 /* mobile menu */
 
 /* about section */
@@ -803,7 +781,7 @@ h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 2rem;
+    margin-left: 1.5rem;
     margin-top: 22px;
 }
 
@@ -848,6 +826,7 @@ h1 {
     max-width: 448px;
     height: auto
 }
+/* about section */
 
 /* Resources */
 
@@ -864,6 +843,10 @@ h1 {
     left: -15vw;
     background: #F42525;
     width: 14vw;
+}
+
+.wrapperAbout__item__content h1 {
+    font-size: 20px;
 }
 
 .languagesOption .btnOptionLang:hover {
@@ -905,6 +888,8 @@ h1 {
 .categoriesOptions {
     margin-top: 30px;
 }
+
+/* Resources */
 
 /* select */
 
