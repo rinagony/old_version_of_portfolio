@@ -15,7 +15,6 @@
 @media (min-width: 1042px) {
     body #resources {
         margin-top: -210px;
-        padding-bottom: 75px;
     }
     body #footer .wrapperFooter {
         padding-top: 30px;
@@ -43,14 +42,36 @@
     .wrpContactMeFooter .wrapperFooter__item__contact a {
         font-size: 1em;
     }
-    /* body #resources .wrapperResourcesOptions {
+    body .contentPages .wrapperContentAndCategories .contentPagesSongsWrapper {
         display: grid;
-        grid-gap: 25px;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-template-rows: repeat(1, 350px);
+        grid-gap: 40px;
+        grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+        grid-template-rows: repeat(1, 31em);
         grid-auto-flow: dense;
         margin-bottom: 1rem;
-    } */
+    }
+    .wrapperContentPages .contentPagesSongsWrapper .contentPagesSongItem h4 {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 746px) and (max-width: 876px) {
+    .logoHead {
+        width: 180px;
+    }
+    .wrapperHeader__item {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+    .wrapperHeader {
+        display: flex;
+        justify-content: space-between;
+    }
+    body .wrapperHeader__item__navigation ul li a {
+        margin-right: 0;
+        margin-left: 15px;
+    }
 }
 
 @media (min-width: 876px) {
@@ -63,14 +84,57 @@
         -ms-flex-pack: justify;
         justify-content: space-between;
     }
-    .wrapperAbout .wrapperAbout__item h1 {
+    body h1 {
         font-size: 48px;
+    }
+    .wrapperContentAndCategories {
+        display: flex;
+        justify-content: space-between;
+    }
+    .contentPages #resources .wrapperResourcesOptions {
+        display: flex;
+        flex-direction: column;
+    }
+    .contentPages #resources {
+        width: 100%;
+        padding-left: 6em;
+    }
+    .contentPages #resources {
+        width: 30%;
+        padding-top: 2em;
+    }
+    .contentPages .wrapperContentPages {
+        width: 70%;
+    }
+    .contentPages #resources .resourcesOptionsQuadreImage {
+        object-fit: cover;
+        object-position: 0 0;
+    }
+    .contentPages .resourcesOptionsQuadre .optionsItemWrpImage {
+        height: 12.06em;
+    }
+    .contentPages .optionsItemWrpImage::after {
+        margin-bottom: 0;
+    }
+    .contentPages .resourcesOptionsItem .resourcesOptionsQuadre span {
+        height: 35px;
+    }
+    body .wrapperLanguagesOptions .languagesOption {
+        margin-top: 0;
+    }
+    .contentPagesSongsWrapper .contentPagesSongItem h4 {
+        font-size: 20px;
+    }
+    body .hrOrange {
+        width: 40vw;
     }
 }
 
+/* @media (min-width: 333px) and (max-width: ) */
+
 @media (min-width: 768px) {
     .wrapperAbout__item .aboutDescription {
-        font-size: 1em;
+        font-size: 1.1em;
     }
     #resources .container h2 {
         font-size: 25px;
@@ -80,11 +144,9 @@
         display: flex;
         justify-content: flex-end;
     }
-
     body #footer {
         display: block;
     }
-
     body #footerMobile {
         display: none;
     }
@@ -128,6 +190,9 @@
     .wrpContactMeFooter #hrFooter {
         display: block;
     }
+    .wrapperTextLanguageOptions p {
+        white-space: nowrap;
+    }
     .wrpContactMeFooter .wrapperFooter__item__socials {
         margin-top: 0;
     }
@@ -147,12 +212,77 @@
     #footer .wrapperFooter__item img {
         width: 265px;
     }
+    #footer .wrapperFooter__item__navigation ul li a, #footer .wrapperFooter__item__contact a {
+        font-size: 16px;
+    }
+    body .chooselanguage .wrapperLanguagesOptions {
+        align-items: center;
+        flex-direction: row;
+        justify-content: start;
+    }
+    .wrapperTextLanguageOptions p {
+        margin-right: 72px;
+    }
+    .contentPages .wrapperContentAndCategories .contentPagesSongsWrapper {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
+        grid-auto-flow: dense;
+        margin-bottom: 1rem;
+    }
+    .wrapperPlayerItemSong h3 {
+        font-size: 36px;
+    }
+    body .chooselanguage .languagesOption {
+        margin-top: 0;
+    }
+    .wrapperLanguagesOptions .languagesOption {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: start;
+        width: 100%;
+    }
+    .wrapperLanguagesOptions .languagesOption .btnOptionLang {
+        margin-right: 20px;
+    }
+    .wrapperHeader__item .wrapperContactSocials {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .wrapperMenuMobile {
+        display: none;
+    }
+    .wrapperHeader .wrapperLogoDesk {
+        display: block;
+    }
+    .wrapperMoreVideos .moreVideo {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(20em, 180px);
+        grid-auto-flow: dense;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 333px) and (max-width: 767px) {
+    #footer .wrapperFooter__item__navigation ul li:nth-child(2) {
+        text-align: center;
+    }
+    #footer .wrapperFooter__item__navigation ul li:nth-child(5) {
+        text-align: center;
+    }
+    #footer .wrapperFooter__item__navigation ul li:nth-child(3) {
+        text-align: end;
+    }
+    #footer .wrapperFooter__item__navigation ul li:nth-child(6) {
+        text-align: end;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1042px) and (orientation: landscape) {
-    .wrapperAbout .wrapperAbout__item h1 {
-        font-size: 48px;
-    }
     body #resources {
         margin-top: -60px;
     }
@@ -166,6 +296,27 @@
     } */
 }
 
+@media (min-width: 251px) and (max-width: 768px) {
+    .footerMobileWrapperNavigation .wrapperFooter__item__navigation_mob ul li:nth-child(1) {
+        text-align: left;
+    }
+    .footerMobileWrapperNavigation .wrapperFooter__item__navigation_mob ul li:nth-child(2) {
+        text-align: center;
+    }
+    .footerMobileWrapperNavigation .wrapperFooter__item__navigation_mob ul li:nth-child(3) {
+        text-align: right;
+    }
+    .footerMobileWrapperNavigation .wrapperFooter__item__navigation_mob ul li:nth-child(4) {
+        text-align: left;
+    }
+    .footerMobileWrapperNavigation .wrapperFooter__item__navigation_mob ul li:nth-child(5) {
+        text-align: center;
+    }
+    .footerMobileWrapperNavigation .wrapperFooter__item__navigation_mob ul li:nth-child(6) {
+        text-align: right;
+    }
+}
+
 @media (min-width: 596px) and (max-width: 768px) {
     .wrapperAbout__item .aboutDescription {
         font-size: 15px;
@@ -177,33 +328,26 @@
         width: 83vw;
         margin: 0 auto;
     }
+    .wrapperContentAndCategories .contentPagesSongsWrapper {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+        grid-template-rows: repeat(14em, 180px);
+        grid-auto-flow: dense;
+        margin-bottom: 1rem;
+    }
 }
 
 @media (min-width: 596px) {
-    .wrapperHeader__item .wrapperContactSocials {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
     header .wrapperHeadDesktop {
         display: block;
     }
-    .wrapperMenuMobile {
-        display: none;
-    }
-    .wrapperHeader .wrapperLogoDesk {
-        display: block;
-    }
-    .wrapperAbout__item h1 {
-        font-size: 31px;
+    h1 {
+        font-size: 2em;
     }
     body #aboutSection {
         padding-top: 2rem;
         padding-bottom: 1rem;
-    }
-    .wrapperAbout .wrapperAbout__item__content h1 {
-        font-size: 2em;
-        margin-bottom: 24px;
     }
     #aboutSection .wrapperAbout .btnBasic {
         padding: 10px 8px;
@@ -240,7 +384,8 @@
     .resourcesOptionsItem .resourcesOptionsQuadre span {
         width: calc(100% - 10px);
         font-size: 1em;
-        height: 60px;
+        height: 40px;
+        vertical-align: middle;
     }
     .wrapperResourcesOptions #testsBlock {
         display: block;
@@ -256,6 +401,55 @@
     .wrpAboutButtonSocials .wrapperAbout__item__socials p {
         font-size: 1em;
     }
+    .contentPagesSongItem .wrapperTitleSong {
+        height: 50px;
+    }
+    .wrapperTitlePagesSongs .titlePagesSongs {
+        font-size: 14px;
+    }
+    .contentPagesSongItem .titlePagesSongs {
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+    .wrapperSongInfo .wrapperCoverAndPlayer .wrapperAbout__item__socials {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .contentPagesSongItemWrapper .wrapperLyricsSong {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    .contentPagesSongItemWrapper .wrapperLyricsSongItem:nth-child(1) {
+        padding-right: 2em;
+    }
+    .wrapperLyricsSongItemMob {
+        display: none;
+    }
+    .wrapperContentPagesSongsItem .contentPagesSongsItemTitle {
+        font-size: 3em;
+    }
+    .wrapperContentAndCategories .wrapperContentPagesSongsItem .hrOrange {
+        top: -35px;
+    }
+    .contentPages .wrapperYouCanAlsoLikeSong h2 {
+        font-size: 36px;
+    }
+    .wrapperContentPagesSongsItem .wrapperYouCanAlsoLikeSong .hrOrange, body .wrapperMoreVideos .hrOrange {
+        top: -53px;
+    }
+    .wrapperContentAndCategories .wrapperYouCanAlsoLikeSong #youCanAlsoLike {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .optionsItemWrpImage .videoIcon {
+        position: absolute;
+        top: 30%;
+        left: 35%;
+        z-index: 1000;
+    }
+    .wrapperMoreVideos .moreVideo span {
+        font-size: 1em;
+    }
 }
 
 @media (min-width: 479px) {
@@ -264,6 +458,29 @@
     }
     .wrpFormOptions .formCooperationNormal input {
         width: 330px;
+    }
+    .wrapperCoverAndPlayer .wrapperPlayerItemSong #player {
+        display: block;
+    }
+    .wrapperCoverAndPlayer .wrapperCoverItemSong {
+        max-width: 212px;
+    }
+    .wrapperPlayerItemSong .titleSongItem {
+        font-size: 21px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .wrapperCoverAndPlayer .wrapperPlayerItemSong h3 {
+        font-size: 36px;
+        font-weight: 600;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .wrapperSongInfo .wrapperPlayerItemSong {
+        background: #ffffff;
+    }
+    .wrapperCoverItemSong #playerWrapperMob #play-pause {
+        display: none;
     }
 }
 
@@ -303,8 +520,16 @@ body {
     margin: 0 auto;
 }
 
+video {
+    outline: none;
+}
+
 a {
     margin: 0;
+}
+
+input::-webkit-search-decoration, input::-webkit-search-cancel-button, input::-webkit-search-results-button, input::-webkit-search-results-decoration {
+    display: none;
 }
 
 #aboutSection .btnBasic {
@@ -371,51 +596,35 @@ a {
 /* ввести переменную на этот блок */
 
 .wrapperHeader__item__search {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    width: 118px;
+    vertical-align: middle;
+    white-space: nowrap;
     margin-right: 15px;
-}
-
-.wrapperHeader__itemContent form {
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
-.wrapperHeader__itemContent form button {
-    background: inherit;
-    border: none;
-}
-
-.wrapperHeader__itemContent form input {
+.wrapperHeader__itemContent input {
+    padding-left: 25px;
+    float: left;
     background: #F2F2F2;
     border: none;
     border-radius: 3px;
     outline: none;
-    height: 22px;
-    width: 118px;
+    width: 100%;
+    height: 22.01px;
 }
 
-.searchButton {
+.wrapperHeader__item__search .searchTermIcon {
     position: absolute;
-    left: 0rem;
-    margin-right: 10px;
-    top: 3px;
-    outline: none;
-    cursor: pointer;
+    margin-left: 8px;
+    z-index: 1;
+    color: #4f5b66;
 }
 
-.searchButton svg {
-    width: 13.98px;
+.wrapperHeader__item__search .searchTermIcon .fa {
+    font-size: 13px;
 }
 
 /* search */
@@ -567,9 +776,8 @@ a {
 /* Menu Header */
 
 .headerMob {
-    background: #ffff;
     overflow: hidden;
-    height: 80px;
+    height: 50px;
     width: 100%;
     z-index: 1;
     -webkit-transition: all 0.4s ease-out, background 1s ease-out;
@@ -592,8 +800,9 @@ a {
 .headerMob ul.menu {
     position: relative;
     display: block;
-    padding: 30px 40px 0;
+    padding: 10px 40px 0;
     list-style: none;
+    margin-top: -30px;
     background: #FFFFFF;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
     border-radius: 2px;
@@ -710,7 +919,7 @@ a {
 .icon-container #menuicon {
     width: 60px;
     margin-top: 20px;
-    top: 17px;
+    top: 9px;
     height: 45px;
     right: -18px;
     position: relative;
@@ -771,7 +980,7 @@ a {
 
 #aboutSection {
     padding-top: 16px;
-    padding-bottom: 40px;
+    padding-bottom: 100px;
 }
 
 .wrapperAbout {
@@ -800,7 +1009,7 @@ h1 {
     height: 3px;
     left: -15vw;
     background: #F42525;
-    width: 31vw;
+    width: 50vw;
 }
 
 .aboutDescription {
@@ -818,7 +1027,7 @@ h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 4.1rem;
+    margin-right: 1.8em;
     margin-top: 32px;
 }
 
@@ -843,7 +1052,7 @@ h1 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-left: 15px;
+    margin-left: 10px;
 }
 
 #wrapperAbout__item {
@@ -855,8 +1064,8 @@ h1 {
 }
 
 .wrpAboutButtonSocials {
-    margin-right: -20%;
     position: absolute;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -885,8 +1094,8 @@ h1 {
     width: 14vw;
 }
 
-.wrapperAbout__item__content h1 {
-    font-size: 1.5em;
+h1 {
+    font-size: 20px;
     white-space: nowrap;
 }
 
@@ -898,8 +1107,9 @@ h1 {
 }
 
 #resources h2 {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
+    margin-top: 0;
     line-height: 44px;
     letter-spacing: 0.01em;
 }
@@ -908,21 +1118,34 @@ h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .btnOptionLang {
     background: none;
     border: none;
+    padding: 0;
     outline: none;
     cursor: pointer;
-    margin-right: 10px;
     font-weight: 300;
     font-size: 11px;
     line-height: 19px;
-    margin-left: 2px;
 }
 
-.wrapperResourcesOptions {
+.btnOptionLang:nth-child(1) {
+    margin-right: 7px;
+}
+
+.btnOptionLang:nth-child(2) {
+    margin-right: 7px;
+}
+
+.btnOptionLang:nth-child(3) {
+    margin-right: 7px;
+}
+
+btnOptionLang .wrapperResourcesOptions {
     margin-top: 40px;
 }
 
@@ -1020,6 +1243,7 @@ h1 {
     bottom: 0;
     background: #000000;
     opacity: 0.4;
+    margin-bottom: 4px;
 }
 
 #wrapperVideos {
@@ -1028,8 +1252,8 @@ h1 {
 
 .videoIcon {
     position: absolute;
-    top: 32.5%;
-    left: 32.5%;
+    top: 20%;
+    left: 24%;
     z-index: 1000;
 }
 
@@ -1102,7 +1326,7 @@ h1 {
     color: #fff;
     font-weight: 500;
     font-size: 11px;
-    padding: 10px 5px 6px 5px;
+    padding: 10px 5px 8px 5px;
     line-height: 24px;
     text-decoration: none;
 }
@@ -1119,6 +1343,7 @@ h1 {
     grid-template-columns: repeat(auto-fit, minmax(111px, 1fr));
     grid-auto-flow: dense;
     margin-bottom: 24px;
+    margin-top: 40px;
 }
 
 .descriptionOptionTitleTestMobImage {
@@ -1541,55 +1766,47 @@ h1 {
 /* ввести переменную на этот блок */
 
 .wrapperFooter__item__search {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-}
-
-.wrapperFooter__item__search {
-    display: none;
-}
-
-.wrapperFooter__itemContent form {
+    width: 118px;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin-right: 15px;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
-.wrapperFooter__itemContent form button {
-    background: inherit;
-    border: none;
-}
-
-.wrapperFooter__itemContent form input {
+.wrapperFooter__item__search .searchTerm {
+    padding-left: 25px;
+    float: left;
     background: #4F4F4F;
     border: none;
     border-radius: 3px;
     outline: none;
-    height: 22px;
-    padding-left: 25px;
-    width: 118px;
+    color: #fff;
+    width: 100%;
+    height: 22.01px;
 }
 
-.searchButton {
+.wrapperFooter__item__search .searchTermIcon .fa {
+    font-size: 13px;
+}
+
+.wrapperFooter__item__search .searchTerm::-ms-clear {
+    display: none;
+}
+
+.wrapperFooter__item__search .searchTermIcon {
     position: absolute;
-    left: 0rem;
-    margin-right: 10px;
-    top: 3px;
-    outline: none;
-    cursor: pointer;
+    margin-left: 8px;
+    z-index: 1;
+    font-size: 13px;
+    color: #fcfcfc;
+    background: #4F4F4F;
+    ;
 }
 
-.searchButton svg {
-    width: 13.98px;
+.wrapperFooter__item__search {
+    display: none;
 }
 
 /* search */
@@ -1687,7 +1904,7 @@ h1 {
     -ms-flex-align: center;
     align-items: center;
     margin-left: 15px;
-    margin-top: 15px;
+    margin-right: -10px;
 }
 
 .wrapperFooter__item__socials .fab {
@@ -1746,7 +1963,7 @@ h1 {
 .footerMobileWrapperNavigation .wrapperFooter__item__navigation_mob ul {
     display: grid;
     grid-gap: 15px;
-    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(50%, 30px);
 }
 
@@ -1763,4 +1980,472 @@ h1 {
 
 .wrapperFooter__item__navigation_mob ul li a svg {
     margin-right: 5px;
+}
+
+/* MAIN PAGE */
+
+/* Another page: WORDS PORN */
+
+.contentPages #resources {
+    margin-top: 0;
+}
+
+.chooselanguage {
+    background: #F6F6F6;
+    padding: 9px 0;
+}
+
+.chooselanguage .wrapperLanguagesOptions {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.headerPages {
+    padding-bottom: 24px;
+}
+
+.wrapperTextLanguageOptions p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.menuPages {
+    margin-top: 21px;
+}
+
+.menuPages a, .menuPages span {
+    color: #4285F4;
+    text-decoration: none;
+}
+
+.menuPages .wrapperMenuPages .activeLinkMenuPages {
+    color: rgb(119, 119, 119);
+}
+
+.wordsPorn h1 {
+    margin-top: 50px;
+}
+
+.textPostWordsPorn {
+    max-width: 700px;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 26px;
+    margin-bottom: 0;
+}
+
+.imagePostWordsPorn {
+    width: 100%;
+}
+
+.wrapperWordsPornPost {
+    margin-top: 3.1em;
+}
+
+.contentPages #resources {
+    background: inherit;
+}
+
+.contentPages .btnBasic {
+    padding: 12px 10px;
+    font-size: 13px;
+    margin-top: 50px;
+}
+
+.contentPages {
+    padding-bottom: 80px;
+}
+
+.chooselanguage .languagesOption {
+    margin-top: 15px;
+}
+
+.contentPagesSongsWrapper {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: dense;
+}
+
+.wrapperTitleSong {
+    height: 40px;
+}
+
+.contentPagesSongItem h4 {
+    font-family: Inter;
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 29px;
+    letter-spacing: 0.01em;
+    color: #333333;
+}
+
+.contentPagesSongsWrapper a {
+    text-decoration: none;
+}
+
+.wrapperSongItemImage {
+    max-height: 330px;
+}
+
+.songItemImage {
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.titlePagesSongs {
+    margin-bottom: 7px;
+    margin-top: 7px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 9px;
+    line-height: 20px;
+    color: #333333;
+    height: 50px;
+}
+
+.wrapperTitlePagesSongs {
+    height: 50px;
+    text-align: start;
+    max-width: 330px;
+}
+
+/* SongItem */
+
+.wrapperCoverAndPlayer {
+    margin-top: 50px;
+}
+
+.contentPagesSongsItemTitle {
+    font-size: 20px;
+}
+
+.wrapperContentPagesSongsItem .hrOrange {
+    top: -13px;
+}
+
+audio {
+    outline: none;
+    width: 95%;
+    height: 50px;
+}
+
+#playerWrapperMob #play-pause {
+    cursor: pointer;
+    text-indent: -999999px;
+    height: 2em;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 2em;
+    border-radius: 2em;
+    padding: 10px;
+    z-index: 2;
+    background-image: url('./../images/play.svg');
+    background-repeat: no-repeat!important;
+    background-position: center;
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    background-color: #F42525;
+}
+
+.playMob {
+    background-image: url('./../images/play.svg');
+}
+
+.pauseMob {
+    background-image: url('./../images/pause.svg')!important;
+}
+
+#player {
+    background-color: #F2F2F2;
+    display: none;
+}
+
+.wrapperCoverItemSong img {
+    width: 100%;
+}
+
+.wrapperPlayerItemSong {
+    padding-left: 25px;
+    width: 100%;
+    background: #F6F6F6;
+    max-height: 105px;
+}
+
+.wrapperCoverAndPlayer {
+    display: flex;
+}
+
+.wrapperCoverItemSong {
+    max-width: 105px;
+}
+
+.titleSongItem {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.wrapperPlayerItemSong h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 11px;
+    margin-bottom: 7px;
+}
+
+.wrapperCoverAndPlayer .wrapperAbout__item__socials {
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.wrapperLyricsSong {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapperLyricsSong {
+    display: none;
+}
+
+.wrapperLyricsSongItemTranlation {
+    max-width: 330px;
+}
+
+.wrapperYouCanAlsoLikeSong {
+    position: relative;
+    margin-top: 40px;
+}
+
+.wrapperYouCanAlsoLikeSong .hrOrange {
+    position: absolute;
+    top: -28px;
+    height: 3px;
+    left: -15vw;
+    background: #F42525;
+    width: 14.6vw;
+}
+
+.wrapperMoreVideos .hrOrange {
+    position: absolute;
+    top: -28px;
+    height: 3px;
+    left: -15vw;
+    background: #F42525;
+    width: 14.6vw;
+}
+
+.wrapperYouCanAlsoLikeSong h2 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.pretitle {
+    font-size: 36px;
+}
+
+.wrapperContentAndCategories .wrapperYouCanAlsoLikeSong #youCanAlsoLike {
+    display: grid;
+    grid-gap: 40px;
+    grid-auto-flow: dense;
+    margin-bottom: 1rem;
+}
+
+#youCanAlsoLike .contentPagesSongItem {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.wrapperYouCanAlsoLikeSong .wrapperTitleAndBandSong .wrapperTitleSong {
+    font-size: 24px;
+    letter-spacing: 0.01em;
+}
+
+.wrapperYouCanAlsoLikeSong .wrapperTitleAndBandSong .wrapperTitleSong {
+    height: 0;
+}
+
+.contentPagesSongItem .wrapperTitleAndBandSong .titlePagesSongs {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+/* mobile tabs */
+
+.wrapperLyricsSongItemMob {
+    margin-top: 32px;
+}
+
+.wrapperLyricsSongItemMob .tabs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapperLyricsSongItemMob .tabs .tab {
+    font-size: 11px;
+    text-align: center;
+}
+
+.wrapperLyricsSongItemMob .tabs .tab svg {
+    margin-right: 4px;
+}
+
+.wrapperLyricsSongItemMob .tabs .tab.active {
+    text-decoration: underline;
+}
+
+.wrapperCoverAndPlayer {
+    position: relative;
+}
+
+.wrapperLyricsSongItemMob .tabs-content .tabs-panel {
+    display: none;
+}
+
+.wrapperLyricsSongItemMob .tabs-content .tabs-panel.active {
+    display: block;
+    margin-top: 30px;
+}
+
+/* mobile tabs */
+
+/* Video page */
+
+.wrapperVideos {
+    position: relative;
+}
+
+.playButtonVideo {
+    /* Position */
+    left: 0;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    /* Take full size */
+    height: 100%;
+    width: 100%;
+    /* Center the content */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* Add a dark background */
+}
+
+.wrapperPlayVideoImg {
+    width: 5em;
+    height: 5em;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5em;
+    padding: 10px;
+    background: rgba(78, 78, 78, 0.8);
+}
+
+.playButtonVideo img {
+    width: 50%;
+    cursor: pointer;
+}
+
+.wrapperVideos .video-js .vjs-big-play-button {
+    top: 41%;
+    left: 44%;
+    width: 2em;
+    height: 2em;
+    border-radius: 2em;
+    border: none;
+    background-color: rgba(94, 94, 94, 0.7);
+}
+
+.wrapperVideos .video-js .vjs-big-play-button .vjs-icon-placeholder:before, .video-js .vjs-modal-dialog, .vjs-button>.vjs-icon-placeholder:before, .vjs-modal-dialog .vjs-modal-dialog-content {
+    font-size: 50px;
+    top: 15%;
+}
+
+.wrapperVideos {
+    margin-top: 50px;
+}
+
+.wrapperVideos h4 {
+    font-weight: 500;
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 25px;
+}
+
+.wrapperVideos .wrapperAbout__item__socials {
+    margin-left: 0;
+    margin-top: 35px;
+}
+
+.wrapperMoreVideos {
+    margin-top: 70px;
+}
+
+.moreVideo {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(20em, 180px);
+    grid-auto-flow: dense;
+    margin-bottom: 1rem;
+}
+
+.moreVideo a:hover .videoMoreItem span {
+    background: #F42525;
+    transition: 0.4s ease-in-out;
+}
+
+.moreVideo img {
+    object-fit: cover;
+    object-position: 0 0;
+    width: 100%;
+    height: 100%;
+}
+
+.moreVideo span {
+    display: inline-block;
+    width: calc(100% - 10px);
+    margin-top: -5px;
+    background: #333333;
+    color: #fff;
+    font-weight: 500;
+    font-size: 11px;
+    padding: 10px 5px 8px 5px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.videoMoreItemWrapperImage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.videoMoreItemWrapperImage::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000000;
+    opacity: 0.4;
+    margin-bottom: 4px;
 }
