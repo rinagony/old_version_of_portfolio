@@ -401,16 +401,16 @@
     .wrpAboutButtonSocials .wrapperAbout__item__socials p {
         font-size: 1em;
     }
-    .contentPagesSongItem .wrapperTitleSong {
+    /* .contentPagesSongItem .wrapperTitleSong {
         height: 50px;
-    }
+    } */
     .wrapperTitlePagesSongs .titlePagesSongs {
         font-size: 14px;
     }
-    .contentPagesSongItem .titlePagesSongs {
+    /* .contentPagesSongItem .titlePagesSongs {
         margin-bottom: 10px;
         margin-top: 15px;
-    }
+    } */
     .wrapperSongInfo .wrapperCoverAndPlayer .wrapperAbout__item__socials {
         margin-top: 20px;
         margin-left: 0;
