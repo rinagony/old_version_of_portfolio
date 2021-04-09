@@ -2150,7 +2150,7 @@ audio {
     width: 2em;
     border-radius: 2em;
     padding: 10px;
-    z-index: 2;
+    z-index: 0;
     background-image: url('./../images/play.svg');
     background-repeat: no-repeat!important;
     background-position: center;
