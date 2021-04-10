@@ -102,22 +102,3 @@ $(function () {
         }
     });
 });
-
-
-var v = document.getElementsByTagName('video');
-v.addEventListener(
-    'play',
-    function () {
-        v.play();
-    },
-    false);
-
-v.onclick = function () {
-    if (v.paused) {
-        v.play();
-        v.controls = null;
-    } else {
-        v.pause();
-        v.controls = "controls";
-    }
-};

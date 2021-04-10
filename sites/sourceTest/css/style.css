@@ -40,12 +40,6 @@
     #footer .wrapperFooter__item__navigation ul li a {
         font-size: 1em;
     }
-    #cooperation .wrapperCooperationImageBlock img {
-        margin-top: -40px;
-        z-index: 1000;
-        width: 100%;
-        height: auto;
-    }
     .wrpContactMeFooter .wrapperFooter__item__contact a {
         font-size: 1em;
     }
@@ -104,6 +98,16 @@
         -ms-flex-pack: justify;
         justify-content: space-between;
     }
+    #cooperation .wrapperCooperationImageBlock img {
+        margin-top: -70px;
+        z-index: 1000;
+        width: 100%;
+        height: auto;
+    }
+    body #resources  {
+        padding-bottom: 140px;
+    }
+
     body h1 {
         font-size: 48px;
     }
@@ -184,6 +188,9 @@
     }
     body #footerMobile {
         display: none;
+    }
+    .wrapperVideos {
+        margin-top: 50px;
     }
 }
 
@@ -2090,7 +2097,7 @@ btnOptionLang .wrapperResourcesOptions {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    margin-top: 17px;
+    margin-top: -17px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -3687,10 +3694,6 @@ audio {
 .wrapperVideos .video-js .vjs-big-play-button .vjs-icon-placeholder:before, .video-js .vjs-modal-dialog, .vjs-button>.vjs-icon-placeholder:before, .vjs-modal-dialog .vjs-modal-dialog-content {
     font-size: 50px;
     top: 15%;
-}
-
-.wrapperVideos {
-    margin-top: 50px;
 }
 
 .wrapperVideos h4 {
