@@ -113,15 +113,20 @@ $(function () {
     });
 });
 
-$('a[href^="#"').on('click', function () {
+const anchors = document.querySelectorAll('a[href*="#"]')
 
-    let href = $(this).attr('href');
-
-    $('html, body').animate({
-        scrollTop: $(href).offset().top
-    });
-    return false;
-});
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const blockID = anchor.getAttribute('href').substr(1)
+    
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
 
 function openTestFirst() {
     let test = document.getElementById('firstTest');
