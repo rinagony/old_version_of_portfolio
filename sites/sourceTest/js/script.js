@@ -1,3 +1,12 @@
+window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+    }, 500);
+}
+
+
 // select
 var x, i, j, l, ll, selElmnt, a, b, c;
 x = document.getElementsByClassName("custom-select");
@@ -66,6 +75,7 @@ function closeAllSelect(elmnt) {
     }
 }
 
+
 document.addEventListener("click", closeAllSelect);
 
 (function () {
@@ -102,3 +112,21 @@ $(function () {
         }
     });
 });
+
+$('a[href^="#"').on('click', function () {
+
+    let href = $(this).attr('href');
+
+    $('html, body').animate({
+        scrollTop: $(href).offset().top
+    });
+    return false;
+});
+
+function openTestFirst() {
+    let test = document.getElementById('firstTest');
+    test.style.display = 'block';
+    test.style.visibility = 'visible';
+    test.style.transition = '1s';
+    test.style.opacity = '1';
+}
