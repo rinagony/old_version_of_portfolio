@@ -268,6 +268,9 @@
     .wrapperContentPages .contentPagesSongsWrapper .contentPagesSongItem h4 {
         font-size: 24px;
     }
+    .wrapperFooter__item .wrapperFooter__item__search {
+        margin-left: 20px;
+    }
 }
 
 @media (min-width: 746px) and (max-width: 876px) {
@@ -422,7 +425,6 @@
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        margin-left: 20px;
         margin-right: 20px;
     }
     #footer .wrpContactMeFooter {
@@ -959,13 +961,13 @@ body {
 
 @media (min-width: 768px) {
     .container {
-        width: 750px;
+        width: 710px;
     }
 }
 
 @media (min-width: 992px) {
     .container {
-        width: 970px;
+        width: 920px;
     }
 }
 
@@ -1211,13 +1213,12 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button, input::-w
     margin-right: 10px;
 }
 
-.wrapperHeader__item__socials .fab:hover {
+.wrapperHeader__item__socials .fab:hover, .wrapperAbout__item__social .fab:hover{
     color: #333333;
     -webkit-transition: 0.4s ease-out;
     -o-transition: 0.4s ease-out;
     transition: 0.4s ease-out;
 }
-
 /* header */
 
 /* mobile menu */
