@@ -116,22 +116,67 @@ $(function () {
 const anchors = document.querySelectorAll('a[href*="#"]')
 
 for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault()
-    
-    const blockID = anchor.getAttribute('href').substr(1)
-    
-    document.getElementById(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault()
+
+        const blockID = anchor.getAttribute('href').substr(1)
+
+        document.getElementById(blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
     })
-  })
 }
 
 function openTestFirst() {
     let test = document.getElementById('firstTest');
+    let grid = document.getElementById('testQuestionGrid');
+    grid.classList.add("grid");
     test.style.display = 'block';
     test.style.visibility = 'visible';
     test.style.transition = '1s';
     test.style.opacity = '1';
 }
+
+
+// $('.buttonTests').click(function () {
+//     $('.buttonTests').removeClass('buttonTests_active');
+//     $(this).addClass('buttonTests_active');
+// });
+
+// $(document).ready(function() {
+
+//     $('.grid').masonry({
+//     itemSelector: '.grid-item',
+//     columnWidth: '.grid-sizer',
+//     percentPosition: true
+//     });
+// })
+
+// function resizeGridItem(item){
+//     grid = document.getElementsByClassName("masonry")[0];
+//     rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+//     rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
+//     rowSpan = Math.ceil((item.querySelector('.testItemQuestion').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
+//       item.style.gridRowEnd = "span "+rowSpan;
+//   }
+  
+//   function resizeAllGridItems(){
+//     allItems = document.getElementsByClassName("grid-item");
+//     for(x=0;x<allItems.length;x++){
+//       resizeGridItem(allItems[x]);
+//     }
+//   }
+  
+//   function resizeInstance(instance){
+//     item = instance.elements[0];
+//     resizeGridItem(item);
+//   }
+  
+//   window.onload = resizeAllGridItems();
+//   window.addEventListener("resize", resizeAllGridItems);
+  
+//   allItems = document.getElementsByClassName("grid-item");
+//   for(x=0;x<allItems.length;x++){
+//     imagesLoaded( allItems[x], resizeInstance);
+//   }
