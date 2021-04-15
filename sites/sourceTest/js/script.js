@@ -136,6 +136,7 @@ function openTestFirst() {
     test.style.visibility = 'visible';
     test.style.transition = '1s';
     test.style.opacity = '1';
+
 }
 
 

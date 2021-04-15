@@ -261,7 +261,7 @@
                         <div id="firstTest" class="wrapperTestQuestuins">
                             <div id="testQuestionGrid" class="wrapperQuestionTests">
                                 <div class="wrapperQuestionsTest">
-                                    <div id="firstQuestionOfTest" class="grid-item testItemQuestion">
+                                    <div id="firstQuestionLanguage" class="testItemQuestion">
                                         <h4 class="questuionTestTxt">Do you enjoy the challenge? </h4>
                                         <div class="hrTests"></div>
                                         <div class="wrapperAnswers">
@@ -287,7 +287,8 @@
                                             </form>
                                         </div>
                                     </div>
-                                    <div class="grid-item testItemQuestion" style="grid-row-end: span 1">
+                                    <div class="grid-item testItemQuestion" id="thirdQuestionLanguage"
+                                        style="grid-row-end: span 1">
                                         <h4 class="questuionTestTxt">Which of the following interests you most?</h4>
                                         <div class="hrTests"></div>
                                         <form>
@@ -331,7 +332,8 @@
                                             </div>
                                         </form>
                                     </div>
-                                    <div class="grid-item testItemQuestion" style="grid-row-end: span -1">
+                                    <div id="fiveQuestionLanguage" class="grid-item testItemQuestion"
+                                        style="grid-row-end: span -1">
                                         <h4 class="questuionTestTxt">My motivation for learning a language is...</h4>
                                         <div class="hrTests"></div>
                                         <form>
@@ -363,7 +365,7 @@
                                             </div>
                                         </form>
                                     </div>
-                                    <div class="grid-item testItemQuestion">
+                                    <div id="sevenQuestionLanguage" class="grid-item testItemQuestion">
                                         <h4 class="questuionTestTxt">Grammar for you is...</h4>
                                         <div class="hrTests"></div>
                                         <form>
@@ -389,7 +391,7 @@
                                             </div>
                                         </form>
                                     </div>
-                                    <div class="grid-item testItemQuestion">
+                                    <div id="nineQuestionLanguage" class="grid-item testItemQuestion">
                                         <h4 class="questuionTestTxt">Now pick a dish...</h4>
                                         <div class="hrTests"></div>
                                         <form>
@@ -435,7 +437,7 @@
                                     </div>
                                 </div>
                                 <div class="wrapperQuestionsTest">
-                                    <div class="grid-item testItemQuestion">
+                                    <div id="secondQuestionLanguage" class="grid-item testItemQuestion">
                                         <h4 class="questuionTestTxt">Perfect vacation for me is...</h4>
                                         <div class="hrTests"></div>
                                         <form>
@@ -467,7 +469,7 @@
                                             </div>
                                         </form>
                                     </div>
-                                    <div class="grid-item testItemQuestion">
+                                    <div id="fourQuestionLanguage" class="grid-item testItemQuestion">
                                         <h4 class="questuionTestTxt">Which career path best fits your interests? </h4>
                                         <div class="hrTests"></div>
                                         <form>
@@ -516,7 +518,7 @@
                                             </div>
                                         </form>
                                     </div>
-                                    <div class="grid-item testItemQuestion">
+                                    <div id="sixQuestionLanguage" class="grid-item testItemQuestion">
                                         <h4 class="questuionTestTxt">How would you describe your sense of humor?</h4>
                                         <div class="hrTests"></div>
                                         <form>
@@ -550,7 +552,7 @@
                                             </div>
                                         </form>
                                     </div>
-                                    <div class="grid-item testItemQuestion">
+                                    <div id="eightQuestionLanguage" class="grid-item testItemQuestion">
                                         <h4 class="questuionTestTxt">Pick a drink...</h4>
                                         <div class="hrTests"></div>
                                         <form>
@@ -575,7 +577,8 @@
                                                 <div>
                                                     <input name="nineQuestionLang" id="nineQuestionLangOptFour"
                                                         type="radio" value="Wine">
-                                                    <label class="buttonTests" for="nineQuestionLangOptFour">Wine</label>
+                                                    <label class="buttonTests"
+                                                        for="nineQuestionLangOptFour">Wine</label>
                                                 </div>
                                                 <div>
                                                     <input name="nineQuestionLang" id="nineQuestionLangOptFive"
@@ -586,9 +589,12 @@
                                             </div>
                                         </form>
                                     </div>
-                                    <button class="btnBasic" onclick="resultsLangTest()">Finish test</button>
                                 </div>
                             </div>
+                        </div>
+                        <div class="resultTestLang" id="resultTestLang">
+                            <div class="hrWhiteTests"></div>
+                            <p>You should learn english</p>
                         </div>
                         <div class="linkToMoreTests">
                             <h2 class="pretitle animate__animated animate__fadeInLeftBig animate__delay-0.5s">More
@@ -619,8 +625,6 @@
                 </div>
                 <div id="resources">
                     <div class="categoriesOptions">
-                        <!-- Surround the select box within a "custom-select" DIV element.
-                        Remember to set the width: -->
                         <div class="custom-select">
                             <select>
                                 <option value="0">Categories</option>
@@ -673,52 +677,7 @@
                                 <span class="optionDescribeTxt">Learn more</span>
                             </div>
                         </div>
-                        <div class="resourcesOptionsItem" id="testsBlock">
-                            <a href="#" class="descriptionOptionTitle resourcesOptionsItemSpecial">Tests</a>
-                            <div class="resourcesOptionsQuadre">
-                                <div class="optionsItemWrpImage">
-                                    <img class="resourcesOptionsQuadreImage" src="./images/category5.png" alt="">
-                                </div>
-                                <span class="optionDescribeTxt">Which language is right for you⁣⁣ ⠀</span>
-                            </div>
-                        </div>
-                        <!-- <div class="resourcesOptionsItem" id="cooperationBlock">
-                            <h4 class="descriptionOptionTitle">Cooperation</h4>
-                            <div class="wrpHrOrangeResouces">
-                                <div class="hrOrangeResources"></div>
-                            </div>
-                            <div class="wrapperCooperationItemTxt">
-                                <span class="askMeCooperation">Ask me for translation by mail</span>
-                                <form class="formTranslation">
-                                    <label for="emailCooperation">Enter your email:</label>
-                                    <input id="emailCooperation" placeholder="Enter your email" type="text">
-                                    <button class="btnBasic" type="submit">Hire me</button>
-                                </form>
-                            </div>
-                        </div> -->
                     </div>
-                    <div class="descriptionOptionTitleTestMob">
-                        <a href="#" class="descriptionOptionTitleTestMobTitle">Tests</a>
-                        <div class="descriptionOptionTitleTestMobQuadre">
-                            <div class="descriptionOptionTitleTestMobImage">
-                            </div>
-                            <div id="wrpDescriptionOptionTitleTestMobTxt" class="wrpDescriptionOptionTitleTestMobTxt">
-                                <p class="descriptionOptionTitleTestMobTxt">Which language is right for you⁣⁣</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="wrpFormBlockMob">
-                        <form class="formSmall">
-                            <h4 class="wrpFormBlockMobTitle">Have a questions?</h4>
-                            <label for="fname">Name:</label>
-                            <input placeholder="Name" type="text" id="fname" name="fname">
-                            <label for="lname">Email:</label>
-                            <input placeholder="Email" type="text" id="lname" name="lname">
-                            <label for="lname">Text:</label>
-                            <input placeholder="Text" type="text" id="lname" name="lname">
-                            <button class="btnBasic">Send a letter</button>
-                        </form>
-                    </div> -->
                 </div>
             </div>
         </div>
