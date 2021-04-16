@@ -27,9 +27,10 @@ $(function () {
             if (radiosTwo[i].checked) {
                 resultTestLang.second = radiosTwo[i].value;
                 $("#thirdQuestionLanguage").fadeIn();
-                document.querySelector('#thirdQuestionLanguage').scrollIntoView({ 
-                    behavior: 'smooth' 
-                  });
+
+                const element = document.getElementById('thirdQuestionLanguage');
+                const y = element.getBoundingClientRect().top + window.pageYOffset + -100;
+                window.scrollTo({ top: y, behavior: 'smooth' });
             }
         }
 
@@ -46,9 +47,9 @@ $(function () {
             if (radiosFour[i].checked) {
                 resultTestLang.four = radiosFour[i].value;
                 $("#fiveQuestionLanguage").fadeIn();
-                document.querySelector('#fiveQuestionLanguage').scrollIntoView({ 
-                    behavior: 'smooth' 
-                  });
+                const element = document.getElementById('fiveQuestionLanguage');
+                const y = element.getBoundingClientRect().top + window.pageYOffset + -100;
+                window.scrollTo({ top: y, behavior: 'smooth' });
             }
         }
 
@@ -65,9 +66,9 @@ $(function () {
             if (radiosSix[i].checked) {
                 resultTestLang.six = radiosSix[i].value;
                 $("#sevenQuestionLanguage").fadeIn();
-                document.querySelector('#sevenQuestionLanguage').scrollIntoView({ 
-                    behavior: 'smooth' 
-                  });
+                const element = document.getElementById('sevenQuestionLanguage');
+                const y = element.getBoundingClientRect().top + window.pageYOffset + -100;
+                window.scrollTo({ top: y, behavior: 'smooth' });
             }
         }
 
@@ -84,10 +85,9 @@ $(function () {
             if (radiosEight[i].checked) {
                 resultTestLang.eight = radiosEight[i].value;
                 $("#nineQuestionLanguage").fadeIn();
-                document.querySelector('#nineQuestionLanguage').scrollIntoView({ 
-                    behavior: 'smooth',
-                    block: 'start'
-                  });
+                const element = document.getElementById('nineQuestionLanguage');
+                const y = element.getBoundingClientRect().top + window.pageYOffset + -100;
+                window.scrollTo({ top: y, behavior: 'smooth' });
             }
         }
 
@@ -95,7 +95,10 @@ $(function () {
         for (var i = 0, length = radiosNine.length; i < length; i++) {
             if (radiosNine[i].checked) {
                 resultTestLang.nine = radiosNine[i].value;
-                resultsLangTest(resultTestLang)
+                resultsLangTest(resultTestLang);
+                const element = document.getElementById('resultTestLang');
+                const y = element.getBoundingClientRect().top + window.pageYOffset + -100;
+                window.scrollTo({ top: y, behavior: 'smooth' });
             }
         }
     })
