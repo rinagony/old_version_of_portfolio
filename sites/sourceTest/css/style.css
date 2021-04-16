@@ -338,7 +338,7 @@
         justify-content: space-between;
     }
     body #resources {
-        padding-bottom: 120px;
+        padding-bottom: 135px;
     }
     .contentPages #resources .wrapperResourcesOptions {
         display: -webkit-box;
@@ -353,7 +353,6 @@
         width: 100%;
         padding-left: 6em;
     }
-
     .resourcesOptionsItem {
         margin-top: 20px;
     }
@@ -388,15 +387,12 @@
     body .hrOrange {
         width: 55vw;
     }
-
     #songsPage .hrOrange {
         width: 40em;
     }
-
     .wrapperContentAndCategories .wrapperContentPages .resultTestLang {
         font-size: 36px;
     }
-
     .wrapperContactSocials .wrapperHeader__item__search {
         margin-right: 25px;
     }
@@ -429,21 +425,14 @@
     .wrapperVideos {
         margin-top: 50px;
     }
-    
     .wrapperQuestionTests .wrapperQuestionsTest .testItemQuestion {
         padding: 40px;
     }
 }
 
 @media (min-width: 746px) {
-    #resources #cooperationBlock {
-        display: block;
-    }
     body #cooperation {
         display: block;
-    }
-    #resources .wrpFormBlockMob {
-        display: none;
     }
     #cooperationSectionMob {
         display: none;
@@ -480,7 +469,7 @@
     }
     .resourcesOptionsItem .descriptionOptionTitle {
         font-size: 1.5em;
-        margin-bottom: 24px;
+        margin-bottom: 17px;
         margin-top: 0;
     }
     .wrapperMenuMobile .wrpLogoMobile .logoMob {
@@ -514,6 +503,9 @@
         grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
         grid-auto-flow: dense;
         margin-bottom: 1rem;
+    }
+    .wrapperTests_testItem .wrapperTests_testItemTxt h2 {
+        font-size: 26px;
     }
     .wrapperPlayerItemSong h3 {
         font-size: 36px;
@@ -673,6 +665,9 @@
     .categoriesOptions .custom-select {
         width: 212px;
     }
+    #resources .wrpFormBlockMob {
+        display: none;
+    }
     .categoriesOptions .custom-select {
         font-size: 1em;
     }
@@ -734,6 +729,9 @@
         justify-content: space-between;
         margin-top: 30px;
     }
+    #resources #cooperationBlock {
+        display: block;
+    }
     .contentPagesSongItemWrapper .wrapperLyricsSongItem:nth-child(1) {
         padding-right: 2em;
     }
@@ -765,8 +763,8 @@
     .wrapperMoreVideos .moreVideo span {
         font-size: 1em;
     }
-    .wrapperTests_testItem .wrapperTests_testItemTxt h2 {
-        font-size: 20px;
+    body .contentPages {
+        padding-bottom: 70px;
     }
     .wrapperQuestionsTest .questuionTestTxt {
         font-size: 24px;
@@ -828,6 +826,9 @@
     .wrapperCoverItemSong #playerWrapperMob #play-pause {
         display: none;
     }
+    .wrpFormBlockMob .formSmall input {
+        width: 330px;
+    }
 }
 
 @media (min-width: 445px) and (max-width: 596px) {
@@ -847,11 +848,24 @@
         position: relative;
         display: block;
     }
-    .wrpAboutButtonSocials .wrapperAbout__item__socials {
+    body .wrapperAbout__item__socials {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    body #aboutSection {
+        padding-bottom: 30px;
+    }
+
+    .wrapperAbout .wrpAboutButtonSocials .wrapperAbout__item__socials {
         margin-left: 0;
     }
-     body #aboutSection {
-        padding-bottom: 30px;
+
+    .wrapperTestLinkToTest .wrapperTestItem {
+        padding: 20px;
+    }
+
+    .wrapperTestItem .hrOrangeTest {
+        display: block;
     }
 }
 
@@ -1651,7 +1665,7 @@ h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 1.8em;
+    margin-left: 2.5rem;
     margin-top: 32px;
 }
 
@@ -1695,7 +1709,6 @@ h1 {
 
 .wrpAboutButtonSocials {
     position: absolute;
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1741,7 +1754,7 @@ h1 {
     -o-transition: 0.3s ease-out;
     text-decoration: none;
     transition: 0.3s ease-out;
-    text-shadow: 0 0.015em #101010,0 -0.015em #101010,0.01em 0 #101010,-0.01em 0 #101010;
+    text-shadow: 0 0.015em #101010, 0 -0.015em #101010, 0.01em 0 #101010, -0.01em 0 #101010;
 }
 
 #resources h2 {
@@ -1983,7 +1996,6 @@ h1 {
     margin-top: 40px;
 }
 
-
 .wrpDescriptionOptionTitleTestMobTxt {
     display: inline-block;
     width: 100%;
@@ -2030,6 +2042,7 @@ h1 {
 .formTranslation .btnBasic {
     padding: 10px 23px;
     cursor: pointer;
+    margin-top: 12px;
 }
 
 #emailCooperation {
@@ -2061,6 +2074,7 @@ h1 {
     -ms-flex-align: start;
     align-items: flex-start;
     text-align: start;
+    width: 100%;
 }
 
 .wrpFormBlockMobTitle {
@@ -2079,6 +2093,40 @@ h1 {
 .wrpFormOptions h4 {
     font-weight: 500;
     color: #F42525;
+}
+
+.formSmall label {
+    display: none;
+}
+
+.wrpFormBlockMob .formSmall .btnBasic {
+    width: 130px;
+}
+
+.formSmall .btnBasic {
+    width: 95px;
+    margin-top: 27px;
+}
+
+.formSmall {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formSmall input {
+    border-top: 0;
+    background: inherit;
+    padding: 9px;
+    outline: none;
+    border-right: 0;
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(65, 65, 65, 0.38);
+    border-left: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .formSmallMob {
@@ -3372,6 +3420,10 @@ h1 {
 
 /* Another page: WORDS PORN */
 
+.contentPages {
+    padding-bottom: 40px;
+}
+
 .contentPages #resources {
     margin-top: 0;
 }
@@ -3944,6 +3996,7 @@ audio {
 }
 
 .hrOrangeTest {
+    display: none;
     height: 3px;
     background: #F42525;
     width: 85%;
@@ -3959,9 +4012,6 @@ audio {
     max-width: 90px;
 }
 
-.wrapperTests_testItemTxt h2 {
-    font-size: 18px;
-}
 
 .linkToMoreTests {
     margin-top: 100px;
@@ -4078,8 +4128,8 @@ audio {
     margin-top: 7px;
     margin-bottom: 13px;
 }
-  
-  /* The Masonry Brick */
+
+/* The Masonry Brick */
 
 #testQuestionGrid {
     width: 100%;
@@ -4093,9 +4143,11 @@ audio {
     margin-top: 25px;
     max-height: 800px;
 }
+
 .wrapperQuestionsTest {
     width: 50%;
 }
+
 .wrapperQuestionsTest:nth-child(1) {
     margin-right: 25px;
 }
@@ -4107,11 +4159,12 @@ audio {
 .buttonTests {
     display: inline-block;
 }
+
 .wrapperAnswers input[type="radio"] {
     display: none;
 }
 
-.wrapperAnswers input:checked + .buttonTests {
+.wrapperAnswers input:checked+.buttonTests {
     transition: 0.3s;
     color: #F42525;
     border: 1px solid #F42525;
