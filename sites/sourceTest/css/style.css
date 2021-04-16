@@ -273,6 +273,10 @@
     .wrapperTestItem .wrapperTests_testItem .wrapperTests_testItemTxt h2 {
         font-size: 36px;
     }
+    body .contentPages .videoIcon {
+        left: 37%;
+        top: 35%;
+    }
 }
 
 @media (min-width: 746px) and (max-width: 876px) {
@@ -757,7 +761,7 @@
     .optionsItemWrpImage .videoIcon {
         position: absolute;
         top: 30%;
-        left: 35%;
+        left: 30%;
         z-index: 1000;
     }
     .wrapperMoreVideos .moreVideo span {
@@ -822,6 +826,10 @@
     }
     .wrapperSongInfo .wrapperPlayerItemSong {
         background: #ffffff;
+    }
+    .wrapperMoreVideos .videoMoreItem svg{
+        width: 72px;
+        height: 72px;
     }
     .wrapperCoverItemSong #playerWrapperMob #play-pause {
         display: none;
@@ -1906,8 +1914,8 @@ h1 {
 
 .videoIcon {
     position: absolute;
-    top: 20%;
-    left: 24%;
+    top: 30%;
+    left: 30%;
     z-index: 1000;
 }
 
@@ -3843,7 +3851,10 @@ audio {
     width: 50%;
     cursor: pointer;
 }
-
+.videoMoreItem svg{
+    width: 40px;
+    height: 40px;
+}
 .wrapperVideos .video-js .vjs-big-play-button {
     top: 41%;
     left: 44%;
