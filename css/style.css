@@ -742,3 +742,7 @@ h2 {
     font-weight: 600;
     color: #000000;
 }
+
+#buttonMoreTwoColumn {
+    margin: -20px 10px;
+}
