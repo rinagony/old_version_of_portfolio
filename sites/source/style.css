@@ -41,9 +41,6 @@ body, button, input {
     .container .wrapperMainBlock h1 {
         font-size: 30px;
     }
-    #slider {
-        width: 100%;
-    }
     .controls {
         font-size: 1em;
     }
@@ -203,6 +200,9 @@ body, button, input {
         padding-bottom: 2em;
     }
     .contactsPageItem .itemContactPage a, .contactsPageItem .itemContactPage p {
+        font-size: 16px;
+    }
+    .contactsBlockPage .contactsPageItem .wrapperPhoneContactPage span {
         font-size: 16px;
     }
     .mapBlockContactsPage .wrapperMapContactsPage {
@@ -875,7 +875,7 @@ header {
 /* slider main */
 
 #slider {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -1804,6 +1804,10 @@ header {
     font-size: 13px;
     color: #222222;
     text-decoration: none;
+}
+
+.contactsPageItem .wrapperPhoneContactPage span {
+    font-size: 13px;
 }
 
 .contactsPageItem {
