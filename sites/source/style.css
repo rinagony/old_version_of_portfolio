@@ -47,9 +47,6 @@ body, button, input {
     .controls {
         font-size: 1em;
     }
-    #dots-con {
-        display: none;
-    }
     #sliderLicense {
         width: 100%;
     }
@@ -1822,6 +1819,9 @@ header {
     padding-bottom: 2em;
 }
 
+#dots-con {
+    display: none;
+}
 .wrapperMapContactsPage {
     display: none;
 }

@@ -1,4 +1,4 @@
-if (window.location.href.indexOf("index") > -1) {
+
     var slides = document.querySelectorAll(".slide");
     var dots = document.querySelectorAll(".dot");
     var index = 0;
@@ -33,4 +33,3 @@ if (window.location.href.indexOf("index") > -1) {
         slides[index].style.display = "block";
         dots[index].classList.add("active");
     }
-}
