@@ -16,7 +16,6 @@ if (window.innerWidth > 768) {
             let blockname = document.getElementById(attrib);
             slides = blockname.querySelectorAll(".slideServices");
             let imagepathbg = buttonsTabs[i].getAttribute('data-image');
-            console.log(imagepathbg)
             imageBg.style.background = `url('img/photo/${imagepathbg}')`;
             imageBg.style.backgroundSize = 'cover';
             imageBg.style.backgroundRepeat = 'no-repeat';
@@ -75,7 +74,11 @@ if (window.innerWidth < 768) {
             shrimp.innerHTML = buttonsTabs[i].innerHTML;
             let blockname = document.getElementById(attrib);
             slidesMobile = blockname.querySelectorAll(".slideServicesMobile");
-            indexMobile = 0
+            let imagepathbg = buttonsTabs[i].getAttribute('data-image');
+            imageBg.style.background = `url('img/photo/${imagepathbg}')`;
+            imageBg.style.backgroundSize = 'cover';
+            imageBg.style.backgroundRepeat = 'no-repeat';
+            indexMobile = 0;
             changeSlideServicesMobile();
         })
     }
