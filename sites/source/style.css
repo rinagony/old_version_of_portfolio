@@ -1723,6 +1723,11 @@ header {
     color: #828282;
 }
 
+#navigationServicesImageItem {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .navigationServicesImage {
     background: url('img/bgservices.jpg');
     background-size: cover;

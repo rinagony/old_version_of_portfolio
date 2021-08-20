@@ -3,6 +3,7 @@ var slides = document.querySelectorAll(".slideServices");
 var dots = document.querySelectorAll(".dotServices");
 let titleMain = document.getElementById('titleServicesMain');
 let shrimp = document.getElementById('lastShrimpBread');
+let imageBg = document.getElementById('navigationServicesImageItem');
 var index = 0;
 
 
@@ -14,6 +15,11 @@ if (window.innerWidth > 768) {
             shrimp.innerHTML = buttonsTabs[i].innerHTML;
             let blockname = document.getElementById(attrib);
             slides = blockname.querySelectorAll(".slideServices");
+            let imagepathbg = buttonsTabs[i].getAttribute('data-image');
+            console.log(imagepathbg)
+            imageBg.style.background = `url('img/photo/${imagepathbg}')`;
+            imageBg.style.backgroundSize = 'cover';
+            imageBg.style.backgroundRepeat = 'no-repeat';
             index = 0;
             changeSlideServices();
         })
