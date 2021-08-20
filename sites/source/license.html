@@ -15,12 +15,18 @@
 </head>
 
 <body>
+    <div id="jsModal" class="modal">
+        <div class="modal__overlay jsOverlay"></div>
+        <div class="modal__container" id="modal__container">
+            <button class="modal__close jsModalClose">&#10005;</button>
+        </div>
+    </div>
     <header>
         <div class="container">
             <div class="wraperHeaderMain">
                 <div class="wrapperLogoNavigation">
                     <div class="wrapperLogo">
-                        <a href="index.html"><img src="img/logo.png" alt=""></a>
+                        <a href="index.html"><img src="img/logo.svg" alt=""></a>
                     </div>
                     <div class="wrapperNavigation">
                         <ul>
@@ -61,7 +67,7 @@
 
             <div class="wrapperHeaderMobile">
                 <div class="wrapperLogoMobile">
-                    <a href="index.html"><img src="img/logo.png" alt=""></a>
+                    <a href="index.html"><img src="img/logo.svg" alt=""></a>
                 </div>
                 <div class="headerMob">
                     <div class="icon-container">
@@ -132,15 +138,15 @@
                 <div class="wrapperSertificatesLicensePage">
                     <div class="sertificateLicensePageItem">
                         <img src="img/license/СРО1.jpg" alt="">
-                        <a href="#">СРО1</a>
+                        <a data-license="СРО1" class="licenseOpenImage" href="#jsModal">СРО1</a>
                     </div>
                     <div class="sertificateLicensePageItem">
                         <img src="img/license/СРО2.jpg" alt="">
-                        <a href="#">СРО2</a>
+                        <a data-license="СРО2" class="licenseOpenImage" href="#jsModal">СРО2</a>
                     </div>
                     <div class="sertificateLicensePageItem">
                         <img src="img/license/СРО3.jpg" alt="">
-                        <a href="#">СРО3</a>
+                        <a data-license="СРО3" class="licenseOpenImage" href="#jsModal">СРО3</a>
                     </div>
                 </div>
                 <div class="wrapperSertificatesLicensePageMob">
@@ -149,35 +155,37 @@
                             <div class="slideLicense">
                                 <div class="aboutItemSliderLicense">
                                     <img src="img/license/СРО1.jpg" alt="">
-                                    <a href="#">СРО1</a>
+                                    <a class="licenseOpenImage" href="#jsModal">СРО1</a>
                                 </div>
                             </div>
-    
+
                             <div class="slideLicense">
                                 <div class="aboutItemSliderLicense">
                                     <img src="img/license/СРО2.jpg" alt="">
-                                    <a href="#">СРО2</a>
+                                    <a class="licenseOpenImage" href="#jsModal">СРО2</a>
                                 </div>
                             </div>
-    
+
                             <div class="slideLicense">
                                 <div class="aboutItemSliderLicense">
                                     <img src="img/license/СРО3.jpg" alt="">
-                                    <a href="#">СРО3</a>
+                                    <a class="licenseOpenImage" href="#jsModal">СРО3</a>
                                 </div>
                             </div>
                         </div>
                         <div id="dots-conLicense">
-                            <span class="dotLicense"></span><span class="dotLicense"></span><span class="dotLicense"></span>
+                            <span class="dotLicense"></span><span class="dotLicense"></span><span
+                                class="dotLicense"></span>
                         </div>
-    
+
                     </div>
 
                     <div class="wrapperControlsLicense">
-                        <span class="controlsLicense" onclick="prevSlideLicense(-1)" id="left-arrowLicense"><img src="img/sliderLeft.svg"
-                                alt=""></i>
+                        <span class="controlsLicense" onclick="prevSlideLicense(-1)" id="left-arrowLicense"><img
+                                src="img/sliderLeft.svg" alt=""></i>
                         </span>
-                        <span class="controlsLicense" id="right-arrowLicense" onclick="nextSlideLicense(1)"><img src="img/slideRight.svg" alt="">
+                        <span class="controlsLicense" id="right-arrowLicense" onclick="nextSlideLicense(1)"><img
+                                src="img/slideRight.svg" alt="">
                         </span>
                     </div>
                 </div>
@@ -189,7 +197,7 @@
         <div class="container">
             <div class="wrapperFooter">
                 <div class="wrapperLogo">
-                    <a href="index.html"><img src="img/logo.png" alt=""></a>
+                    <a href="index.html"><img src="img/logo.svg" alt=""></a>
                 </div>
                 <div class="wrapperNavigation">
                     <ul>
@@ -236,6 +244,7 @@
 
     <script src="script.js"></script>
     <script src="slider.js"></script>
+    <script src="license.js"></script>
     <script src="slider-license.js"></script>
     <script src="slider-services.js"></script>
 </body>

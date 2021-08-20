@@ -20,7 +20,7 @@
             <div class="wraperHeaderMain">
                 <div class="wrapperLogoNavigation">
                     <div class="wrapperLogo">
-                        <a href="index.html"><img src="img/logo.png" alt=""></a>
+                        <a href="index.html"><img src="img/logo.svg" alt=""></a>
                     </div>
                     <div class="wrapperNavigation">
                         <ul>
@@ -61,7 +61,7 @@
 
             <div class="wrapperHeaderMobile">
                 <div class="wrapperLogoMobile">
-                    <a href="index.html"><img src="img/logo.png" alt=""></a>
+                    <a href="index.html"><img src="img/logo.svg" alt=""></a>
                 </div>
                 <div class="headerMob">
                     <div class="icon-container">
@@ -118,15 +118,15 @@
                         <span>|</span>
                     </div>
                     <div>
-                        <a href="services.html">
-                            <p class="notActiveShrimp">Услуги</p>
+                        <a href="services.html" class="notActiveShrimp">
+                            Услуги
                         </a>
                     </div>
                     <div>
                         <span>|</span>
                     </div>
-                    <div>
-                        <p class="activeShrimp">Геодезические работы</p>
+                    <div class="wrapperBreadShrimp">
+                        <p class="activeShrimp" id="lastShrimpBread">Геодезические работы</p>
                     </div>
                 </div>
             </div>
@@ -137,15 +137,30 @@
         <div class="container">
             <div class="wrapperNavigationServices">
                 <div class="navigationServices">
-                    <a href="#" id="activeNavigationItemServices">Геодезические работы</a>
-                    <a href="#">Кадастровые работы</a>
-                    <a href="#">Землеустроительные работы</a>
-                    <a href="#">Точное земледелие</a>
-                    <a href="#">Землеустроительная экспертиза </a>
+                    <button data-tab="sliderServices" data-tabmob="sliderServicesMobile" class="tablink"
+                        onclick="openPage('firstservice', this)" id="defaultOpenServices">
+                        Геодезические работы
+                    </button>
+                    <button data-tab="sliderServicesSecond" data-tabmob="sliderServicesMobileSecond" class="tablink"
+                        onclick="openPage('secondservice', this)">
+                        Кадастровые работы
+                    </button>
+                    <button data-tab="sliderServicesThird" data-tabmob="sliderServicesMobileThird" class="tablink"
+                        onclick="openPage('thirdservice', this)">
+                        Землеустроительные работы
+                    </button>
+                    <button data-tab="sliderServicesFourth" data-tabmob="sliderServicesMobileFourth" class="tablink"
+                        onclick="openPage('fourthservice', this)">
+                        Точное земледелие
+                    </button>
+                    <button data-tab="sliderServicesFifth" data-tabmob="sliderServicesMobileFifth" class="tablink"
+                        onclick="openPage('fifthservice', this)">
+                        Землеустроительная экспертиза
+                    </button>
                 </div>
                 <div class="wrapperNavigationServicesImage">
                     <div class="navigationServicesImage">
-                        <h3>Геодезические работы</h3>
+                        <h3 id="titleServicesMain">Геодезические работы</h3>
                         <button class="btnLearnMore">отправить заявку</button>
                     </div>
                 </div>
@@ -153,319 +168,1575 @@
         </div>
     </section>
 
-    <section class="descriptionServices">
-        <div class="container">
-            <div class="wrapperDescriptionServices">
-                <p>Проведение инженерно-геодезических работ необходимо при кадастровых работах, судебных
-                    землеустроительных экспертизах, строительстве, инженерных изысканиях.</p>
-                <p>Инженерно-геодезические работы по выносу в натуру проектных координат земельных участков проводятся с
-                    целью точного определения месторасположения данных земельных участков на местности и закрепления
-                    характерных точек земельных участков.</p>
+    <div class="tabcontent" id="firstservice">
+        <div class="descriptionServices">
+            <div class="container">
+                <div class="wrapperDescriptionServices">
+                    <p>Проведение инженерно-геодезических работ необходимо при кадастровых работах, судебных
+                        землеустроительных экспертизах, строительстве, инженерных изысканиях.</p>
+                    <p>Инженерно-геодезические работы по выносу в натуру проектных координат земельных участков
+                        проводятся с
+                        целью точного определения месторасположения данных земельных участков на местности и закрепления
+                        характерных точек земельных участков.</p>
+                </div>
+
+                <div class="wrapperProjectServices">
+                    <h2>Проекты:</h2>
+                    <div class="wrapperSliderServies">
+                        <div id="sliderServices">
+                            <div class="slideServices">
+                                <div class="aboutItemSliderServices">
+                                    <div class="wrapperColumnsSliderServices">
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServices">
+                                <div class="aboutItemSliderServices">
+                                    <div class="wrapperColumnsSliderServices">
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServices">
+                                <div class="aboutItemSliderServices">
+                                    <div class="wrapperColumnsSliderServices">
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServices">
+                                <div class="aboutItemSliderServices">
+                                    <div class="wrapperColumnsSliderServices">
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServices">
+                                <div class="aboutItemSliderServices">
+                                    <div class="wrapperColumnsSliderServices">
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="dots-conServices">
+                                <span class="dotServices"></span><span class="dotServices"></span><span
+                                    class="dotServices"></span><span class="dotServices"></span><span
+                                    class="dotServices"></span>
+                            </div>
+                        </div>
+                        <div class="wrapperControlsServices">
+                            <span class="controlsServices" onclick="prevSlideServices(-1, 'sliderServices')"
+                                id="left-arrowServices"><img src="img/sliderLeft.svg" alt=""></i>
+                            </span>
+                            <span class="controlsServices" id="right-arrowServices"
+                                onclick="nextSlideServices(1, 'sliderServices')"><img src="img/slideRight.svg" alt="">
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="wrapperSliderServiesMobile">
+                        <div id="sliderServicesMobile">
+                            <div class="slideServicesMobile">
+                                <div class="aboutItemSliderServicesMobile">
+                                    <div class="wrapperColumnsSliderServicesMobile">
+                                        <div class="itemColumnSliderServicesMobile">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServicesMobile">
+                                <div class="aboutItemSliderServicesMobile">
+                                    <div class="wrapperColumnsSliderServicesMobile">
+                                        <div class="itemColumnSliderServicesMobile">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServicesMobile">
+                                <div class="aboutItemSliderServicesMobile">
+                                    <div class="wrapperColumnsSliderServicesMobile">
+                                        <div class="itemColumnSliderServicesMobile">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServicesMobile">
+                                <div class="aboutItemSliderServicesMobile">
+                                    <div class="wrapperColumnsSliderServicesMobile">
+                                        <div class="itemColumnSliderServicesMobile">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServicesMobile">
+                                <div class="aboutItemSliderServicesMobile">
+                                    <div class="wrapperColumnsSliderServicesMobile">
+                                        <div class="itemColumnSliderServicesMobile">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="dots-conServicesMobile">
+                                <span class="dotServicesMobile"></span><span class="dotServicesMobile"></span><span
+                                    class="dotServicesMobile"></span><span class="dotServicesMobile"></span><span
+                                    class="dotServicesMobile"></span>
+                            </div>
+                        </div>
+                        <div class="wrapperControlsServicesMobile">
+                            <span class="controlsServicesMobile"
+                                onclick="prevSlideServicesMobile(-1, 'sliderServicesMobile')"
+                                id="left-arrowServicesMobile"><img src="img/sliderLeft.svg" alt=""></i>
+                            </span>
+                            <span class="controlsServicesMobile" id="right-arrowServicesMobile"
+                                onclick="nextSlideServicesMobile(1, 'sliderServicesMobile')"><img
+                                    src="img/slideRight.svg" alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="wrapperBtnServicesSendMessage">
+                        <button class="btnLearnMore">отправить заявку</button>
+                    </div>
+                </div>
+
+                <div class="wrapperPriceServices">
+                    <h2>Стоимость работ</h2>
+                    <div class="wrapperPriceTable">
+                        <table id="tablePrices">
+                            <tr>
+                                <th class="titleTablePrices">Наименование работ</th>
+                                <th class="titleTablePrices">Стоимость</th>
+                            </tr>
+                            <tr>
+                                <td>Межевой план</td>
+                                <td>от 5000</td>
+                            </tr>
+                            <tr>
+                                <td>Технический план</td>
+                                <td>от 5000</td>
+                            </tr>
+                            <tr>
+                                <td>Акт обследования</td>
+                                <td>от 5000</td>
+                            </tr>
+                            <tr>
+                                <td>Землеустроительные работы</td>
+                                <td>по договоренности
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Вынос границ участка на местность</td>
+                                <td>от 750 точка (при большом количестве точек — по договоренности).
+                                    Минимальная стоимость выезда геодезиста 3000 руб. (при количестве точек менее 4-х)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Заключение специалиста для суда/досудебного разрешения земельного спора</td>
+                                <td>от 7000</td>
+                            </tr>
+                            <tr>
+                                <td>Судебная землеустроительная экспертиза</td>
+                                <td>от 15 000</td>
+                            </tr>
+                            <tr>
+                                <td>Топографическая съемка</td>
+                                <td>по договоренности</td>
+                            </tr>
+                            <tr>
+                                <td>Инженерно-геодезические изыскания</td>
+                                <td>по договоренности</td>
+                            </tr>
+                            <tr>
+                                <td>Инженерно-геологические изыскания</td>
+                                <td>по договоренности</td>
+                            </tr>
+                            <tr>
+                                <td>Консультация</td>
+                                <td>бесплатно</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="projectsServices">
-        <div class="container">
-            <div class="wrapperProjectServices">
-                <h2>Проекты:</h2>
-                <div class="wrapperSliderServies">
-                    <div id="sliderServices">
-                        <div class="slideServices">
-                            <div class="aboutItemSliderServices">
-                                <div class="wrapperColumnsSliderServices">
-                                    <div class="itemColumnSliderServices">
-                                        <img src="img/services/project1.jpg" alt="">
-                                        <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
-                                            Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
-                                            2016-2018</p>
-                                    </div>
-                                    <div class="itemColumnSliderServices">
-                                        <img src="img/services/project2.jpg" alt="">
-                                        <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
-                                            высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
-                                            опорами ВЛ в г. Волгограде, 2018г.</p>
-                                    </div>
-                                    <div class="itemColumnSliderServices">
-                                        <img src="img/services/project3.jpg" alt="">
-                                        <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
-                                            Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе г.
-                                            Волгограда, 2018</p>
+    <div class="tabcontent" id="secondservice">
+        <div class="descriptionServices">
+            <div class="container">
+                <div class="wrapperDescriptionServices">
+                    <p>Проведение кадастровых работ необходимо при кадастровых работах, судебных
+                        землеустроительных экспертизах, строительстве, инженерных изысканиях.</p>
+                    <p>Инженерно-геодезические работы по выносу в натуру проектных координат земельных участков
+                        проводятся с
+                        целью точного определения месторасположения данных земельных участков на местности и закрепления
+                        характерных точек земельных участков.</p>
+                </div>
+
+                <div class="wrapperProjectServices">
+                    <h2>Проекты:</h2>
+                    <div class="wrapperSliderServies">
+                        <div id="sliderServicesSecond">
+                            <div class="slideServices">
+                                <div class="aboutItemSliderServices">
+                                    <div class="wrapperColumnsSliderServices">
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="slideServices">
-                            <div class="aboutItemSliderServices">
-                                <div class="wrapperColumnsSliderServices">
-                                    <div class="itemColumnSliderServices">
-                                        <img src="img/services/project3.jpg" alt="">
-                                        <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
-                                            Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
-                                            2016-2018</p>
-                                    </div>
-                                    <div class="itemColumnSliderServices">
-                                        <img src="img/services/project1.jpg" alt="">
-                                        <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
-                                            высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
-                                            опорами ВЛ в г. Волгограде, 2018г.</p>
-                                    </div>
-                                    <div class="itemColumnSliderServices">
-                                        <img src="img/services/project2.jpg" alt="">
-                                        <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
-                                            Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе г.
-                                            Волгограда, 2018</p>
+                            <div class="slideServices">
+                                <div class="aboutItemSliderServices">
+                                    <div class="wrapperColumnsSliderServices">
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="slideServices">
-                            <div class="aboutItemSliderServices">
-                                <div class="wrapperColumnsSliderServices">
-                                    <div class="itemColumnSliderServices">
-                                        <img src="img/services/project2.jpg" alt="">
-                                        <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
-                                            Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
-                                            2016-2018</p>
-                                    </div>
-                                    <div class="itemColumnSliderServices">
-                                        <img src="img/services/project1.jpg" alt="">
-                                        <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
-                                            высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
-                                            опорами ВЛ в г. Волгограде, 2018г.</p>
-                                    </div>
-                                    <div class="itemColumnSliderServices">
-                                        <img src="img/services/project3.jpg" alt="">
-                                        <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
-                                            Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе г.
-                                            Волгограда, 2018</p>
+                            <div class="slideServices">
+                                <div class="aboutItemSliderServices">
+                                    <div class="wrapperColumnsSliderServices">
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="slideServices">
-                            <div class="aboutItemSliderServices">
-                                <div class="wrapperColumnsSliderServices">
-                                    <div class="itemColumnSliderServices">
-                                        <img src="img/services/project1.jpg" alt="">
-                                        <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
-                                            Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
-                                            2016-2018</p>
-                                    </div>
-                                    <div class="itemColumnSliderServices">
-                                        <img src="img/services/project3.jpg" alt="">
-                                        <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
-                                            высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
-                                            опорами ВЛ в г. Волгограде, 2018г.</p>
-                                    </div>
-                                    <div class="itemColumnSliderServices">
-                                        <img src="img/services/project2.jpg" alt="">
-                                        <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
-                                            Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе г.
-                                            Волгограда, 2018</p>
+                            <div class="slideServices">
+                                <div class="aboutItemSliderServices">
+                                    <div class="wrapperColumnsSliderServices">
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="slideServices">
-                            <div class="aboutItemSliderServices">
-                                <div class="wrapperColumnsSliderServices">
-                                    <div class="itemColumnSliderServices">
-                                        <img src="img/services/project3.jpg" alt="">
-                                        <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
-                                            Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
-                                            2016-2018</p>
-                                    </div>
-                                    <div class="itemColumnSliderServices">
-                                        <img src="img/services/project1.jpg" alt="">
-                                        <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
-                                            высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
-                                            опорами ВЛ в г. Волгограде, 2018г.</p>
-                                    </div>
-                                    <div class="itemColumnSliderServices">
-                                        <img src="img/services/project2.jpg" alt="">
-                                        <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
-                                            Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе г.
-                                            Волгограда, 2018</p>
+                            <div class="slideServices">
+                                <div class="aboutItemSliderServices">
+                                    <div class="wrapperColumnsSliderServices">
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div id="dots-conServicesSecond">
+                                <span class="dotServices"></span><span class="dotServices"></span><span
+                                    class="dotServices"></span><span class="dotServices"></span><span
+                                    class="dotServices"></span>
+                            </div>
                         </div>
-                        <div id="dots-conServices">
-                            <span class="dotServices"></span><span class="dotServices"></span><span
-                                class="dotServices"></span><span class="dotServices"></span><span
-                                class="dotServices"></span>
+                        <div class="wrapperControlsServices">
+                            <span class="controlsServices" onclick="prevSlideServices(-1, 'sliderServicesSecond')"
+                                id="left-arrowServicesSecond"><img src="img/sliderLeft.svg" alt=""></i>
+                            </span>
+                            <span class="controlsServices" id="right-arrowServicesSecond"
+                                onclick="nextSlideServices(1, 'sliderServicesSecond')"><img src="img/slideRight.svg"
+                                    alt="">
+                            </span>
                         </div>
                     </div>
-                    <div class="wrapperControlsServices">
-                        <span class="controlsServices" onclick="prevSlideServices(-1)" id="left-arrowServices"><img
-                                src="img/sliderLeft.svg" alt=""></i>
-                        </span>
-                        <span class="controlsServices" id="right-arrowServices" onclick="nextSlideServices(1)"><img
-                                src="img/slideRight.svg" alt="">
-                        </span>
+
+                    <div class="wrapperSliderServiesMobile">
+                        <div id="sliderServicesMobileSecond">
+                            <div class="slideServicesMobile">
+                                <div class="aboutItemSliderServicesMobile">
+                                    <div class="wrapperColumnsSliderServicesMobile">
+                                        <div class="itemColumnSliderServicesMobile">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServicesMobile">
+                                <div class="aboutItemSliderServicesMobile">
+                                    <div class="wrapperColumnsSliderServicesMobile">
+                                        <div class="itemColumnSliderServicesMobile">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServicesMobile">
+                                <div class="aboutItemSliderServicesMobile">
+                                    <div class="wrapperColumnsSliderServicesMobile">
+                                        <div class="itemColumnSliderServicesMobile">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServicesMobile">
+                                <div class="aboutItemSliderServicesMobile">
+                                    <div class="wrapperColumnsSliderServicesMobile">
+                                        <div class="itemColumnSliderServicesMobile">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServicesMobile">
+                                <div class="aboutItemSliderServicesMobile">
+                                    <div class="wrapperColumnsSliderServicesMobile">
+                                        <div class="itemColumnSliderServicesMobile">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="dots-conServicesMobileSecond">
+                                <span class="dotServicesMobile"></span><span class="dotServicesMobile"></span><span
+                                    class="dotServicesMobile"></span><span class="dotServicesMobile"></span><span
+                                    class="dotServicesMobile"></span>
+                            </div>
+                        </div>
+                        <div class="wrapperControlsServicesMobile">
+                            <span class="controlsServicesMobile"
+                                onclick="prevSlideServicesMobile(-1, 'sliderServicesMobileSecond')"
+                                id="left-arrowServicesMobileSecond"><img src="img/sliderLeft.svg" alt=""></i>
+                            </span>
+                            <span class="controlsServicesMobile" id="right-arrowServicesMobileSecond"
+                                onclick="nextSlideServicesMobile(1, 'sliderServicesMobileSecond')"><img
+                                    src="img/slideRight.svg" alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="wrapperBtnServicesSendMessage">
+                        <button class="btnLearnMore">отправить заявку</button>
                     </div>
                 </div>
 
-                <div class="wrapperSliderServiesMobile">
-                    <div id="sliderServicesMobile">
-                        <div class="slideServicesMobile">
-                            <div class="aboutItemSliderServicesMobile">
-                                <div class="wrapperColumnsSliderServicesMobile">
-                                    <div class="itemColumnSliderServicesMobile">
-                                        <img src="img/services/project1.jpg" alt="">
-                                        <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
-                                            Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
-                                            2016-2018</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="slideServicesMobile">
-                            <div class="aboutItemSliderServicesMobile">
-                                <div class="wrapperColumnsSliderServicesMobile">
-                                    <div class="itemColumnSliderServicesMobile">
-                                        <img src="img/services/project2.jpg" alt="">
-                                        <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
-                                            высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
-                                            опорами ВЛ в г. Волгограде, 2018г.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="slideServicesMobile">
-                            <div class="aboutItemSliderServicesMobile">
-                                <div class="wrapperColumnsSliderServicesMobile">
-                                    <div class="itemColumnSliderServicesMobile">
-                                        <img src="img/services/project3.jpg" alt="">
-                                        <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
-                                            Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе г.
-                                            Волгограда, 2018</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="slideServicesMobile">
-                            <div class="aboutItemSliderServicesMobile">
-                                <div class="wrapperColumnsSliderServicesMobile">
-                                    <div class="itemColumnSliderServicesMobile">
-                                        <img src="img/services/project2.jpg" alt="">
-                                        <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
-                                            Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
-                                            2016-2018</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="slideServicesMobile">
-                            <div class="aboutItemSliderServicesMobile">
-                                <div class="wrapperColumnsSliderServicesMobile">
-                                    <div class="itemColumnSliderServicesMobile">
-                                        <img src="img/services/project1.jpg" alt="">
-                                        <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
-                                            высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
-                                            опорами ВЛ в г. Волгограде, 2018г.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="dots-conServicesMobile">
-                            <span class="dotServicesMobile"></span><span class="dotServicesMobile"></span><span
-                                class="dotServicesMobile"></span><span class="dotServicesMobile"></span><span
-                                class="dotServicesMobile"></span>
-                        </div>
+                <div class="wrapperPriceServices">
+                    <h2>Стоимость работ</h2>
+                    <div class="wrapperPriceTable">
+                        <table id="tablePrices">
+                            <tr>
+                                <th class="titleTablePrices">Наименование работ</th>
+                                <th class="titleTablePrices">Стоимость</th>
+                            </tr>
+                            <tr>
+                                <td>Межевой план</td>
+                                <td>от 5000</td>
+                            </tr>
+                            <tr>
+                                <td>Технический план</td>
+                                <td>от 5000</td>
+                            </tr>
+                            <tr>
+                                <td>Акт обследования</td>
+                                <td>от 5000</td>
+                            </tr>
+                            <tr>
+                                <td>Землеустроительные работы</td>
+                                <td>по договоренности
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Вынос границ участка на местность</td>
+                                <td>от 750 точка (при большом количестве точек — по договоренности).
+                                    Минимальная стоимость выезда геодезиста 3000 руб. (при количестве точек менее 4-х)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Заключение специалиста для суда/досудебного разрешения земельного спора</td>
+                                <td>от 7000</td>
+                            </tr>
+                            <tr>
+                                <td>Судебная землеустроительная экспертиза</td>
+                                <td>от 15 000</td>
+                            </tr>
+                            <tr>
+                                <td>Топографическая съемка</td>
+                                <td>по договоренности</td>
+                            </tr>
+                            <tr>
+                                <td>Инженерно-геодезические изыскания</td>
+                                <td>по договоренности</td>
+                            </tr>
+                            <tr>
+                                <td>Инженерно-геологические изыскания</td>
+                                <td>по договоренности</td>
+                            </tr>
+                            <tr>
+                                <td>Консультация</td>
+                                <td>бесплатно</td>
+                            </tr>
+                        </table>
                     </div>
-                    <div class="wrapperControlsServicesMobile">
-                        <span class="controlsServicesMobile" onclick="prevSlideServicesMobile(-1)" id="left-arrowServicesMobile"><img
-                                src="img/sliderLeft.svg" alt=""></i>
-                        </span>
-                        <span class="controlsServicesMobile" id="right-arrowServicesMobile" onclick="nextSlideServicesMobile(1)"><img
-                                src="img/slideRight.svg" alt="">
-                        </span>
-                    </div>
-                </div>
-                <div class="wrapperBtnServicesSendMessage">
-                    <button class="btnLearnMore">отправить заявку</button>
-                </div>
-            </div>
-    </section>
-
-    <section class="priceServices">
-        <div class="container">
-            <div class="wrapperPriceServices">
-                <h2>Стоимость работ</h2>
-                <div class="wrapperPriceTable">
-                    <table id="tablePrices">
-                        <tr>
-                          <th class="titleTablePrices">Наименование работ</th>
-                          <th class="titleTablePrices">Стоимость</th>
-                        </tr>
-                        <tr>
-                          <td>Межевой план</td>
-                          <td>от 5000</td>
-                        </tr>
-                        <tr>
-                          <td>Технический план</td>
-                          <td>от 5000</td>
-                        </tr>
-                        <tr>
-                          <td>Акт обследования</td>
-                          <td>от 5000</td>
-                        </tr>
-                        <tr>
-                          <td>Землеустроительные работы</td>
-                          <td>по договоренности
-                        </td>
-                        </tr>
-                        <tr>
-                          <td>Вынос границ участка на местность</td>
-                          <td>от 750 точка (при большом количестве точек — по договоренности).
-                            Минимальная стоимость выезда геодезиста 3000 руб. (при количестве точек менее 4-х)
-                            </td>
-                        </tr>
-                        <tr>
-                          <td>Заключение специалиста для суда/досудебного разрешения земельного спора</td>
-                          <td>от 7000</td>
-                        </tr>
-                        <tr>
-                          <td>Судебная землеустроительная экспертиза</td>
-                          <td>от 15 000</td>
-                        </tr>
-                        <tr>
-                            <td>Топографическая съемка</td>
-                            <td>по договоренности</td>
-                        </tr>
-                        <tr>
-                            <td>Инженерно-геодезические изыскания</td>
-                            <td>по договоренности</td>
-                        </tr>
-                        <tr>
-                            <td>Инженерно-геологические изыскания</td>
-                            <td>по договоренности</td>
-                        </tr>
-                        <tr>
-                            <td>Консультация</td>
-                            <td>бесплатно</td>
-                        </tr>
-                      </table>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+
+    <div class="tabcontent" id="thirdservice">
+        <div class="descriptionServices">
+            <div class="container">
+                <div class="wrapperDescriptionServices">
+                    <p>Проведение землеустроительных работ необходимо при кадастровых работах, судебных
+                        землеустроительных экспертизах, строительстве, инженерных изысканиях.</p>
+                    <p>Инженерно-геодезические работы по выносу в натуру проектных координат земельных участков
+                        проводятся с
+                        целью точного определения месторасположения данных земельных участков на местности и закрепления
+                        характерных точек земельных участков.</p>
+                </div>
+
+                <div class="wrapperProjectServices">
+                    <h2>Проекты:</h2>
+                    <div class="wrapperSliderServies">
+                        <div id="sliderServicesThird">
+                            <div class="slideServices">
+                                <div class="aboutItemSliderServices">
+                                    <div class="wrapperColumnsSliderServices">
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServices">
+                                <div class="aboutItemSliderServices">
+                                    <div class="wrapperColumnsSliderServices">
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServices">
+                                <div class="aboutItemSliderServices">
+                                    <div class="wrapperColumnsSliderServices">
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServices">
+                                <div class="aboutItemSliderServices">
+                                    <div class="wrapperColumnsSliderServices">
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServices">
+                                <div class="aboutItemSliderServices">
+                                    <div class="wrapperColumnsSliderServices">
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="dots-conServicesThird">
+                                <span class="dotServices"></span><span class="dotServices"></span><span
+                                    class="dotServices"></span><span class="dotServices"></span><span
+                                    class="dotServices"></span>
+                            </div>
+                        </div>
+                        <div class="wrapperControlsServices">
+                            <span class="controlsServices" onclick="prevSlideServices(-1, 'sliderServicesThird')"
+                                id="left-arrowServicesThird"><img src="img/sliderLeft.svg" alt=""></i>
+                            </span>
+                            <span class="controlsServices" id="right-arrowServicesThird"
+                                onclick="nextSlideServices(1, 'sliderServicesThird')"><img src="img/slideRight.svg"
+                                    alt="">
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="wrapperSliderServiesMobile">
+                        <div id="sliderServicesMobileThird">
+                            <div class="slideServicesMobile">
+                                <div class="aboutItemSliderServicesMobile">
+                                    <div class="wrapperColumnsSliderServicesMobile">
+                                        <div class="itemColumnSliderServicesMobile">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServicesMobile">
+                                <div class="aboutItemSliderServicesMobile">
+                                    <div class="wrapperColumnsSliderServicesMobile">
+                                        <div class="itemColumnSliderServicesMobile">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServicesMobile">
+                                <div class="aboutItemSliderServicesMobile">
+                                    <div class="wrapperColumnsSliderServicesMobile">
+                                        <div class="itemColumnSliderServicesMobile">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServicesMobile">
+                                <div class="aboutItemSliderServicesMobile">
+                                    <div class="wrapperColumnsSliderServicesMobile">
+                                        <div class="itemColumnSliderServicesMobile">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServicesMobile">
+                                <div class="aboutItemSliderServicesMobile">
+                                    <div class="wrapperColumnsSliderServicesMobile">
+                                        <div class="itemColumnSliderServicesMobile">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="dots-conServicesMobileThird">
+                                <span class="dotServicesMobile"></span><span class="dotServicesMobile"></span><span
+                                    class="dotServicesMobile"></span><span class="dotServicesMobile"></span><span
+                                    class="dotServicesMobile"></span>
+                            </div>
+                        </div>
+                        <div class="wrapperControlsServicesMobile">
+                            <span class="controlsServicesMobile"
+                                onclick="prevSlideServicesMobile(-1, 'sliderServicesMobileThird')"
+                                id="left-arrowServicesMobileThird"><img src="img/sliderLeft.svg" alt=""></i>
+                            </span>
+                            <span class="controlsServicesMobile" id="right-arrowServicesMobileThird"
+                                onclick="nextSlideServicesMobile(1, 'sliderServicesMobileThird')"><img
+                                    src="img/slideRight.svg" alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="wrapperBtnServicesSendMessage">
+                        <button class="btnLearnMore">отправить заявку</button>
+                    </div>
+                </div>
+
+                <div class="wrapperPriceServices">
+                    <h2>Стоимость работ</h2>
+                    <div class="wrapperPriceTable">
+                        <table id="tablePrices">
+                            <tr>
+                                <th class="titleTablePrices">Наименование работ</th>
+                                <th class="titleTablePrices">Стоимость</th>
+                            </tr>
+                            <tr>
+                                <td>Межевой план</td>
+                                <td>от 5000</td>
+                            </tr>
+                            <tr>
+                                <td>Технический план</td>
+                                <td>от 5000</td>
+                            </tr>
+                            <tr>
+                                <td>Акт обследования</td>
+                                <td>от 5000</td>
+                            </tr>
+                            <tr>
+                                <td>Землеустроительные работы</td>
+                                <td>по договоренности
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Вынос границ участка на местность</td>
+                                <td>от 750 точка (при большом количестве точек — по договоренности).
+                                    Минимальная стоимость выезда геодезиста 3000 руб. (при количестве точек менее 4-х)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Заключение специалиста для суда/досудебного разрешения земельного спора</td>
+                                <td>от 7000</td>
+                            </tr>
+                            <tr>
+                                <td>Судебная землеустроительная экспертиза</td>
+                                <td>от 15 000</td>
+                            </tr>
+                            <tr>
+                                <td>Топографическая съемка</td>
+                                <td>по договоренности</td>
+                            </tr>
+                            <tr>
+                                <td>Инженерно-геодезические изыскания</td>
+                                <td>по договоренности</td>
+                            </tr>
+                            <tr>
+                                <td>Инженерно-геологические изыскания</td>
+                                <td>по договоренности</td>
+                            </tr>
+                            <tr>
+                                <td>Консультация</td>
+                                <td>бесплатно</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tabcontent" id="fourthservice">
+        <div class="descriptionServices">
+            <div class="container">
+                <div class="wrapperDescriptionServices">
+                    <p>Проведение землеустроительных работ необходимо при кадастровых работах, судебных
+                        землеустроительных экспертизах, строительстве, инженерных изысканиях.</p>
+                    <p>Инженерно-геодезические работы по выносу в натуру проектных координат земельных участков
+                        проводятся с
+                        целью точного определения месторасположения данных земельных участков на местности и закрепления
+                        характерных точек земельных участков.</p>
+                </div>
+
+                <div class="wrapperProjectServices">
+                    <h2>Проекты:</h2>
+                    <div class="wrapperSliderServies">
+                        <div id="sliderServicesFourth">
+                            <div class="slideServices">
+                                <div class="aboutItemSliderServices">
+                                    <div class="wrapperColumnsSliderServices">
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServices">
+                                <div class="aboutItemSliderServices">
+                                    <div class="wrapperColumnsSliderServices">
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServices">
+                                <div class="aboutItemSliderServices">
+                                    <div class="wrapperColumnsSliderServices">
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServices">
+                                <div class="aboutItemSliderServices">
+                                    <div class="wrapperColumnsSliderServices">
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServices">
+                                <div class="aboutItemSliderServices">
+                                    <div class="wrapperColumnsSliderServices">
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="dots-conServicesFourth">
+                                <span class="dotServices"></span><span class="dotServices"></span><span
+                                    class="dotServices"></span><span class="dotServices"></span><span
+                                    class="dotServices"></span>
+                            </div>
+                        </div>
+                        <div class="wrapperControlsServices">
+                            <span class="controlsServices" onclick="prevSlideServices(-1, 'sliderServicesFourth')"
+                                id="left-arrowServicesFourth"><img src="img/sliderLeft.svg" alt=""></i>
+                            </span>
+                            <span class="controlsServices" id="right-arrowServicesFourth"
+                                onclick="nextSlideServices(1, 'sliderServicesFourth')"><img src="img/slideRight.svg"
+                                    alt="">
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="wrapperSliderServiesMobile">
+                        <div id="sliderServicesMobileFourth">
+                            <div class="slideServicesMobile">
+                                <div class="aboutItemSliderServicesMobile">
+                                    <div class="wrapperColumnsSliderServicesMobile">
+                                        <div class="itemColumnSliderServicesMobile">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServicesMobile">
+                                <div class="aboutItemSliderServicesMobile">
+                                    <div class="wrapperColumnsSliderServicesMobile">
+                                        <div class="itemColumnSliderServicesMobile">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServicesMobile">
+                                <div class="aboutItemSliderServicesMobile">
+                                    <div class="wrapperColumnsSliderServicesMobile">
+                                        <div class="itemColumnSliderServicesMobile">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServicesMobile">
+                                <div class="aboutItemSliderServicesMobile">
+                                    <div class="wrapperColumnsSliderServicesMobile">
+                                        <div class="itemColumnSliderServicesMobile">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServicesMobile">
+                                <div class="aboutItemSliderServicesMobile">
+                                    <div class="wrapperColumnsSliderServicesMobile">
+                                        <div class="itemColumnSliderServicesMobile">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="dots-conServicesMobileFourth">
+                                <span class="dotServicesMobile"></span><span class="dotServicesMobile"></span><span
+                                    class="dotServicesMobile"></span><span class="dotServicesMobile"></span><span
+                                    class="dotServicesMobile"></span>
+                            </div>
+                        </div>
+                        <div class="wrapperControlsServicesMobile">
+                            <span class="controlsServicesMobile"
+                                onclick="prevSlideServicesMobile(-1, 'sliderServicesMobileFourth')"
+                                id="left-arrowServicesMobileFourth"><img src="img/sliderLeft.svg" alt=""></i>
+                            </span>
+                            <span class="controlsServicesMobile" id="right-arrowServicesMobileFourth"
+                                onclick="nextSlideServicesMobile(1, 'sliderServicesMobileFourth')"><img
+                                    src="img/slideRight.svg" alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="wrapperBtnServicesSendMessage">
+                        <button class="btnLearnMore">отправить заявку</button>
+                    </div>
+                </div>
+
+                <div class="wrapperPriceServices">
+                    <h2>Стоимость работ</h2>
+                    <div class="wrapperPriceTable">
+                        <table id="tablePrices">
+                            <tr>
+                                <th class="titleTablePrices">Наименование работ</th>
+                                <th class="titleTablePrices">Стоимость</th>
+                            </tr>
+                            <tr>
+                                <td>Межевой план</td>
+                                <td>от 5000</td>
+                            </tr>
+                            <tr>
+                                <td>Технический план</td>
+                                <td>от 5000</td>
+                            </tr>
+                            <tr>
+                                <td>Акт обследования</td>
+                                <td>от 5000</td>
+                            </tr>
+                            <tr>
+                                <td>Землеустроительные работы</td>
+                                <td>по договоренности
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Вынос границ участка на местность</td>
+                                <td>от 750 точка (при большом количестве точек — по договоренности).
+                                    Минимальная стоимость выезда геодезиста 3000 руб. (при количестве точек менее 4-х)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Заключение специалиста для суда/досудебного разрешения земельного спора</td>
+                                <td>от 7000</td>
+                            </tr>
+                            <tr>
+                                <td>Судебная землеустроительная экспертиза</td>
+                                <td>от 15 000</td>
+                            </tr>
+                            <tr>
+                                <td>Топографическая съемка</td>
+                                <td>по договоренности</td>
+                            </tr>
+                            <tr>
+                                <td>Инженерно-геодезические изыскания</td>
+                                <td>по договоренности</td>
+                            </tr>
+                            <tr>
+                                <td>Инженерно-геологические изыскания</td>
+                                <td>по договоренности</td>
+                            </tr>
+                            <tr>
+                                <td>Консультация</td>
+                                <td>бесплатно</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tabcontent" id="fifthservice">
+        <div class="descriptionServices">
+            <div class="container">
+                <div class="wrapperDescriptionServices">
+                    <p>Проведение землеустроительных работ необходимо при кадастровых работах, судебных
+                        землеустроительных экспертизах, строительстве, инженерных изысканиях.</p>
+                    <p>Инженерно-геодезические работы по выносу в натуру проектных координат земельных участков
+                        проводятся с
+                        целью точного определения месторасположения данных земельных участков на местности и закрепления
+                        характерных точек земельных участков.</p>
+                </div>
+
+                <div class="wrapperProjectServices">
+                    <h2>Проекты:</h2>
+                    <div class="wrapperSliderServies">
+                        <div id="sliderServicesFifth">
+                            <div class="slideServices">
+                                <div class="aboutItemSliderServices">
+                                    <div class="wrapperColumnsSliderServices">
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServices">
+                                <div class="aboutItemSliderServices">
+                                    <div class="wrapperColumnsSliderServices">
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServices">
+                                <div class="aboutItemSliderServices">
+                                    <div class="wrapperColumnsSliderServices">
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServices">
+                                <div class="aboutItemSliderServices">
+                                    <div class="wrapperColumnsSliderServices">
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServices">
+                                <div class="aboutItemSliderServices">
+                                    <div class="wrapperColumnsSliderServices">
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                        <div class="itemColumnSliderServices">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="dots-conServicesFifth">
+                                <span class="dotServices"></span><span class="dotServices"></span><span
+                                    class="dotServices"></span><span class="dotServices"></span><span
+                                    class="dotServices"></span>
+                            </div>
+                        </div>
+                        <div class="wrapperControlsServices">
+                            <span class="controlsServices" onclick="prevSlideServices(-1, 'sliderServicesFifth')"
+                                id="left-arrowServicesFifth"><img src="img/sliderLeft.svg" alt=""></i>
+                            </span>
+                            <span class="controlsServices" id="right-arrowServicesFifth"
+                                onclick="nextSlideServices(1, 'sliderServicesFifth')"><img src="img/slideRight.svg"
+                                    alt="">
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="wrapperSliderServiesMobile">
+                        <div id="sliderServicesMobileFifth">
+                            <div class="slideServicesMobile">
+                                <div class="aboutItemSliderServicesMobile">
+                                    <div class="wrapperColumnsSliderServicesMobile">
+                                        <div class="itemColumnSliderServicesMobile">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServicesMobile">
+                                <div class="aboutItemSliderServicesMobile">
+                                    <div class="wrapperColumnsSliderServicesMobile">
+                                        <div class="itemColumnSliderServicesMobile">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServicesMobile">
+                                <div class="aboutItemSliderServicesMobile">
+                                    <div class="wrapperColumnsSliderServicesMobile">
+                                        <div class="itemColumnSliderServicesMobile">
+                                            <img src="img/services/project3.jpg" alt="">
+                                            <p>Выполнение исполнительной геодезической съемки многоэтажного дома по ул.
+                                                Башкирская, угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                г.
+                                                Волгограда, 2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServicesMobile">
+                                <div class="aboutItemSliderServicesMobile">
+                                    <div class="wrapperColumnsSliderServicesMobile">
+                                        <div class="itemColumnSliderServicesMobile">
+                                            <img src="img/services/project2.jpg" alt="">
+                                            <p>Сопровождение строительства многоэтажного дома по ул. Башкирская, угол
+                                                Поддубного и пр. Металлургов в Краснооктябрьском районе г. Волгограда,
+                                                2016-2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slideServicesMobile">
+                                <div class="aboutItemSliderServicesMobile">
+                                    <div class="wrapperColumnsSliderServicesMobile">
+                                        <div class="itemColumnSliderServicesMobile">
+                                            <img src="img/services/project1.jpg" alt="">
+                                            <p>Съемка пересечений проектируемой трассы ВОЛС с инженерными сетями, Съемка
+                                                высот, Топографическая съемка м 1:500 и подготовка схемы между соседними
+                                                опорами ВЛ в г. Волгограде, 2018г.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="dots-conServicesMobileFifth">
+                                <span class="dotServicesMobile"></span><span class="dotServicesMobile"></span><span
+                                    class="dotServicesMobile"></span><span class="dotServicesMobile"></span><span
+                                    class="dotServicesMobile"></span>
+                            </div>
+                        </div>
+                        <div class="wrapperControlsServicesMobile">
+                            <span class="controlsServicesMobile"
+                                onclick="prevSlideServicesMobile(-1, 'sliderServicesMobileFifth')"
+                                id="left-arrowServicesMobileFifth"><img src="img/sliderLeft.svg" alt=""></i>
+                            </span>
+                            <span class="controlsServicesMobile" id="right-arrowServicesMobileFifth"
+                                onclick="nextSlideServicesMobile(1, 'sliderServicesMobileFifth')"><img
+                                    src="img/slideRight.svg" alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="wrapperBtnServicesSendMessage">
+                        <button class="btnLearnMore">отправить заявку</button>
+                    </div>
+                </div>
+
+                <div class="wrapperPriceServices">
+                    <h2>Стоимость работ</h2>
+                    <div class="wrapperPriceTable">
+                        <table id="tablePrices">
+                            <tr>
+                                <th class="titleTablePrices">Наименование работ</th>
+                                <th class="titleTablePrices">Стоимость</th>
+                            </tr>
+                            <tr>
+                                <td>Межевой план</td>
+                                <td>от 5000</td>
+                            </tr>
+                            <tr>
+                                <td>Технический план</td>
+                                <td>от 5000</td>
+                            </tr>
+                            <tr>
+                                <td>Акт обследования</td>
+                                <td>от 5000</td>
+                            </tr>
+                            <tr>
+                                <td>Землеустроительные работы</td>
+                                <td>по договоренности
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Вынос границ участка на местность</td>
+                                <td>от 750 точка (при большом количестве точек — по договоренности).
+                                    Минимальная стоимость выезда геодезиста 3000 руб. (при количестве точек менее 4-х)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Заключение специалиста для суда/досудебного разрешения земельного спора</td>
+                                <td>от 7000</td>
+                            </tr>
+                            <tr>
+                                <td>Судебная землеустроительная экспертиза</td>
+                                <td>от 15 000</td>
+                            </tr>
+                            <tr>
+                                <td>Топографическая съемка</td>
+                                <td>по договоренности</td>
+                            </tr>
+                            <tr>
+                                <td>Инженерно-геодезические изыскания</td>
+                                <td>по договоренности</td>
+                            </tr>
+                            <tr>
+                                <td>Инженерно-геологические изыскания</td>
+                                <td>по договоренности</td>
+                            </tr>
+                            <tr>
+                                <td>Консультация</td>
+                                <td>бесплатно</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer id="footer">
         <div class="container">
             <div class="wrapperFooter">
                 <div class="wrapperLogo">
-                    <a href="index.html"><img src="img/logo.png" alt=""></a>
+                    <a href="index.html"><img src="img/logo.svg" alt=""></a>
                 </div>
                 <div class="wrapperNavigation">
                     <ul>
