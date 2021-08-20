@@ -96,6 +96,11 @@ body, button, input {
     .aboutItemTop .titleBlockAbout {
         font-size: 18px;
     }
+
+    .modal .modal__container {
+        width: 100%;
+        height: 93%;
+    }
     .container .btnLearnMore {
         font-size: 16px;
         padding: 10px 50px;
@@ -155,6 +160,11 @@ body, button, input {
     #footer .wrapperFooter .wrapperContactsHeader .wrapperAddressHeader {
         display: block;
     }
+
+    .modal .modal__container img{
+        height: 100%;
+        width: auto;
+    }
     #footer .wrapperAddressHeaderAdd {
         display: none;
     }
@@ -192,6 +202,11 @@ body, button, input {
         margin-right: 2em;
         margin-bottom: 0;
         align-items: flex-start;
+    }
+
+    .modal .modal__close {
+        top: -10px;
+        right: 3em;
     }
     #navigationServicesWrap .navigationServices a {
         font-size: 16px;
@@ -2121,8 +2136,8 @@ header {
 
 .modal__close {
     position: absolute;
-    top: -10px;
-    right: 3em;
+    top: -20px;
+    right: -15px;
     border: none;
     outline: none;
     background: none;
@@ -2140,8 +2155,7 @@ header {
 .modal__container {
     position: relative;
     z-index: 22;
-    width: 100%;
-    height: 93%;
+    width: 90%;
     top: 0;
     bottom: 0;
     margin-bottom: 20px;
@@ -2150,7 +2164,7 @@ header {
 
 .modal__container img{
     height: 100%;
-    width: auto;
+    width: inherit;
 }
 
 #defaultOpenServices {
