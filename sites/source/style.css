@@ -27,9 +27,6 @@ body, button, input {
         display: flex;
         justify-content: space-between;
     }
-    .wrapperAboutItemAllMobile {
-        display: none;
-    }
     .wrapperSertificatesLicensePageMob .wrapperControlsLicense {
         display: none;
     }
@@ -87,16 +84,12 @@ body, button, input {
     .controlsPublic {
         font-size: 1em;
     }
-    #aboutBlock .wrapperControls {
-        display: none;
-    }
     .container .wrapperMainBlock h2 {
         font-size: 27px;
     }
     .aboutItemTop .titleBlockAbout {
         font-size: 18px;
     }
-
     .modal .modal__container {
         width: 100%;
         height: 93%;
@@ -109,15 +102,19 @@ body, button, input {
     .wraperHeaderMain .wrapperContactsHeader a {
         font-size: 14px;
     }
-    body #mainBlock {
-        min-height: 420px;
+    .itemColumnSliderServicesMobile p {
+        font-size: 16px;
+    }
+
+    .descriptionServices .wrapperProjectServices h2 {
+        font-size: 26px;
+    }
+    #slider .aboutItemBottomSlider {
+        align-items: center;
     }
     .container .aboutUsTitle {
         font-size: 24px;
         text-align: left;
-    }
-    .wrapperAboutUs .wrapperAboutItemAll {
-        display: block;
     }
     body #descriptionBlock {
         margin-top: 6em;
@@ -160,8 +157,7 @@ body, button, input {
     #footer .wrapperFooter .wrapperContactsHeader .wrapperAddressHeader {
         display: block;
     }
-
-    .modal .modal__container img{
+    .modal .modal__container img {
         height: 100%;
         width: auto;
     }
@@ -203,7 +199,6 @@ body, button, input {
         margin-bottom: 0;
         align-items: flex-start;
     }
-
     .modal .modal__close {
         top: -10px;
         right: 3em;
@@ -214,8 +209,9 @@ body, button, input {
     .navigationServicesImage .btnLearnMore {
         display: none;
     }
-    .descriptionServices .wrapperDescriptionServices p {
+    .descriptionServices .wrapperDescriptionServices p, .descriptionServices .wrapperDescriptionServices ul li {
         font-size: 16px;
+        line-height: 24px;
     }
     .descriptionServices .wrapperBtnServicesSendMessage {
         display: flex;
@@ -262,11 +258,9 @@ body, button, input {
     #footer .container .wrapperPhoneSocialsHeader {
         align-items: flex-start;
     }
-
     #navigationServicesWrap .navigationServices a {
         text-align: left;
     }
-
     #navigationServicesWrap .navigationServices button {
         text-align: left;
     }
@@ -294,11 +288,17 @@ body, button, input {
     .formBlockLeft {
         width: 35%;
     }
+    .wrapperAboutItemAllMobile {
+        display: none;
+    }
     .wrapperForm .formBlockParagr {
         max-width: 85%;
         font-size: 16px;
         line-height: 24px;
         text-align: left;
+    }
+    #aboutBlock .wrapperControls {
+        display: none;
     }
     .wrapperForm .formBlockRight form {
         display: flex;
@@ -317,13 +317,13 @@ body, button, input {
     .wrapperDescriptionServices {
         padding-right: 2em;
     }
-    .wrapperColumnsSliderServices .itemColumnSliderServices img {
+    .wrapperColumnsSliderServices .itemColumnSliderServices img,  .wrapperColumnsSliderServices .itemColumnSliderServices p {
         max-width: 13em;
     }
     .descriptionServices .wrapperSliderServies {
         display: block;
     }
-    .descriptionServices .wrapperProjectServices h2 {
+    .descriptionServices .container .wrapperProjectServices h2 {
         font-size: 32px;
         font-weight: 500;
         text-align: left;
@@ -335,6 +335,10 @@ body, button, input {
         font-size: 32px;
         font-weight: 500;
         text-align: left;
+    }
+
+    .descriptionServices .wrapperProjectServices {
+        margin-top: 0;
     }
     .descriptionServices .titleTablePrices {
         font-size: 24px;
@@ -349,6 +353,9 @@ body, button, input {
         justify-content: space-between;
         align-items: center;
         margin-top: 3em;
+    }
+    .wrapperProjectServices .wrapperBlockServicesSimpleProjects {
+        display: flex;
     }
     .wrapperContactsPageItems .contactsPageItem {
         padding-right: 1.5em;
@@ -369,6 +376,9 @@ body, button, input {
     .wrapperpublicationsPageMob {
         display: none;
     }
+    .wrapperAboutUs .wrapperAboutItemAll {
+        display: block;
+    }
 }
 
 @media (min-width: 992px) {
@@ -384,6 +394,17 @@ body, button, input {
     .aboutItem .aboutItemTop {
         flex-direction: row;
     }
+    body #mainBlock {
+        min-height: 480px;
+    }
+    #mainBlock .wrapperMainBlock {
+        display: flex;
+        text-align: center;
+        padding-top: 5.5em;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .wrapperContactsHeader .wrapperPhoneSocialsHeader .wrapperSocialsHeader {
         justify-content: flex-start;
     }
@@ -395,7 +416,7 @@ body, button, input {
         color: #fff;
         font-weight: 500;
     }
-    .aboutItemSliderServices .wrapperColumnsSliderServices .itemColumnSliderServices img {
+    .aboutItemSliderServices .wrapperColumnsSliderServices .itemColumnSliderServices img, .aboutItemSliderServices .wrapperColumnsSliderServices .itemColumnSliderServices p {
         max-width: 16em;
     }
 }
@@ -455,7 +476,7 @@ body, button, input {
     #footer .wrapperFooter .wrapperPhoneSocialsHeader {
         align-items: flex-start;
     }
-    .slideServices .aboutItemSliderServices .wrapperColumnsSliderServices .itemColumnSliderServices img {
+    .slideServices .aboutItemSliderServices .wrapperColumnsSliderServices .itemColumnSliderServices img, .slideServices .aboutItemSliderServices .wrapperColumnsSliderServices .itemColumnSliderServices p{
         max-width: 20.5em;
     }
     .wrapperPublicationsPageRightContent .wrapperContentPublication h3 {
@@ -830,7 +851,7 @@ header {
     background: url("img/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 300px;
+    min-height: 320px;
 }
 
 .wrapperMainBlock {
@@ -1146,10 +1167,9 @@ header {
     text-align: center;
 }
 
-#dots-conServicesSecond, #dots-conServicesThird, #dots-conServicesFourth, #dots-conServicesFifth  {
+#dots-conServicesSecond, #dots-conServicesThird, #dots-conServicesFourth, #dots-conServicesFifth {
     text-align: center;
 }
-
 
 .dotServices {
     display: inline-block;
@@ -1283,9 +1303,11 @@ header {
 #left-arrowServicesMobile {
     margin-right: 5px;
 }
+
 #left-arrowServicesMobileSecond, #left-arrowServicesMobileThird, #left-arrowServicesMobileFourth, #left-arrowServicesMobileFifth {
     margin-right: 5px;
 }
+
 #right-arrowServicesMobile {
     margin-left: 5px;
 }
@@ -1313,6 +1335,7 @@ header {
 #left-arrowServicesMobile {
     left: 10px;
 }
+
 #left-arrowServicesMobileSecond, #left-arrowServicesMobileThird, #left-arrowServicesMobileFourth, #left-arrowServicesMobileFifth {
     left: 10px;
 }
@@ -1349,7 +1372,7 @@ header {
 
 .wrapperControlsServicesMobile {
     display: flex;
-    margin-top: 3em;
+    margin-top: 1.5em;
     justify-content: center;
 }
 
@@ -1763,10 +1786,10 @@ header {
     font-weight: 500;
 }
 
-.wrapperDescriptionServices p {
+.wrapperDescriptionServices p, .wrapperDescriptionServices ul li {
     font-size: 13px;
-    line-height: 24px;
-    font-weight: 500;
+    line-height: 18px;
+    font-weight: 400;
 }
 
 .navigationServicesImage .btnLearnMore {
@@ -1961,6 +1984,10 @@ header {
     font-size: 16px;
 }
 
+.wrapperBlockServicesSimpleProjects {
+    display: none;
+}
+
 .aboutItemSliderLicense img {
     width: 100%;
     margin-bottom: 1.5em;
@@ -2110,14 +2137,14 @@ header {
     margin: 0;
     padding: 0;
     padding: 20px;
-    pointer-events:none;
+    pointer-events: none;
     opacity: 0;
     visibility: hidden;
     transition: visibility 0s linear 0.1s, opacity 0.3s ease;
 }
 
 .modal.open {
-    pointer-events:auto;
+    pointer-events: auto;
     visibility: visible;
     opacity: 1;
     padding: 20px;
@@ -2162,9 +2189,18 @@ header {
     text-align: center;
 }
 
-.modal__container img{
+.modal__container img {
     height: 100%;
     width: inherit;
+}
+
+.servicesSimpleProjects img {
+    width: 100%;
+}
+
+.servicesSimpleProjects {
+    width: 30%;
+    padding: 1em;
 }
 
 #defaultOpenServices {
@@ -2182,4 +2218,31 @@ header {
 
 .wrapperNavigationServices {
     margin-top: 2em;
+}
+
+.wrapperBlockServicesSimpleProjects {
+    justify-content: space-between;
+    align-items: flex-start;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px
+}
+
+.wrapperDescriptionServices h3 {
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.wrapperDescriptionServices h4 {
+    font-weight: 500;
+}
+
+.itemColumnSliderServicesMobile {
+    width: 100%;
+}
+
+.wrapperDescriptionServices p {
+    font-weight: 400;
+}
+
+.wrapperProjectServices {
+    margin-top: 3em;
 }
