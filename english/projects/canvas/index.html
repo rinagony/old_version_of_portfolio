@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section id="mainSection">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="mainWrp">
+						<div class="wrpRecords">
+							<p class="recordsTxt">Таблица рекордов</p>
+							<div class="wrpRecordsItem">
+								<p>Имя</p>
+								<p>Очки</p>
+							</div>
+						</div>
+						<div class="wrpGame">
+							<div class="wrpResult">
+									<p class="scoreTxt">Очки:</p>
+								<p id="resultOfGame">0</p>
+							</div>
+							<div class="wrpCanvas">
+								<canvas id="mainCanvas"></canvas>
+							</div>
+							<div class="modal" class="modal fade" id="superModal" tabindex="-1" role="dialog" data-dismiss="modal">
+							  <div class="modal-dialog" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <h5 class="modal-title">Ты проиграл!</h5>
+							      </div>
+							      <div class="modal-body">
+							        <p id="winner"></p>
+							        <input class="form-control" type="text" id="nameOfGamer" placeholder="Ваше имя">
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-primary" id="btnSaveResult">Сохранить рекорд</button>
+							        <button type="button" class="btn btn-secondary" id="btnStartAgain" data-dismiss="modal">Начать заново</button>
+							      </div>
+							    </div>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+<script  src="script.js"></script>
+</body>
+</html>

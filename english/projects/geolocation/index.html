@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Title</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<style>
+		.row {
+			margin-top: 30px;
+		}
+	</style>
+</head>
+<body class="container">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3>
+				Мое местоположение
+			</h3>
+		</div>
+		<ul class="list-group" id="messageContainer">
+		</ul>
+	</div>
+	<div class="row">
+		<button class="btn btn-dafault" id="locate">Определить</button>
+		<button class="btn btn-dafault" id="watch">Отслеживать</button>
+		<button class="btn btn-dafault" id="unwatch">Отменить отслеживание</button>
+	</div>
+	<script>
+		var watchId;
+
+		function addLocation(geopos) { //функция выполнится если пользователь нажал разрешить. geopos - информация о геопозиции
+			var messageItem = document.createElement('li');
+
+			messageItem.classList = "list-group-item";
+			messageItem.textContent = 'Широта: ' + geopos.coords.latitude + '; Долгота: ' + geopos.coords.longitude + '; Точность: ' + geopos.coords.accuracy; //координаты
+
+			messageContainer.appendChild(messageItem); //добавляем на страницу
+			messageContainer.scrollTop = messageContainer.scrollHeight - messageContainer.clientHeight; //устанавливаем скролл при добавлении новых элементов
+		}
+
+		locate.addEventListener('click', function() { //при нажатии на кнопку определить 
+			navigator.geolocation.getCurrentPosition(addLocation, function() { //глобальный объект navigator.geolocation.getCurrentPosition позволяет получить местоположение пользователя. После того как пользователь нажмет разрешить, сработает функция addLocation. когда пользователь нажмет запретить, выполнится функция которая передана вторым объектом
+				alert('Невозможно определить местоположение');
+			});
+		});
+
+		watch.addEventListener('click', function() { //при нажатии на кнопку отслеживать
+			if(!watched) { //при каждом изменении геопозиции выполняется функция
+				watched = navigator.geolocation.watchPosition(addLocation, function() { //при изменении геопозиции (navigator.geolocation.watchPosition - глобальный объект) выполняется функция addLocation. А если пользователь запретил отслеживать или произошли неполадки, то выполнится вторая функция
+					alert('Невозможно определить местоположение');
+				})
+			}
+		});
+
+		unwatch.addEventListener('click', function() { //при нажатии на кнопку отменить
+			navigator.geolocation.clearWatch(watchId); //clearWatch помогает прекратить отслеживать местоположение
+			watchId = null;
+		});
+	</script>
+</body>
+</html>

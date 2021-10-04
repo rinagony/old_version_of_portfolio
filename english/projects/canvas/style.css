@@ -1,0 +1,99 @@
+.wrpCanvas {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 10px;
+}
+
+.wrpResult {
+	background: #fff;
+}
+
+#resultOfGame {
+	font-size: 20px;
+	padding: 5px;
+	border-style: dotted;
+	width: 60px;
+	text-align: center;
+	background: #29d9cd;
+}
+
+.wrpResult {
+	display: flex;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+}
+
+#nameOfGamer {
+	width: 46%;
+}
+
+.scoreTxt {
+	font-size: 18px;
+	font-weight: 600;
+	margin-right: 10px;
+}
+
+#resultOfGame {
+	font-weight: 700;
+	font-size: 20px
+}
+
+#mainSection {
+	margin-top: 20px;
+}
+
+.mainWrp {
+	display: flex;	
+}
+
+.wrpGame {
+	margin: 0 auto;
+}
+.wrpRecords {
+	padding: 20px;
+	border-style: dotted;
+    background: #29d9cd;
+}
+.wrpRecordsItem {
+	display: flex;
+	justify-content: space-around;
+	font-weight: 600;
+}
+
+.recordsTxt {
+	font-weight: 800;
+	font-size: 20px;
+}
+
+#startSection {
+	background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),  url('image/2.jpg');
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	background-size: cover;
+}
+
+.wrpBtnStart {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#btnStartGame {
+	padding: 2rem 3rem;
+	background-image: linear-gradient(to top right, rgb(204, 204, 204), rgb(214, 214, 214), rgb(224, 224, 224), rgb(235, 235, 235), rgb(245, 245, 245), rgb(255, 255, 255), rgb(247, 247, 247), rgb(238, 238, 238), rgb(230, 230, 230), rgb(221, 221, 221), rgb(213, 213, 213), rgb(204, 204, 204));
+	color: #000;
+	border: 2px solid #525252;
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+#btnStartGame:hover {
+	border: 2px solid red;
+	background: #cc293c;
+	color: #fff;
+}

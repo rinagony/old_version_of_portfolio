@@ -1,0 +1,46 @@
+* {
+    transition: 0.1s;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #dfdfdf;
+
+}
+
+.boxArea {
+    background-color: #fff;
+    width: calc(100% - 100px);
+    height: calc(100vh - 100px);
+    margin: 50px;
+    min-height: 150px;
+    min-width: 300px;
+/*    position: relative;*/
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: absolute;
+    z-index: 100;
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 14px 5px #555;
+    transform: translate(30px, 30px);
+}
+
+.boxHoll {
+    width: 180px;
+    height: 180px;
+    border-radius: 5px;
+    transform: translate(100px, 100px);
+     position: absolute;
+        background-color: #cdcdcd;
+    box-shadow: inset 0px 0px 14px 5px #555;
+}
+.cr {
+    z-index: 100;
+    position: absolute;
+}
+

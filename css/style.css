@@ -5,6 +5,21 @@
     .landingItemVue {
         display: flex;
     }
+
+    .right { 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left { 
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .specBlock {
+        width: 50%;
+    }
 }
 
 @media (max-width: 576px) {
@@ -23,15 +38,18 @@
     .aboutMe {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        transform: skew(-170deg);
     }
     .aboutMe p, .aboutMe h3, .aboutMe h4, .aboutMe h2, .aboutMe span {
-        transform: skew(170deg);
+        transform: skew(175deg);
     }
     .right {
-        max-width: 45%;
         margin-right: 2rem;
+        width: 50%;
+    }
+
+    .left {
+        margin-right: 2rem;
+        width: 50%;
     }
     .wrpForm {
         width: 55%;
@@ -75,8 +93,18 @@ h2 {
     border: 4px solid #2d93a1;
     transition: 0.3s ease-in-out;
     animation: shadowTwo 1s infinite alternate;
-    transform: skew( -176deg);
+    transform: skew( -175deg);
 }
+
+
+.specBlock {
+    transform: skew(-175deg);
+    animation: shadow 1s infinite alternate;
+    background: #fff;
+    width: 100%;
+    padding: 20px 25px;
+}
+
 
 #mainSection {
     padding-bottom: 50px;
@@ -197,8 +225,17 @@ h2 {
     display: flex;
 }
 
+.specBlockFirst {
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+
 .wrapperApple {
     margin-top: 100px;
+}
+
+.specBlockSecond {
+    margin-right: 2em;
 }
 
 .wrpAppleTxt {
@@ -432,7 +469,7 @@ h2 {
 
 .inputConnectMe {
     width: 100%;
-    padding: 4px;
+    padding: 7px;
     border-radius: 3px;
     box-shadow: 0.5px 0.5px 1px 1px #2d93a1;
     border: none;
@@ -459,6 +496,7 @@ h2 {
     font-weight: 600;
 }
 
+
 .wrpAbout h4 {
     font-weight: 600;
 }
@@ -478,13 +516,6 @@ h2 {
     color: #2d93a1;
     transition: 0.4s ease-in-out;
     text-decoration: none;
-}
-
-.aboutMe {
-    padding: 20px 25px;
-    text-align: justify;
-    animation: shadow 1s infinite alternate;
-    background: #fff;
 }
 
 @keyframes shadow {
@@ -618,6 +649,10 @@ h2 {
     justify-content: flex-start;
 }
 
+.navbarFooter {
+    margin-top: 2em;
+}
+
 .wrpMyEmail a {
     margin-left: 0.5rem;
     color: #2d93a1;
@@ -746,3 +781,29 @@ h2 {
 #buttonMoreTwoColumn {
     margin: -20px 10px;
 }
+
+.navbarFooter {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbarFooter a {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.navbarFooter a:hover {
+    color: #2d93a1;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+:root {
+    --animate-delay: 2s;
+  }
+  
+  /* All delay classes will take half the time to start */
+  :root {
+    --animate-delay: 0.5s;
+  }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Local storage</title>
+	<style>
+		#photoInput {
+			margin-top: 40px;
+		}
+	</style>
+</head>
+<body class="container text-center">
+	<div class="wrpForm">
+		<div>
+			ФИО:<br>
+			<input type="text" id="myName">
+		</div>
+		<div>
+			Дата рождения:<br>
+			<input type="text" id="bday">
+		</div>
+		<div>
+			О себе:<br>
+			<textarea id="about"></textarea>
+		</div>
+		<div>
+			<label><input type="checkbox" id="isSessionStorage">использовать session storage</label>
+		</div>
+		<div>
+			<button id="save">Сохранить</button>
+			<button id="load">Загрузить</button>
+		</div>
+	</div>
+
+	<input type="file" id="photoInput">
+	<label for="photoInput" class="file-label text-center"></label>
+	<div>
+		<img src="" class="img-circle" id="theImage">
+	</div>
+	<script>
+		var storage = localStorage;
+
+		save.addEventListener('click', function() { //при клике на кнопку сэйв
+			storage.data = JSON.stringify({ //обращаемся к хранению данных и присваиваем новый json объект преобразованный в строку
+				myName: myName.value, //добавляем соответсвующим значениям значение инпутов
+				bday: bday.value,
+				about: about.value
+			});
+		});
+
+		load.addEventListener('click', function() {
+			var data = JSON.parse(storage.data || '{}'); //сохраненные данные ранеее преобразовывваем в объект с помощью json.parse
+
+			myName.value = data.myName || ''; //присваеваем инпутам значения из сохраненного объекта
+			bday.value = data.bday || '';
+			about.value = data.about || '';
+		});
+
+		isSessionStorage.addEventListener('change', function(e) { //если нажата галочка, то данные будут сохранятся сессионно, а не локально
+			storage = isSessionStorage.checked ? sessionStorage : localStorage;
+		})
+
+		window.addEventListener('storage', function() {
+			console.log(arguments);
+		})
+
+		var fileReader = new FileReader();
+
+		fileReader.addEventListener('load', function() {
+			theImage.src = this.result;
+		});
+
+		photoInput.addEventListener('change', function(e) {
+			var file = e.target.files[0];
+
+			fileReader.readAsDataURL(file);
+		})
+	</script>
+</body>
+</html>
