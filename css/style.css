@@ -90,6 +90,11 @@
     .myWorks #fullstack .wrpVue {
         margin-top: 2rem;
     }
+
+    .aboutWrp {
+        transform: skew(-175deg);
+    }
+    
 }
 
 @media (min-width: 992px) {}
@@ -522,7 +527,6 @@ h2 {
 
 .aboutWrp {
     display: flex;
-    transform: skew(-175deg);
     animation: shadow 1s infinite alternate;
     padding: 25px;
 }
