@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@200;300;500;700;800&display=swap"
         rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 
 <body>
     <div class="preloader">
@@ -23,61 +24,64 @@
         <button id="closeWindow">x</button>
     </div>
     <section id="mainsection">
-        <nav>
-            <div class="navbarMain" id="menu">
-                <a href="#about">About me</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contacts">Contacts</a>
-                <a href="../index.html">Lang: Русский</a>
-            </div>
-        </nav>
-        <div class="wrpBlockName">
-            <div class="wrpNamePhoto">
-                <div class="wrpNameBlockName">
-                    <img src="image/me.png" alt="">
-                    <p>Alisa Naumycheva</p>
-                    <h1 class="nameOFJob">Front-end developer</h1>
+        <div class="container">
+            <nav>
+                <div class="navbarMain" id="menu">
+                    <a href="#about">About me</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contacts">Contacts</a>
+                    <a href="../index.html">Lang: Русский</a>
                 </div>
-            </div>
-            <button type="button" class="mainButton" data-toggle="modal" data-target="#mymodal">Contact me</button>
-            <div class="modal fade" id="mymodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="exampleModalLabel">Contact me</h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <form id="contactForm">
-                                <div class="form-group">
-                                    <label for="yourName">Your name</label>
-                                    <input class="inputConnectMe" type="text" required id="yourName"
-                                        placeholder="Введите имя">
-                                </div>
-                                <div class="form-group">
-                                    <label for="yourEmail">Email</label>
-                                    <input class="inputConnectMe" type="email" required id="yourEmail"
-                                        placeholder="Введите email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="yourMessage">Your message</label>
-                                    <textarea class="inputConnectMe" id="yourMessage" rows="2"></textarea>
-                                </div>
-                                <button type="submit" class="mainButton mb-2">Send</button>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btnPreMain" data-dismiss="modal">Close</button>
-                        </div>
-
+            </nav>
+            <div class="wrpBlockName">
+                <div class="wrpNamePhoto">
+                    <div class="wrpNameBlockName">
+                        <img src="image/me.png" alt="">
+                        <p>Alisa Naumycheva</p>
+                        <h1 class="nameOFJob">Front-end developer</h1>
                     </div>
                 </div>
+                <button type="button" class="mainButton" data-toggle="modal" data-target="#mymodal">Contact me</button>
+                <div class="modal fade" id="mymodal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="exampleModalLabel">Contact me</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="contactForm">
+                                    <div class="form-group">
+                                        <label for="yourName">Your name</label>
+                                        <input class="inputConnectMe" type="text" required id="yourName"
+                                            placeholder="Введите имя">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="yourEmail">Email</label>
+                                        <input class="inputConnectMe" type="email" required id="yourEmail"
+                                            placeholder="Введите email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="yourMessage">Your message</label>
+                                        <textarea class="inputConnectMe" id="yourMessage" rows="2"></textarea>
+                                    </div>
+                                    <button type="submit" class="mainButton mb-2">Send</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btnPreMain" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <a class="downScroll" href="#about">
+                    &#10095;
+                </a>
             </div>
-            <a class="downScroll" href="#about">
-                &#10095;
-            </a>
         </div>
     </section>
     <section id="about" name="about">
@@ -87,39 +91,21 @@
                 <div class="aboutWrp">
                     <div class="aboutMe">
                         <div class="right">
-                            <div data-aos="fade-down-right" class="specBlock specBlockFirst">
+                            <div class=" specBlockFirst">
                                 <div class="wrpTitleBlock">
                                     <h4>About me</h4>
                                 </div>
-                                <div class="wrapperDescriptionAboutMe">
-                                    <p> <span id="hello">My name is Alisa</span>, i'm 22 years old and it's my
-                                        portfolio.
-                                        I'm russian, living in Barcelona. I
-                                        learn
-                                        web-development about 2 years, I worked 10 months in 2
-                                        companies as a intern. I love what i do and always learning new information and
-                                        new
-                                        technologies. I can speak Spanish.
-                                    </p>
-                                </div>
-
-                            </div>
-                            <div data-aos="fade-down-right" class="specBlock specBlockSecond">
-                                <div class="wrpTitleBlock">
-                                    <h4>Education</h4>
-                                </div>
-                                <p>
-                                    I graduated from the Electrical Engineering College as a
-                                    draftsman-designer,
-                                    completed an internship at the enterprise as a draftsman. I studied for two years in
-                                    the university <b>SPbGUPTD</b> on the direction of applied
-                                    computer science in design, and also took a large number of online web-development
-                                    courses.
+                                <p> <span id="hello">My name is Alisa</span>, i'm 22 years old and it's my
+                                    portfolio.
+                                    I'm russian, living in Barcelona. I
+                                    learn
+                                    web-development about 2 years, I worked 10 months in 2
+                                    companies as a intern. I love what i do and always learning new information and
+                                    new
+                                    technologies. Also i speak Spanish :)
                                 </p>
                             </div>
-                        </div>
-                        <div class="left">
-                            <div data-aos="fade-down-left" class="specBlock specBlockFirst">
+                            <div class=" specBlockFirst">
                                 <div class="wrpTitleBlock">
                                     <h4>Experience</h4>
                                 </div>
@@ -129,22 +115,66 @@
                                     techologies of web-development. <br> <b>МАКС Company</b>- junior
                                     web-developer. Technologies: vue.js, html, javascript, sass.
                                     (4 months). I learned VUE framework and had lot's of practice with JavaScript.
-                                    <br><b>I had clients and worked with designer.</b> I got InVision or Figma layout,
-                                    made
-                                    html-markup (JavaScript, HTML, css) and then created own theme in WordPress
-                                    using PHP.
+                                    <br>I created sites on my own for clients with web-designer.
+                                    <br> <b>Website development with a designer for clients</b>Creation of sites based
+                                    on
+                                    Figma or InVision layouts: coding (HTML, CSS, JavaScript), creating of own theme in
+                                    WordPress(PHP), integration,
+                                    connecting forms and working with databases
+                                    (MySQL).
                                 </p>
                             </div>
-                            <div  data-aos="fade-down-left"  class="specBlock">
+                        </div>
+                        <div class="left">
+                            <div class=" specBlockSecond">
                                 <div class="wrpTitleBlock">
-                                    <h4>Stack</h4>
+                                    <h4>Education</h4>
                                 </div>
-                                <p>JavaScript, JQuery, VUE.js, NUXT, PHP, HTML(HTML5), CSS(CSS3), npm, Git, Ajax, API,
-                                    WordPress,
-                                    Firebase, MongoDB, PUG, Bootstrap 3-4, SASS, CSS-flex/grid, webpack, BEM. Skills in
-                                    cross-browser compatibility and adaptive page making. I have experience with
-                                    AdobePhotoshop/Illustrator, Figma, InVision, besides
-                                    this i have experience in web-design.</p>
+                                <p>
+                                    I graduated from the Electrical Engineering College as a
+                                    draftsman-designer,
+                                    completed an internship at the enterprise as a draftsman. I studied for two years in
+                                    the university <b>SPbGUPTD</b>on the speciality 'applied
+                                    computer science in design', also took a large number of online web-development
+                                    courses.
+                                </p>
+                            </div>
+                            <div>
+                                <div class="wrpTitleBlock">
+                                    <h4>Stack:</h4>
+                                </div>
+                                <div class="wrapperMySteck">
+                                    <p>
+                                        <span data-aos="fade-down-right">JavaScript</span>
+                                        <span data-aos-delay="100" data-aos="fade-down-right">JQuery</span>
+                                        <span data-aos-delay="200" data-aos="fade-down-right">REACT</span>
+                                        <span data-aos-delay="200" data-aos="fade-down-right">REDUX</span>
+                                        <span data-aos-delay="200" data-aos="fade-down-right">JSX</span>
+                                        <span data-aos-delay="200" data-aos="fade-down-right">VUE.js</span>
+                                        <span data-aos-delay="300" data-aos="fade-down-right">NUXT</span>
+                                        <span data-aos-delay="400" data-aos="fade-down-right">PHP</span>
+                                        <span data-aos-delay="500" data-aos="fade-down-right">HTML(HTML5)</span>
+                                        <span data-aos-delay="550" data-aos="fade-down-right">CSS(CSS3)</span>
+                                        <span data-aos-delay="550" data-aos="fade-down-right">NPM</span>
+                                        <span data-aos-delay="600" data-aos="fade-down-right">Git</span>
+                                        <span data-aos-delay="600" data-aos="fade-down-right">Ajax</span>
+                                        <span data-aos-delay="600" data-aos="fade-down-right">API</span>
+                                        <span data-aos-delay="600" data-aos="fade-down-right">WordPress</span>
+                                        <span data-aos-delay="600" data-aos="fade-down-right">Firebase</span>
+                                        <span data-aos-delay="650" data-aos="fade-down-right">MongoDB</span>
+                                        <span data-aos-delay="650" data-aos="fade-down-right">PUG</span>
+                                        <span data-aos-delay="650" data-aos="fade-down-right">Bootstrap 3-4</span>
+                                        <span data-aos-delay="650" data-aos="fade-down-right">SASS</span>
+                                        <span data-aos-delay="700" data-aos="fade-down-right">CSS-flex/grid</span>
+                                        <span data-aos-delay="700" data-aos="fade-down-right">BEM methodology</span>
+                                        <span data-aos-delay="700" data-aos="fade-down-right">adaptive layouts</span>
+                                        <span data-aos-delay="700" data-aos="fade-down-right">cross-browser
+                                            layout</span>
+                                        <span data-aos-delay="700" data-aos="fade-down-right">Adobe Photoshop</span>
+                                        <span data-aos-delay="700" data-aos="fade-down-right">Figma</span>
+                                        <span data-aos-delay="700" data-aos="fade-down-right">InVision</span>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -167,6 +197,10 @@
                             <li class="nav-item">
                                 <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
                                     aria-controls="home" aria-selected="true">All works</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="react-tab" data-toggle="tab" href="#react" role="tab"
+                                    aria-controls="react" aria-selected="false">REACT</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
@@ -197,6 +231,21 @@
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                 <div class="wrpAllContent">
+                                    <div class="landingItem" style="grid-row: 1 / span 2;">
+                                        <img src="../image/react-meetup.jpg" alt="">
+                                        <div class="wrpContentItem">
+                                            <p>
+                                                <span class="titleOfProject">App meetup REACT</span>
+                                                <span style="font-weight: 500;">Tech: REACT, Redux, npm, jsx, firebase,
+                                                    react hooks, JavaScript. Functions: get data from database, change
+                                                    data and send, registration and logIn into account,
+                                                    manage state app (redux) e.t.c</span>
+                                                <a href="https://github.com/rinagony/react-meetup">Github</a>
+                                            </p>
+                                        </div>
+                                        <a href="https://hopeful-agnesi-b0d304.netlify.app/" id="buttonMoreTwoColumn3"
+                                            class="buttonMore">Open</a>
+                                    </div>
 
                                     <div class="landingItem" style="grid-row: 1 / span 2;">
                                         <img src="image/store-alter.jpg" alt="">
@@ -212,7 +261,7 @@
                                                 <a href="https://www.alterpretation.com/products">Store</a>
                                             </p>
                                         </div>
-                                        <a href="https://www.alterpretation.com/products" id="buttonMoreTwoColumn"
+                                        <a href="https://www.alterpretation.com/products" id="buttonMoreTwoColumn5"
                                             class="buttonMore">Open</a>
                                     </div>
 
@@ -498,7 +547,7 @@
                                                 <a href="https://www.alterpretation.com/products">Store</a>
                                             </p>
                                         </div>
-                                        <a href="https://www.alterpretation.com/products" id="buttonMoreTwoColumn"
+                                        <a href="https://www.alterpretation.com/products" id="buttonMoreTwoColumn2"
                                             class="buttonMore">Open</a>
                                     </div>
                                     <div class="landingItem" style="grid-row: 1 / span 2;">
@@ -517,10 +566,31 @@
                                                 <a href="https://www.alterpretation.com/">Site</a>
                                             </p>
                                         </div>
-                                        <a href="https://www.alterpretation.com/" id="buttonMoreTwoColumn"
+                                        <a href="https://www.alterpretation.com/" id="buttonMoreTwoColumn4"
                                             class="buttonMore">Open</a>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="tab-pane fade" id="react" role="tabpanel" aria-labelledby="react-tab">
+                                <div class="wrpAllContent">
+                                    <div class="landingItem" style="grid-row: 1 / span 2;">
+                                        <img src="../image/react-meetup.jpg" alt="">
+                                        <div class="wrpContentItem">
+                                            <p>
+                                                <span class="titleOfProject">App meetup REACT</span>
+                                                <span style="font-weight: 500;">Tech: REACT, Redux, npm, jsx, firebase,
+                                                    react hooks, JavaScript. Functions: get data from database, change
+                                                    data
+                                                    and send, registration and logIn into account,
+                                                    manage state app (redux) e.t.c</span>
+                                                <a href="https://github.com/rinagony/react-meetup">Github</a>
+                                            </p>
+                                        </div>
+                                        <a href="https://hopeful-agnesi-b0d304.netlify.app/" id="buttonMoreTwoColumn3"
+                                            class="buttonMore">Open</a>
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                 <div class="wrpVue">
@@ -690,7 +760,6 @@
             </div>
         </div>
     </section>
-
     <script>
         window.onload = function () {
             document.body.classList.add('loaded_hiding');
@@ -699,6 +768,12 @@
                 document.body.classList.remove('loaded_hiding');
             }, 500);
         }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true
+        });
     </script>
     <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>

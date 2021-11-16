@@ -629,7 +629,7 @@ h2 {
 .nav-tabs a {
     color: rgb(0, 0, 0);
     font-weight: 600;
-    font-size: 20px;
+    font-size: 17px;
     transition: 0.4s;
 }
 
@@ -827,8 +827,12 @@ h2 {
     color: #000000;
 }
 
-#buttonMoreTwoColumn {
+#buttonMoreTwoColumn1, #buttonMoreTwoColumn2 {
     margin: -20px 10px;
+}
+
+#buttonMoreTwoColumn3 {
+    margin: -5px 10px;
 }
 
 .navbarFooter {

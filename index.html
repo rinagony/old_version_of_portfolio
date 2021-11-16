@@ -140,6 +140,9 @@
                                     <p>
                                         <span data-aos="fade-down-right">JavaScript</span>
                                         <span data-aos-delay="100" data-aos="fade-down-right">JQuery</span>
+                                        <span data-aos-delay="200" data-aos="fade-down-right">REACT</span>
+                                        <span data-aos-delay="200" data-aos="fade-down-right">REDUX</span>
+                                        <span data-aos-delay="200" data-aos="fade-down-right">JSX</span>
                                         <span data-aos-delay="200" data-aos="fade-down-right">VUE.js</span>
                                         <span data-aos-delay="300" data-aos="fade-down-right">NUXT</span>
                                         <span data-aos-delay="400" data-aos="fade-down-right">PHP</span>
@@ -158,7 +161,8 @@
                                         <span data-aos-delay="700" data-aos="fade-down-right">CSS-flex/grid</span>
                                         <span data-aos-delay="700" data-aos="fade-down-right">методология БЭМ</span>
                                         <span data-aos-delay="700" data-aos="fade-down-right">адаптивная вёрстка</span>
-                                        <span data-aos-delay="700" data-aos="fade-down-right">кроссбраузерная вёрстка</span>
+                                        <span data-aos-delay="700" data-aos="fade-down-right">кроссбраузерная
+                                            вёрстка</span>
                                         <span data-aos-delay="700" data-aos="fade-down-right">Adobe Photoshop</span>
                                         <span data-aos-delay="700" data-aos="fade-down-right">Figma</span>
                                         <span data-aos-delay="700" data-aos="fade-down-right">InVision</span>
@@ -186,6 +190,10 @@
                             <li class="nav-item">
                                 <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
                                     aria-controls="home" aria-selected="true">Все работы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="react-tab" data-toggle="tab" href="#react" role="tab"
+                                    aria-controls="react" aria-selected="false">REACT</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
@@ -216,6 +224,21 @@
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                 <div class="wrpAllContent">
+                                    <div class="landingItem landingItemStrong">
+                                        <img src="image/react-meetup.jpg" alt="">
+                                        <div class="wrpContentItem">
+                                            <p>
+                                                <span class="titleOfProject">Приложение meetup REACT</span>
+                                                <span style="font-weight: 500;">Tech: REACT, Redux, npm, jsx, firebase,
+                                                    react hooks, JavaScript. Функции: получение данных из бд, изменение
+                                                    данных, возможности регистрации и входа в аккаунт, управление
+                                                    состоянием приложения (redux)</span>
+                                                <a href="https://github.com/rinagony/react-meetup">Github</a>
+                                            </p>
+                                        </div>
+                                        <a href="https://hopeful-agnesi-b0d304.netlify.app/" id="buttonMoreTwoColumn3"
+                                            class="buttonMore">Open</a>
+                                    </div>
 
                                     <div class="landingItem landingItemStrong">
                                         <img src="image/store-alter.jpg" alt="">
@@ -230,7 +253,7 @@
                                                 <a href="https://www.alterpretation.com/products">Магазин</a>
                                             </p>
                                         </div>
-                                        <a href="https://www.alterpretation.com/products" id="buttonMoreTwoColumn"
+                                        <a href="https://www.alterpretation.com/products" id="buttonMoreTwoColumn2"
                                             class="buttonMore">Open</a>
                                     </div>
 
@@ -249,7 +272,7 @@
                                                 <a href="https://www.alterpretation.com/">Сайт</a>
                                             </p>
                                         </div>
-                                        <a href="https://www.alterpretation.com/" id="buttonMoreTwoColumn"
+                                        <a href="https://www.alterpretation.com/" id="buttonMoreTwoColumn1"
                                             class="buttonMore">Open</a>
                                     </div>
                                     <div class="landingItem">
@@ -536,6 +559,25 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="tab-pane fade" id="react" role="tabpanel" aria-labelledby="react-tab">
+                                <div class="wrpVue">
+                                    <div class="landingItem landingItemStrong">
+                                        <img src="image/react-meetup.jpg" alt="">
+                                        <div class="wrpContentItem">
+                                            <p>
+                                                <span class="titleOfProject">Приложение meetup REACT</span>
+                                                <span style="font-weight: 500;">Tech: REACT, Redux, npm, jsx, firebase,
+                                                    react hooks, JavaScript. Функции: получение данных из бд, изменение
+                                                    данных, возможности регистрации и входа в аккаунт, управление
+                                                    состоянием приложения (redux)</span>
+                                                <a href="https://github.com/rinagony/react-meetup">Github</a>
+                                            </p>
+                                        </div>
+                                        <a href="https://hopeful-agnesi-b0d304.netlify.app/" id="buttonMoreTwoColumn"
+                                            class="buttonMore">Open</a>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                 <div class="wrpVue">
                                     <div class="landingItem">
@@ -781,7 +823,7 @@
         AOS.init({
             once: true
         });
-      </script>
+    </script>
     <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
