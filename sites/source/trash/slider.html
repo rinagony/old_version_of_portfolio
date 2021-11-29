@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+    <!-- Add your site or application content here -->
+    <p>Hello world! This is HTML5 Boilerplate.</p>
+
+    <style>
+
+html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #000;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+
+    .gallery-top {
+      height: 60%;
+      width: 100%;
+    }
+
+    .gallery-thumbs {
+      height: 20%;
+      box-sizing: border-box;
+      padding: 10px 0;
+    }
+
+    .gallery-thumbs .swiper-slide {
+      width: 25%;
+      height: 100%;
+      opacity: 0.4;
+    }
+
+    .gallery-thumbs .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+
+    </style>
+
+    <div class="swiper-container gallery-top">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url('https://im0-tub-ru.yandex.net/i?id=84dbd50839c3d640ebfc0de20994c30d&n=27&h=480&w=480')"></div>
+        <div class="swiper-slide" style="background-image:url('https://im0-tub-ru.yandex.net/i?id=84dbd50839c3d640ebfc0de20994c30d&n=27&h=480&w=480')"></div>
+        </div>
+  
+    </div>
+    <div class="swiper-container gallery-thumbs thumbs-class">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url('https://im0-tub-ru.yandex.net/i?id=84dbd50839c3d640ebfc0de20994c30d&n=27&h=480&w=480')"></div>
+        <div class="swiper-slide" style="background-image:url('https://im0-tub-ru.yandex.net/i?id=84dbd50839c3d640ebfc0de20994c30d&n=27&h=480&w=480')"></div>
+        </div>
+    </div>
+
+    <div class="swiper-container gallery-top">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url('https://im0-tub-ru.yandex.net/i?id=84dbd50839c3d640ebfc0de20994c30d&n=27&h=480&w=480')"></div>
+        <div class="swiper-slide" style="background-image:url('https://im0-tub-ru.yandex.net/i?id=84dbd50839c3d640ebfc0de20994c30d&n=27&h=480&w=480')"></div>
+        </div>
+  
+    </div>
+    <div class="swiper-container gallery-thumbs thumbs-class">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url(https://im0-tub-ru.yandex.net/i?id=84dbd50839c3d640ebfc0de20994c30d&n=27&h=480&w=480')"></div>
+        <div class="swiper-slide" style="background-image:url('https://im0-tub-ru.yandex.net/i?id=84dbd50839c3d640ebfc0de20994c30d&n=27&h=480&w=480')"></div>
+        </div>
+    </div>
+
+
+  <!-- Initialize Swiper -->
+  <script>
+
+        const myCustomSlider = document.querySelectorAll('.gallery-top');
+        const myCustomGalleryThumbs = document.querySelectorAll('.thumbs-class');
+
+        for (i = 0; i < myCustomSlider.length; i++) {
+
+            myCustomSlider[i].classList.add('gallery-top-' + i);
+            myCustomGalleryThumbs[i].classList.add('thumbs-class-' + i);
+
+            var galleryThumbs = new Swiper('.thumbs-class-' + i , {
+                spaceBetween: 10,
+                slidesPerView: 4,
+                freeMode: true,
+                watchSlidesVisibility: true,
+                watchSlidesProgress: true,
+            });
+
+            var galleryTop = new Swiper('.gallery-top-' + i, {
+                spaceBetween: 10,
+                thumbs: {
+                    // el: '.thumbs-class',
+                    // slidesPerView: 5,
+                    swiper: galleryThumbs
+                }
+            }); 
+
+        }
+
+  </script>
+
+</body>
+</html>

@@ -14,259 +14,314 @@ body, button, input {
     .wrapperHeaderMobile {
         display: none;
     }
+
     #footer .wrapperFooter .wrapperLogo {
         justify-content: flex-start;
     }
+
     #footer .wrapperFooter .wrapperLogo {
         grid-column: 1;
     }
+
     header .container .wraperHeaderMain {
         display: block;
     }
+
     .wrapperLogoNavigation {
         display: flex;
         justify-content: space-between;
     }
+
     .wrapperSertificatesLicensePageMob .wrapperControlsLicense {
         display: none;
     }
-    .wrapperLicenseAllMobile {
+
+    .wrapperSertificatesLicensePageMob {
         display: none;
     }
+
     .container .wrapperMainBlock h1 {
         font-size: 30px;
     }
+
     .controls {
         font-size: 1em;
     }
+
     #sliderLicense {
         width: 100%;
     }
+
     .controlsLicense {
         font-size: 1em;
     }
+
     #dots-conLicense {
         display: none;
     }
+
+    #jsModal .modal__container img {
+        margin-top: 0;
+    }
+
     #sliderServices {
         width: 100%;
     }
+
     #sliderServicesSecond {
         width: 100%;
     }
+
     .controlsServices {
         font-size: 1em;
     }
-    #dots-conServices {
+
+    .dots-conServices {
         display: none;
     }
-    #dots-conServicesSecond, #dots-conServicesThird, #dots-conServicesFourth, #dots-conServicesFifth {
-        display: none;
-    }
+
     #sliderServicesMobile {
         width: 100%;
     }
+
     #sliderServicesMobileSecond {
         width: 100%;
     }
+
     .controlsServicesMobile {
         font-size: 1em;
     }
-    #dots-conServicesMobile {
-        display: none;
-    }
-    #dots-conServicesMobileSecond, #dots-conServicesMobileThird, #dots-conServicesMobileFourth, #dots-conServicesMobileFifth {
-        display: none;
-    }
+
     #sliderPublic {
         width: 100%;
     }
+
     .controlsPublic {
         font-size: 1em;
     }
+
     .container .wrapperMainBlock h2 {
         font-size: 27px;
     }
+
     .aboutItemTop .titleBlockAbout {
         font-size: 18px;
     }
+
     .modal .modal__container {
         width: 100%;
         height: 93%;
     }
+
     .container .btnLearnMore {
         font-size: 16px;
         padding: 10px 50px;
         margin-top: 1em;
     }
+
     .wraperHeaderMain .wrapperContactsHeader a {
         font-size: 14px;
     }
+
     .itemColumnSliderServicesMobile p {
         font-size: 16px;
     }
 
-    .descriptionServices .wrapperProjectServices h2 {
-        font-size: 26px;
-    }
     #slider .aboutItemBottomSlider {
         align-items: center;
     }
+
     .container .aboutUsTitle {
         font-size: 24px;
         text-align: left;
     }
+
     body #descriptionBlock {
         margin-top: 6em;
     }
+
     .wrapperDescription .wrapperDescriptionItem p, .wrapperDescription .wrapperDescriptionItemSpecial p {
         font-size: 18px;
         text-align: left;
     }
+
     .wrapperForm .formBlockLeft img {
         max-width: auto;
     }
+
     #footer .wrapperFooter .wrapperLogo img {
         max-width: auto;
         margin-right: 1.5em;
     }
+
     #footer .container .wrapperFooter {
         display: grid;
         grid-template-columns: 0.6fr 1.3fr;
         grid-gap: 15px;
     }
+
     #footer .wrapperFooter .wrapperContactsHeader {
         justify-content: space-between;
     }
+
     header .wraperHeaderMain .wrapperContactsHeader {
         justify-content: space-between;
     }
+
     .wrapperFooter .wrapperContactsHeader {
         grid-column: 1 / span 2;
     }
+
     .wrapperPhoneSocialsHeader .wrapperSocialsHeader a {
-        margin-right: 1em;
-        margin-left: 0;
+        margin-right: 0;
+        margin-left: 1em;
     }
+
     .wrapperPhoneSocialsHeader .wrapperSocialsHeader {
         justify-content: flex-start;
     }
+
     .wrapperNavigation {
         text-align: right;
     }
+
     #footer .wrapperFooter .wrapperContactsHeader .wrapperAddressHeader {
         display: block;
     }
+
     .modal .modal__container img {
         height: 100%;
         width: auto;
     }
+
     #footer .wrapperAddressHeaderAdd {
         display: none;
     }
+
     #footer .wrapperFooter .wrapperPhoneSocialsHeader {
         width: auto;
     }
+
     .wrapperFooter .wrapperNavigation ul li a, .wraperHeaderMain .wrapperNavigation ul li a {
         font-size: 14px;
     }
+
     #footer .wrapperFooter span {
         font-size: 12px;
     }
+
     .wraperHeaderMain .wrapperLogo img {
         margin-right: 1.5em;
+        max-width: 211px;
     }
+
     #footer .container .wrapperFooter .wrapperNavigation ul {
         display: block;
     }
+
     body #formBlock {
         margin-top: 6em;
         padding-bottom: 6em;
     }
+
     #footer .container .wrapperNavigation ul li {
         margin-left: 1.5em;
         margin-right: 0;
     }
+
     header .wrapperLogoNavigation .wrapperNavigation ul li {
         margin-left: 1.5em;
         margin-right: 0;
     }
+
     .wrapperNavigationServices {
         display: flex;
     }
+
     #navigationServicesWrap .navigationServices {
         margin-right: 2em;
         margin-bottom: 0;
         align-items: flex-start;
     }
+
     .modal .modal__close {
         top: -10px;
         right: 3em;
     }
+
     #navigationServicesWrap .navigationServices a {
         font-size: 16px;
     }
+
     .navigationServicesImage .btnLearnMore {
         display: none;
     }
+
     .descriptionServices .wrapperDescriptionServices p, .descriptionServices .wrapperDescriptionServices ul li {
         font-size: 16px;
         line-height: 24px;
     }
-    .descriptionServices .wrapperBtnServicesSendMessage {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 2em;
-        padding-bottom: 2em;
-    }
+
     .contactsPageItem .itemContactPage a, .contactsPageItem .itemContactPage p {
         font-size: 16px;
     }
+
     .contactsBlockPage .contactsPageItem .wrapperPhoneContactPage span {
         font-size: 16px;
     }
+
     .mapBlockContactsPage .wrapperMapContactsPage {
         display: block;
     }
+
     .wrapperMapContactsPageMobile {
         display: none;
     }
+
     .itemContactPage {
         margin-top: 1.5em;
     }
+
     body .mapBlockContactsPage {
         padding-top: 3em;
         padding-bottom: 4em;
     }
+
     .wrapperLicensePage .wrapperSertificatesLicensePage {
         display: flex;
         justify-content: space-between;
         padding: 1.3em;
         box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
     }
+
     .licensePage .wrapperLicensePage h1 {
         text-align: left;
         font-size: 32px;
     }
+
     #services .activeShrimp {
         font-size: 12px;
     }
+
     .container .notActiveShrimp {
         font-size: 12px;
     }
+
     #footer .container .wrapperPhoneSocialsHeader {
         align-items: flex-start;
     }
+
     #navigationServicesWrap .navigationServices a {
         text-align: left;
     }
+
     #navigationServicesWrap .navigationServices button {
         text-align: left;
     }
 }
 
 @media (min-width: 768px) {
+
     /* .container {
         width: 740px;
     } */
@@ -275,128 +330,242 @@ body, button, input {
         justify-content: space-between;
         flex-direction: row;
     }
+
+    .itemColumnSliderServices p {
+        font-size: 16px;
+        max-width: 330px;
+    }
+
     .wrapperLogoNavigation .wrapperNavigation {
         text-align: center;
     }
+
     .container .wrapperDescription .wrapperDescriptionItem p, .container .wrapperDescription .wrapperDescriptionItemSpecial p {
         font-size: 24px;
     }
+
     .wrapperForm .formBlockLeft h3, .wrapperForm .formBlockRight h3 {
         font-size: 36px;
         text-align: center;
     }
+
+    .wrapperBtnServicesSendMessageSpecial {
+        height: 60px;
+    }
+
     .formBlockLeft {
         width: 35%;
     }
+
     .wrapperAboutItemAllMobile {
         display: none;
     }
+
     .wrapperForm .formBlockParagr {
         max-width: 85%;
         font-size: 16px;
         line-height: 24px;
         text-align: left;
     }
+
     #aboutBlock .wrapperControls {
         display: none;
     }
+
     .wrapperForm .formBlockRight form {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
+
     .wrapperForm .formBlockRight form input {
         width: 82%;
     }
+
     #navigationServicesWrap .navigationServices {
         padding-right: 5em;
     }
+
     .wrapperNavigationServices .navigationServicesImage {
         padding-top: 1.5em;
     }
+
     .wrapperDescriptionServices {
         padding-right: 2em;
     }
-    .wrapperColumnsSliderServices .itemColumnSliderServices img,  .wrapperColumnsSliderServices .itemColumnSliderServices p {
+
+    .wrapperColumnsSliderServices .itemColumnSliderServices img, .wrapperColumnsSliderServices .itemColumnSliderServices p {
         max-width: 13em;
     }
-    .descriptionServices .wrapperSliderServies {
-        display: block;
+
+    .wrapperServicesItems .videoServicesItem__description {
+        margin-top: 0;
     }
-    .descriptionServices .container .wrapperProjectServices h2 {
+
+    .wrapperProjectServices .wrapperProjectServices__wrapperInfoZemleustr {
+        padding: 1em;
+        font-size: 24px;
+        margin-top: 1.5em;
+        margin-bottom: 2em;
+    }
+
+    .descriptionServices #sliderServicesFifthItem, .wrapperExpertizaProjects #sliderServicesEleven {
+        display: none;
+    }
+
+    .descriptionServices #sliderServicesFour {
+        display: none;
+    }
+
+    .descriptionServices .accordion-content #sliderServicesThirdItem {
+        display: none;
+    }
+
+    /* .descriptionServices .container .wrapperProjectServices h2 {
         font-size: 32px;
         font-weight: 500;
         text-align: left;
-    }
+    } */
+
     .wrapperSliderServiesMobile {
         display: none;
     }
+
     .descriptionServices .container .wrapperPriceServices h2 {
         font-size: 32px;
         font-weight: 500;
         text-align: left;
     }
 
-    .descriptionServices .wrapperProjectServices {
-        margin-top: 0;
-    }
     .descriptionServices .titleTablePrices {
         font-size: 24px;
         padding: 15px
     }
+
+    .accordion-content__wrapper__videoWrapper {
+        padding: 1em 2em;
+        box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+    }
+
     .descriptionServices .wrapperPriceTable td {
         padding: 15px;
         font-size: 14px;
     }
+
     .wrapperContactsPage .wrapperContactsPageItems {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-top: 3em;
     }
-    .wrapperProjectServices .wrapperBlockServicesSimpleProjects {
+
+    .wrapperProjectServices .wrapperBlockServicesSimpleProjects, .accordion-content .wrapperBlockServicesSimpleProjects, #fourthservice .wrapperBlockServicesSimpleProjects {
         display: flex;
     }
+
+
     .wrapperContactsPageItems .contactsPageItem {
         padding-right: 1.5em;
         text-align: left;
     }
+
+    #thirdservice .wrapperProjectServices h2 {
+        font-size: 24px;
+    }
+
     .contactsBlockPage .container h1 {
         text-align: left;
     }
+
     .contactsBlockPage .wrapperContactsPage h1 {
         font-size: 32px;
     }
+
     .contactsBlockPage .wrapperPhoneContactPage a span {
         font-size: 16px;
     }
+
     .publicationPage .wrapperPublicationsPage {
         display: flex;
     }
+
     .wrapperpublicationsPageMob {
         display: none;
     }
+
     .wrapperAboutUs .wrapperAboutItemAll {
         display: block;
     }
+
+    .wrapperSliderServiesMob {
+        display: none;
+    }
+
+    .wrapperServicesItems__accordion-content__projects #sliderServicesFirst {
+        display: block;
+    }
+
+    .accordion-content__listWorks__items .accordion-content__listWorks__items__items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .wrapperKadastrServicesStadies .wrapperKadastrServicesStadies__listWorks, .wrapperExpertizaProjects .wrapperKadastrServicesStadies__listWorks {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .wrapperServicesItems__accordion-content__wrapper .accordion-content__BlockServicesSimpleProjects {
+        display: block;
+    }
+
+    .wrapperServicesItems #sliderServicesNine {
+        display: none;
+    }
+
+    .accordion-content__wrapper__videoWrapper .videoServicesItem {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+    }
+
+    .wrapperServicesItems #videoItemDescriptionBlock {
+        display: flex;
+    }
+
+    .wrapperServicesItems .videoServicesItem img {
+        width: 50%;
+    }
+
+    .videoServicesItem__description {
+        width: 45%;
+        padding: 0 2em;
+    }
+
 }
 
 @media (min-width: 992px) {
     .container {
         width: 920px;
     }
+
     #mainBlock .container .wrapperMainBlock h1 {
         font-size: 48px;
     }
+
     #mainBlock .container .wrapperMainBlock h2 {
         font-size: 38px;
     }
+
     .aboutItem .aboutItemTop {
         flex-direction: row;
     }
+
     body #mainBlock {
         min-height: 480px;
     }
+
     #mainBlock .wrapperMainBlock {
         display: flex;
         text-align: center;
@@ -405,88 +574,118 @@ body, button, input {
         justify-content: center;
         align-items: center;
     }
+
     .wrapperContactsHeader .wrapperPhoneSocialsHeader .wrapperSocialsHeader {
         justify-content: flex-start;
     }
+
     .wrapperNavigationServices .navigationServicesImage {
         height: 19em;
     }
+
     .wrapperNavigationServices .navigationServicesImage h3 {
         font-size: 36px;
         color: #fff;
         font-weight: 500;
     }
+
     .aboutItemSliderServices .wrapperColumnsSliderServices .itemColumnSliderServices img, .aboutItemSliderServices .wrapperColumnsSliderServices .itemColumnSliderServices p {
         max-width: 16em;
     }
 }
 
 @media (min-width: 1200px) {
+
     .container {
         width: 1100px;
     }
+
     .wrapperPublicationsPageRightContent.imagePublication h3 {
         font-size: 3em;
     }
+
     .wrapperLogoNavigation {
         width: 70%;
     }
+
     .wrapperContactsHeader {
         width: 30%;
         margin-top: 0;
     }
+
     header .container .wraperHeaderMain {
         display: flex;
         justify-content: space-between;
     }
+
     #footer .container .wrapperFooter {
         display: flex;
         justify-content: space-between;
     }
-    .wrapperAboutItems .aboutItemTop .titleBlockAbout {
+
+    .wrapperAboutItemAll .aboutItemTop .titleBlockAbout {
         font-size: 24px;
         margin-left: 1em;
         word-wrap: normal;
     }
+
     .aboutItemBottom .aboutItemBottomBlock p {
         font-size: 16px;
     }
+
     .wraperHeaderMain .wrapperContactsHeader {
         margin-top: 0;
     }
+
     #footer .container .wrapperFooter .wrapperContactsHeader {
         justify-content: flex-end;
     }
+
     header .container .wraperHeaderMain .wrapperContactsHeader {
         justify-content: flex-end;
+        align-items: flex-start;
     }
+
     #footer .container .wrapperFooter .wrapperContactsHeader {
         margin-top: 0;
     }
+
     header .container .wrapperLogoNavigation .wrapperNavigation ul li {
         margin-right: 1.5em;
         margin-left: 0;
     }
+
     .wraperHeaderMain .wrapperLogo img {
         width: 100%;
     }
+
     #footer .wrapperFooter .wrapperLogo img {
         max-width: 100%;
     }
+
     #footer .wrapperFooter .wrapperPhoneSocialsHeader {
-        align-items: flex-start;
+        justify-content: flex-start;
+        align-items: flex-end;
     }
-    .slideServices .aboutItemSliderServices .wrapperColumnsSliderServices .itemColumnSliderServices img, .slideServices .aboutItemSliderServices .wrapperColumnsSliderServices .itemColumnSliderServices p{
+
+    .slideServices .aboutItemSliderServices .wrapperColumnsSliderServices .itemColumnSliderServices img, .slideServices .aboutItemSliderServices .wrapperColumnsSliderServices .itemColumnSliderServices p {
         max-width: 20.5em;
     }
+
     .wrapperPublicationsPageRightContent .wrapperContentPublication h3 {
         font-size: 32px;
         font-weight: 500;
         line-height: 40px;
         color: #222222;
     }
+
     .wrapperBtnPublic .wrapperPublicationsPageLeftContent button {
         max-width: 40em;
+    }
+
+
+    .wrapperLogoNavigation .wrapperNavigation {
+        margin-right: 2em;
     }
 }
 
@@ -830,8 +1029,12 @@ header {
     justify-content: flex-start;
 }
 
+#sliderServicesFour {
+    display: block;
+}
+
 .wrapperAddressHeader {
-    max-width: 10em;
+    max-width: 13em;
     margin-left: 2em;
     font-size: 12px;
     text-align: right;
@@ -938,17 +1141,22 @@ header {
     from {
         opacity: 0.5;
     }
+
     to {
         opacity: 1;
     }
 }
 
-#left-arrow {
+.left {
     margin-right: 5px;
 }
 
-#right-arrow {
+.right {
     margin-left: 5px;
+}
+
+.dots-conServices {
+    display: none;
 }
 
 .controls {
@@ -967,11 +1175,11 @@ header {
     transition: 0.3s;
 }
 
-#left-arrow {
+.left {
     left: 10px;
 }
 
-#right-arrow {
+.right {
     right: 10px;
 }
 
@@ -1018,17 +1226,10 @@ header {
     from {
         opacity: 0.5;
     }
+
     to {
         opacity: 1;
     }
-}
-
-#left-arrowPublic {
-    margin-right: 5px;
-}
-
-#right-arrowPublic {
-    margin-left: 5px;
 }
 
 .controlsPublic {
@@ -1047,13 +1248,6 @@ header {
     transition: 0.3s;
 }
 
-#left-arrowPublic {
-    left: 10px;
-}
-
-#right-arrowPublic {
-    right: 10px;
-}
 
 #dots-conPublic {
     text-align: center;
@@ -1088,7 +1282,6 @@ header {
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 #sliderServicesSecond {
@@ -1096,7 +1289,6 @@ header {
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 .slideServices {
@@ -1110,24 +1302,17 @@ header {
     from {
         opacity: 0.5;
     }
+
     to {
         opacity: 1;
     }
 }
 
-#left-arrowServices {
+.left {
     margin-right: 5px;
 }
 
-#left-arrowServicesSecond, #left-arrowServicesThird, #left-arrowServicesFourth, #left-arrowServicesFifth {
-    margin-right: 5px;
-}
-
-#right-arrowServices {
-    margin-left: 5px;
-}
-
-#right-arrowServicesSecond, #right-arrowServicesThird, #right-arrowServicesFourth, #right-arrowServicesFifth {
+.right {
     margin-left: 5px;
 }
 
@@ -1147,27 +1332,15 @@ header {
     transition: 0.3s;
 }
 
-#left-arrowServices {
+.left {
     left: 10px;
 }
 
-#left-arrowServicesSecond, #left-arrowServicesThird, #left-arrowServicesFourth, #left-arrowServicesFifth {
-    left: 10px;
-}
-
-#right-arrowServices {
+.right {
     right: 10px;
 }
 
-#right-arrowServicesSecond, #right-arrowServicesThird, #right-arrowServicesFourth, #right-arrowServicesFifth {
-    right: 10px;
-}
-
-#dots-conServices {
-    text-align: center;
-}
-
-#dots-conServicesSecond, #dots-conServicesThird, #dots-conServicesFourth, #dots-conServicesFifth {
+.dots-conServices {
     text-align: center;
 }
 
@@ -1185,7 +1358,7 @@ header {
 
 .wrapperControlsServices {
     display: flex;
-    margin-top: 2em;
+    margin-top: 1em;
     justify-content: center;
 }
 
@@ -1209,17 +1382,10 @@ header {
     from {
         opacity: 0.5;
     }
+
     to {
         opacity: 1;
     }
-}
-
-#left-arrowLicense {
-    margin-right: 5px;
-}
-
-#right-arrowLicense {
-    margin-left: 5px;
 }
 
 .controlsLicense {
@@ -1238,13 +1404,6 @@ header {
     transition: 0.3s;
 }
 
-#left-arrowLicense {
-    left: 10px;
-}
-
-#right-arrowLicense {
-    right: 10px;
-}
 
 #dots-conLicense {
     text-align: center;
@@ -1295,24 +1454,17 @@ header {
     from {
         opacity: 0.5;
     }
+
     to {
         opacity: 1;
     }
 }
 
-#left-arrowServicesMobile {
+.left {
     margin-right: 5px;
 }
 
-#left-arrowServicesMobileSecond, #left-arrowServicesMobileThird, #left-arrowServicesMobileFourth, #left-arrowServicesMobileFifth {
-    margin-right: 5px;
-}
-
-#right-arrowServicesMobile {
-    margin-left: 5px;
-}
-
-#right-arrowServicesMobileSecond, #right-arrowServicesMobileThird, #right-arrowServicesMobileFourth, #right-arrowServicesMobileFifth {
+.right {
     margin-left: 5px;
 }
 
@@ -1332,30 +1484,12 @@ header {
     transition: 0.3s;
 }
 
-#left-arrowServicesMobile {
+.left {
     left: 10px;
 }
 
-#left-arrowServicesMobileSecond, #left-arrowServicesMobileThird, #left-arrowServicesMobileFourth, #left-arrowServicesMobileFifth {
-    left: 10px;
-}
-
-#right-arrowServicesMobile {
+.right {
     right: 10px;
-}
-
-#right-arrowServicesMobileSecond, #right-arrowServicesMobileThird, #right-arrowServicesMobileFourth, #right-arrowServicesMobileFifth {
-    right: 10px;
-}
-
-#dots-conServicesMobile {
-    text-align: center;
-    display: none;
-}
-
-#dots-conServicesMobileSecond, #dots-conServicesMobileThird, #dots-conServicesMobileFourth, #dots-conServicesMobileFifth {
-    text-align: center;
-    display: none;
 }
 
 .dotServicesMobile {
@@ -1372,9 +1506,11 @@ header {
 
 .wrapperControlsServicesMobile {
     display: flex;
-    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    margin-top: 0.5em;
     justify-content: center;
 }
+
 
 .wrapperPriceServices {
     margin-top: 2em;
@@ -1426,7 +1562,7 @@ header {
 
 #lastAboutItem {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
 }
 
 .aboutItemSpecialSet {
@@ -1439,7 +1575,16 @@ header {
 }
 
 #lastAboutItem .aboutItemTop {
-    padding-right: 1.5em;
+    padding: 1.5em;
+    width: 48%;
+}
+
+#lastAboutItem .aboutItemBottom {
+    display: flex;
+    width: 51%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .wrapperDescriptionItem {
@@ -1608,7 +1753,7 @@ header {
 .wrapperPhoneSocialsHeader {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: center;
 }
 
@@ -1812,7 +1957,6 @@ header {
 }
 
 .wrapperProjectServices h2 {
-    font-size: 20px;
     text-align: center;
     font-weight: 500;
 }
@@ -1830,10 +1974,6 @@ header {
 
 .itemColumnSliderServices p {
     font-size: 16px;
-}
-
-.wrapperSliderServies {
-    display: none;
 }
 
 .itemColumnSliderServicesMobile {
@@ -1883,11 +2023,7 @@ header {
 
 .descriptionServices {
     padding-top: 2em;
-    padding-bottom: 3em;
-}
-
-.wrapperBtnServicesSendMessage {
-    display: none;
+    padding-bottom: 2em;
 }
 
 .itemColumnSliderServicesMobile {
@@ -2164,7 +2300,7 @@ header {
 .modal__close {
     position: absolute;
     top: -20px;
-    right: -15px;
+    right: -5px;
     border: none;
     outline: none;
     background: none;
@@ -2192,6 +2328,7 @@ header {
 .modal__container img {
     height: 100%;
     width: inherit;
+    margin-top: 2em;
 }
 
 .servicesSimpleProjects img {
@@ -2200,7 +2337,6 @@ header {
 
 .servicesSimpleProjects {
     width: 30%;
-    padding: 1em;
 }
 
 #defaultOpenServices {
@@ -2216,6 +2352,14 @@ header {
     text-align: center;
 }
 
+.wrapperControlsServicesMobileMain {
+    margin-top: 3em;
+}
+
+#sliderServicesMain .aboutItemBottomSlider {
+    padding: 1.2em 0;
+}
+
 .wrapperNavigationServices {
     margin-top: 2em;
 }
@@ -2223,7 +2367,11 @@ header {
 .wrapperBlockServicesSimpleProjects {
     justify-content: space-between;
     align-items: flex-start;
-    box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px
+}
+
+#secondservice .wrapperBlockServicesSimpleProjects {
+    padding: 1.5em;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
 }
 
 .wrapperDescriptionServices h3 {
@@ -2245,4 +2393,386 @@ header {
 
 .wrapperProjectServices {
     margin-top: 3em;
+}
+
+#aboutItemTopThird {
+    padding: 2.9em 1em;
+}
+
+#aboutItemBottomThird {
+    padding-bottom: 2em;
+}
+
+#breadShrimps__goHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Accordion */
+
+button.accordion {
+    width: 100%;
+    background-color: inherit;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    padding: 0;
+    align-items: center;
+    outline: none;
+    text-align: left;
+    display: flex;
+    font-size: 13px;
+    color: #333;
+    cursor: pointer;
+    border-bottom: 1px solid #E0E0E0;
+    transition: background-color 0.2s linear;
+}
+
+.accordion span {
+    width: 70%;
+}
+
+
+button.accordion:hover,
+button.accordion.is-open {
+    background-color: inherit;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+}
+
+.accordeonServicesQuadre {
+    width: 60px;
+    height: 60px;
+    box-shadow: rgba(0, 0, 0, #C8C8C8);
+    background: #f2f2f2;
+    display: flex;
+    margin-right: 1.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Accordion */
+
+.listWorks__items__item {
+    width: 130px;
+}
+
+.listWorks__items__item img {
+    width: 100px;
+    height: 100px;
+}
+
+.listWorks__items__item:nth-child(2), .listWorks__items__item:nth-child(3), .listWorks__items__item:nth-child(4), .listWorks__items__item:nth-child(5), .listWorks__items__item:nth-child(6) {
+    margin-left: 1em;
+}
+
+.listWorks__items__item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: start;
+    align-items: center;
+    flex: 1;
+}
+
+.listWorks__items__item p {
+    font-size: 13px;
+    max-width: 200px;
+}
+
+.wrapperServicesItems__accordion-content__listWorks {
+    margin-top: 2.5em;
+}
+
+.descriptionServices h2 {
+    font-weight: 500;
+    text-align: center;
+}
+
+.wrapperServicesItems__accordion-content__wrapper>p {
+    font-size: 16px;
+}
+
+.wrapperServicesItems__accordion-content__wrapper {
+    margin: 2.5em 0;
+    font-size: 16px;
+}
+
+.wrapperServicesItems {
+    margin-top: 3em;
+}
+
+.accordion-content__listWorks__items {
+    margin-top: 2.5em;
+}
+
+
+/* multislider */
+
+.controlsServices {
+    transform: translateY(-50%);
+    background: inherit;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 2px solid #20A26A;
+}
+
+.left:after {
+    content: url('img/sliderLeft.svg');
+    margin-bottom: 5px;
+}
+
+.right:after {
+    content: url('img/slideRight.svg');
+    margin-bottom: 5px;
+}
+
+.descriptionServices #sliderServicesThirdItem {
+    display: block;
+}
+
+#secondservice .wrapperKadastrServicesStadies .accordion-content__listWorks__items__items {
+    display: none;
+}
+
+.wrapperKadastrServicesStadies__listWorks {
+    display: none;
+}
+
+.slideServices__itemSlide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion-content__BlockServicesSimpleProjects {
+    padding: 2em;
+}
+
+.accordion-content__BlockServicesSimpleProjects p {
+    margin-top: 1.5em;
+    font-size: 16px;
+    text-align: center;
+}
+
+.accordion-content__BlockServicesSimpleProjects {
+    display: none;
+}
+
+.singleItemSlider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapperServicesItems__accordion-content__projects {
+    margin-top: 2em;
+}
+
+#sliderServicesFour .wrapperControlsServices {
+    margin-top: 2em;
+}
+
+.sliderServicesThreeItems {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sliderServicesThreeItems__item {
+    width: 30%;
+}
+
+.sliderServicesThreeItems__item img {
+    width: 100%;
+}
+
+.videoServicesItem {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.videoServicesItem p {
+    font-size: 13px;
+    margin-top: 0;
+    line-height: 21px;
+}
+
+.videoServicesItem__description {
+    margin-top: 2em;
+}
+
+.videoServicesItem video {
+    width: 55%;
+}
+
+.wrapper__videoWrapper__videoItem__descriptionItem img {
+    width: 100%;
+}
+
+.wrapper__videoWrapper__videoItem__descriptionItem {
+    margin-right: 2em;
+}
+
+.wrapper__videoWrapper__videoItem__descriptionItem {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#sliderServicesFifthItem, #sliderServicesEleven {
+    display: block;
+}
+
+.wrapperKadastrServicesStadies__descroptionText {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.accordion-content__listWorks__items__items {
+    display: none;
+}
+
+.wrapperProjectServices h2 {
+    font-size: 16px;
+}
+
+.wrapperKadastrServicesStadies__listWorks {
+    margin-top: 3em;
+}
+
+.wrapperKadastrServicesStadies {
+    margin-top: 3em;
+}
+
+.wrapperBlockServicesSimpleProjects {
+    margin-top: 3em;
+}
+
+.wrapperDescriptionServices__casesList__item {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1em;
+}
+
+.wrapperDescriptionServices__casesList__item p {
+    margin-top: 0;
+    font-style: 16px;
+}
+
+.wrapperDescriptionServices__casesList__item img {
+    margin-right: 0.6em;
+    margin-top: 0.3em;
+}
+
+.wrapperDescriptionServices__casesList {
+    margin-top: 2em;
+}
+
+#sliderServicesFirst {
+    display: none;
+}
+
+#zemleustrWorksServices .servicesSimpleProjects img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+#thirdservice h2 {
+    margin-bottom: 2em;
+}
+
+#zemleustrWorksServices .servicesSimpleProjects p {
+    font-size: 11px;
+    line-height: 18px;
+}
+
+#zemleustrWorksServices .servicesSimpleProjects {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapperProjectServices__wrapperInfoZemleustr {
+    padding: 1em;
+    font-size: 14px;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    font-weight: 500;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+}
+
+.videoServicesItem img {
+    width: 100%;
+}
+
+#videoItemDescriptionBlock {
+    display: none;
+}
+
+#sliderServicesNine {
+    margin-top: 3em;
+}
+
+.accordion-content__wrapper__videoWrapper__videoItem {
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+#sliderServicesNine .singleItemSlider img, #sliderServicesEight .singleItemSlider img, #sliderServicesSixth .singleItemSlider img, #sliderServicesTen .singleItemSlider img {
+    width: 100%;
+}
+
+.wrapperProjectServices__projectsZemleustr {
+    margin-top: 2em;
+}
+
+#sliderServicesSeven .singleItemSlider p {
+    font-size: 11px;
+    padding-bottom: 1em;
+}
+
+.wrapperZemledelieServices {
+    padding-top: 2em;
+}
+
+.wrapperZemledelieServices .servicesSimpleProjects p {
+    font-size: 11px;
+}
+
+#zemledelieServicesProjects {
+    margin-bottom: 2em;
+}
+
+#sliderServicesTen .singleItemSlider p {
+    font-size: 11px;
+}
+
+.descriptionServices .wrapperBtnServicesSendMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.descriptionServices__wrapperDescription {
+    margin-top: 2em;
+}
+
+#sliderServicesEleven {
+    margin-top: 2em;
 }
