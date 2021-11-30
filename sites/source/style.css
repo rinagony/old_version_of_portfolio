@@ -5,6 +5,10 @@
     margin-left: auto;
 }
 
+p, span {
+    line-height: 21px;
+}
+
 body, button, input {
     margin: 0;
     font-family: 'Montserrat Alternates', sans-serif;
@@ -134,10 +138,11 @@ body, button, input {
     .container .aboutUsTitle {
         font-size: 24px;
         text-align: left;
+        line-height: 32px;
     }
 
     body #descriptionBlock {
-        margin-top: 6em;
+        margin-top: 50px;
     }
 
     .wrapperDescription .wrapperDescriptionItem p, .wrapperDescription .wrapperDescriptionItemSpecial p {
@@ -220,8 +225,8 @@ body, button, input {
     }
 
     body #formBlock {
-        margin-top: 6em;
-        padding-bottom: 6em;
+        margin-top: 50px;
+        padding-bottom: 50px;
     }
 
     #footer .container .wrapperNavigation ul li {
@@ -350,7 +355,7 @@ body, button, input {
     }
 
     .wrapperBtnServicesSendMessageSpecial {
-        height: 60px;
+        height: 40px;
     }
 
     .formBlockLeft {
@@ -366,6 +371,10 @@ body, button, input {
         font-size: 16px;
         line-height: 24px;
         text-align: left;
+    }
+
+    .descriptionServices .wrapperDescriptionServicesItem p {
+        font-size: 16px;
     }
 
     #aboutBlock .wrapperControls {
@@ -384,10 +393,6 @@ body, button, input {
 
     #navigationServicesWrap .navigationServices {
         padding-right: 5em;
-    }
-
-    .wrapperNavigationServices .navigationServicesImage {
-        padding-top: 1.5em;
     }
 
     .wrapperDescriptionServices {
@@ -421,11 +426,14 @@ body, button, input {
         display: none;
     }
 
-    /* .descriptionServices .container .wrapperProjectServices h2 {
-        font-size: 32px;
-        font-weight: 500;
-        text-align: left;
-    } */
+    .slider6, .slider2, .slider7, .slider4, .slider5, .slider8, .slider10, .slider11, .slider12 {
+        display: none;
+    }
+
+    .wrapperServicesItems__accordion-content__projects .wrapperShadowBlock {
+        display: block;
+        margin-top: 11px;
+    }
 
     .wrapperSliderServiesMobile {
         display: none;
@@ -543,6 +551,10 @@ body, button, input {
         padding: 0 2em;
     }
 
+    #descriptionBlock .wrapperDescription .wrapperDescriptionItemSpecial p {
+        line-height: 32px;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -574,6 +586,7 @@ body, button, input {
         justify-content: center;
         align-items: center;
     }
+    
 
     .wrapperContactsHeader .wrapperPhoneSocialsHeader .wrapperSocialsHeader {
         justify-content: flex-start;
@@ -590,7 +603,7 @@ body, button, input {
     }
 
     .aboutItemSliderServices .wrapperColumnsSliderServices .itemColumnSliderServices img, .aboutItemSliderServices .wrapperColumnsSliderServices .itemColumnSliderServices p {
-        max-width: 16em;
+        max-width: 18em;
     }
 }
 
@@ -694,6 +707,33 @@ body, button, input {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    .descriptionServices .slidercontainer .sliderControl .rightSlider {
+        content: url('img/left.svg');
+        right: 4%;
+        width: 40px;
+    }
+}
+
+@media (min-width: 472px) {
+    .sliderLine .itemColumnSliderServices >img {
+        width: auto;
+        max-height: 330px;
+    }
+
+    .sliderLine .itemColumnSliderServices > p {
+        max-width: 330px;
+    }
+
+    .wrapperTextSlider5 {
+        margin-top: 1em;
+        margin-bottom: 1.5em;
+    }
+
+    .wrapperTextSlider5 p{
+        max-width: 330px;
+        margin: 0 auto;
+    }
 }
 
 header {
@@ -726,7 +766,8 @@ header {
 .mobile-menu {
     clear: both;
     background: #20A26A;
-    padding: 17px;
+    padding-top: 10px;
+    padding-bottom: 30px;
 }
 
 .mobile-menu a {
@@ -743,7 +784,7 @@ header {
 }
 
 .mobile-menu ul li {
-    margin-top: 0.7em;
+    margin-top: 20px;
 }
 
 .wrapperMenuMobile {
@@ -796,7 +837,8 @@ header {
 }
 
 #services {
-    margin-top: 1em;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .headerMob ul.menu li.menu-item:nth-child(3) {
@@ -1084,6 +1126,7 @@ header {
     background: #DF5114;
     color: #ffff;
     border: none;
+    text-decoration: none;
     font-size: 13px;
     padding: 10px 30px;
     border-radius: 40px;
@@ -1110,7 +1153,6 @@ header {
 .aboutUsTitle {
     font-size: 13px;
     text-align: center;
-    font-weight: 500;
 }
 
 .aboutItemTop {
@@ -1879,17 +1921,14 @@ header {
 }
 
 #navigationServicesWrap {
-    padding: 1.5em 0;
+    padding-bottom: 30px;
 }
 
 .navigationServices {
     display: flex;
     margin-bottom: 1.5em;
-    padding-top: 0.5em;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+    padding: 1.5em;
     align-items: center;
-    padding-bottom: 1.5em;
     flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
@@ -1937,9 +1976,16 @@ header {
     font-weight: 400;
 }
 
+.wrapperDescriptionServicesItem p{
+    font-size: 13px;
+    line-height: 18px;
+    margin:0;
+}
+
 .navigationServicesImage .btnLearnMore {
     padding: 10px 20px;
     margin-top: 1em;
+    text-decoration: none;
 }
 
 .wrapperNavigationServicesImage {
@@ -2021,11 +2067,6 @@ header {
     padding: 10px 25px;
 }
 
-.descriptionServices {
-    padding-top: 2em;
-    padding-bottom: 2em;
-}
-
 .itemColumnSliderServicesMobile {
     font-size: 13px;
 }
@@ -2083,6 +2124,7 @@ header {
 
 .licensePage {
     padding-bottom: 3em;
+    position: relative;
 }
 
 .sertificateLicensePageItem img {
@@ -2125,7 +2167,7 @@ header {
 }
 
 .aboutItemSliderLicense img {
-    width: 100%;
+    width: 90%;
     margin-bottom: 1.5em;
 }
 
@@ -2150,6 +2192,10 @@ header {
 .wrapperPublicationsPageLeftContent {
     display: flex;
     flex-direction: column;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+    padding-bottom: 1.5em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
     justify-content: center;
 }
 
@@ -2217,6 +2263,22 @@ header {
     margin-top: 2em;
     font-size: 13px;
 }
+
+.aboutItemSliderPublic {
+    padding: 0 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sliderPublication .rightSlider {
+    top: 40%;
+}
+
+/* .slidercontainer .sliderControl .rightSliderSpec {
+    content: url('img/rightSpec.svg');
+} */
 
 .wrapperPublicationsMobileContent {
     margin-top: 2em;
@@ -2348,7 +2410,7 @@ header {
     padding: 0;
     border: none;
     font-size: 16px;
-    margin-top: 1.5em;
+    margin: 0.7em 0;
     text-align: center;
 }
 
@@ -2360,17 +2422,13 @@ header {
     padding: 1.2em 0;
 }
 
-.wrapperNavigationServices {
-    margin-top: 2em;
-}
-
 .wrapperBlockServicesSimpleProjects {
     justify-content: space-between;
     align-items: flex-start;
 }
 
 #secondservice .wrapperBlockServicesSimpleProjects {
-    padding: 1.5em;
+    padding: 2em;
     box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
 }
 
@@ -2412,6 +2470,17 @@ header {
 
 /*Accordion */
 
+.accordionItem {
+    display: flex;
+    font-size: 13px;
+    color: #333;
+    cursor: pointer;
+    border-bottom: 1px solid #E0E0E0;
+    transition: background-color 0.2s linear;
+    background-color: inherit;
+    text-align: left;
+}
+
 button.accordion {
     width: 100%;
     background-color: inherit;
@@ -2431,7 +2500,16 @@ button.accordion {
 }
 
 .accordion span {
-    width: 70%;
+    width: 80%;
+    padding: 0.5em 0;
+}
+
+.itemColumnSliderServices img {
+    width: 100%;
+}
+
+#slider9 .itemColumnSliderServices img {
+    width: auto;
 }
 
 
@@ -2448,7 +2526,7 @@ button.accordion.is-open {
 
 .accordeonServicesQuadre {
     width: 60px;
-    height: 60px;
+    min-height: 60px;
     box-shadow: rgba(0, 0, 0, #C8C8C8);
     background: #f2f2f2;
     display: flex;
@@ -2487,7 +2565,7 @@ button.accordion.is-open {
 }
 
 .wrapperServicesItems__accordion-content__listWorks {
-    margin-top: 2.5em;
+    margin-top: 30px;
 }
 
 .descriptionServices h2 {
@@ -2500,12 +2578,11 @@ button.accordion.is-open {
 }
 
 .wrapperServicesItems__accordion-content__wrapper {
-    margin: 2.5em 0;
     font-size: 16px;
 }
 
 .wrapperServicesItems {
-    margin-top: 3em;
+    margin-top: 30px;
 }
 
 .accordion-content__listWorks__items {
@@ -2578,7 +2655,7 @@ button.accordion.is-open {
 }
 
 .wrapperServicesItems__accordion-content__projects {
-    margin-top: 2em;
+    margin-top: 30px;
 }
 
 #sliderServicesFour .wrapperControlsServices {
@@ -2612,7 +2689,8 @@ button.accordion.is-open {
 }
 
 .videoServicesItem__description {
-    margin-top: 2em;
+    margin-top: 30px;
+    margin-bottom: 17px;
 }
 
 .videoServicesItem video {
@@ -2628,7 +2706,6 @@ button.accordion.is-open {
 }
 
 .wrapper__videoWrapper__videoItem__descriptionItem {
-    font-weight: 500;
     font-size: 16px;
 }
 
@@ -2696,7 +2773,7 @@ button.accordion.is-open {
 
 #zemleustrWorksServices .servicesSimpleProjects p {
     font-size: 11px;
-    line-height: 18px;
+    line-height: 21px;
 }
 
 #zemleustrWorksServices .servicesSimpleProjects {
@@ -2704,6 +2781,7 @@ button.accordion.is-open {
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .wrapperProjectServices__wrapperInfoZemleustr {
@@ -2746,7 +2824,11 @@ button.accordion.is-open {
 }
 
 .wrapperZemledelieServices {
-    padding-top: 2em;
+    padding-top: 18px;
+}
+
+.slider4 {
+    margin-top: 10px;
 }
 
 .wrapperZemledelieServices .servicesSimpleProjects p {
@@ -2765,14 +2847,187 @@ button.accordion.is-open {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 14px;
+    padding-bottom: 50px;
 }
 
 .descriptionServices__wrapperDescription {
-    margin-top: 2em;
+    margin-top: 30px;
 }
 
 #sliderServicesEleven {
     margin-top: 2em;
+}
+
+.rightSlider:after {
+    content: url('img/left.svg');
+}
+
+.leftSliderLicense:after {
+    content: url('img/licenseRight.svg');
+}
+
+.rightSliderLicense:after {
+    content: url('img/licenseLeft.svg');
+}
+
+.showSlide {
+    overflow: hidden;
+    min-width: 100%;
+    position: relative;
+}
+
+.showSlideLicense {
+    overflow: hidden;
+    min-width: 100%;
+}
+
+.sliderControlLicense {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+
+.sliderLine {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    transform: translate(0%, 0px);
+    /*transition: transform 0.3s ease-in-out;*/
+}
+
+.sliderLine.animated {
+    transition: transform 0.3s ease-in-out;
+}
+
+.slidercontainer {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slidercontainerLicense {
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.rightSlider {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    top: 25%;
+    right: 2%;
+    align-items: center;
+    background: none;
+    border: none;
+}
+
+.leftSliderLicense {
+    left: 0;
+}
+
+.rightSliderLicense {
+    right: 0;
+}
+
+.leftSliderLicense, .rightSliderLicense {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    top: 45%;
+    align-items: center;
+    background: none;
+    border: none;
+}
+
+.wrapperBtnServicesSendMessage a {
+    text-decoration: none;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.wrapperShadowBlock {
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    padding-top: 2em;
+    padding-right: 2em;
+    padding-left: 2em;
+    margin: 0.5em;
+}
+
+.wrapperShadowBlock {
+    display: none;
+}
+
+.wrapperShadowBlockSimpleProjects {
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    padding: 2em;
+}
+
+.fifthservice .descriptionServices h2 {
+    margin-top: 40px;
+}
+
+.slider12 {
+    margin-top: 10px;
+}
+
+.slider1 {
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+}
+
+.wrapper__videoWrapper__videoItem__descriptionItem {
+    font-size: 16px;
+}
+
+#zemledelieServicesProjects .servicesSimpleProjects img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+#zemledelieServicesProjects .servicesSimpleProjects {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+    text-align: center;
+}
+
+#descriptionBlock .wrapperDescriptionItemSpecial p {
+    line-height: 22px;
 }

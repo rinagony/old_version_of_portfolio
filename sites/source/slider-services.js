@@ -1,7 +1,150 @@
+function sliderInitialisation(options) {
+  console.log(options);
+  const root = document.querySelector(options.root);
+  const sliderLine = root.querySelector(".sliderLine");
+  const slides = root.querySelectorAll(".sliderLine > div");
+  const sliderControl = root.querySelector(".sliderControl");
+  let currentIndex = options.startIndex;
+  moveSlider();
+
+  setTimeout(function () {
+    sliderLine.classList.add("animated");
+  }, 1500);
+  console.log(currentIndex);
+  console.log(sliderLine, sliderControl);
+
+  if (options.autoplay == true) {
+    setInterval(function () {
+      if (currentIndex < slides.length) {
+        currentIndex++;
+      } else {
+        currentIndex = 1;
+      }
+      moveSlider();
+    }, options.autoplaydelay);
+  }
+
+  sliderControl.addEventListener("click", function (e) {
+    if (e.target.classList.contains("rightSlider")) {
+      if (currentIndex < slides.length) {
+        currentIndex++;
+        moveSlider();
+        console.log("кликнули далее");
+      } else if ((currentIndex = slides.length)) {
+        currentIndex = 1;
+        moveSlider();
+        console.log("lll");
+      }
+    }
+
+    console.log("currentIndex", currentIndex, slides.length);
+  });
+
+  function moveSlider() {
+    let result = (currentIndex - 1) * 100;
+    sliderLine.style.transform = `translate(-${result}%, 0px)`;
+  }
+}
+
+if (document.getElementById("aboutBlock")) {
+  sliderInitialisation({
+    root: ".slider1",
+    startIndex: 1,
+    autoplay: false,
+    autoplaydelay: 4500,
+  });
+}
+
+if(document.getElementById('sliderPublication')) {
+  sliderInitialisation({
+    root: ".slider14",
+    startIndex: 1,
+    autoplay: false,
+    autoplaydelay: 4500,
+  });
+}
+
+if (document.getElementById("firstservice")) {
+  sliderInitialisation({
+    root: ".slider2",
+    startIndex: 1,
+    autoplay: false,
+    autoplaydelay: 4500,
+  });
+
+  sliderInitialisation({
+    root: ".slider3",
+    startIndex: 1,
+    autoplay: false,
+    autoplaydelay: 4500,
+  });
+
+  sliderInitialisation({
+    root: ".slider4",
+    startIndex: 1,
+    autoplay: false,
+    autoplaydelay: 4500,
+  });
+
+  sliderInitialisation({
+    root: ".slider5",
+    startIndex: 1,
+    autoplay: false,
+    autoplaydelay: 4500,
+  });
+
+  sliderInitialisation({
+    root: ".slider6",
+    startIndex: 1,
+    autoplay: false,
+    autoplaydelay: 4500,
+  });
+
+  sliderInitialisation({
+    root: ".slider7",
+    startIndex: 1,
+    autoplay: false,
+    autoplaydelay: 4500,
+  });
+
+  sliderInitialisation({
+    root: ".slider8",
+    startIndex: 1,
+    autoplay: false,
+    autoplaydelay: 4500,
+  });
+
+  sliderInitialisation({
+    root: ".slider9",
+    startIndex: 1,
+    autoplay: false,
+    autoplaydelay: 4500,
+  });
+
+  sliderInitialisation({
+    root: ".slider10",
+    startIndex: 1,
+    autoplay: false,
+    autoplaydelay: 4500,
+  });
+
+  sliderInitialisation({
+    root: ".slider11",
+    startIndex: 1,
+    autoplay: false,
+    autoplaydelay: 4500,
+  });
+
+  sliderInitialisation({
+    root: ".slider12",
+    startIndex: 1,
+    autoplay: false,
+    autoplaydelay: 4500,
+  });
+}
+
 (function () {
   let buttonsTabs = document.getElementsByClassName("tablink");
-  var slides = document.querySelectorAll(".slideServices");
-  var dots = document.querySelectorAll(".dotServices");
   let titleMain = document.getElementById("titleServicesMain");
   let shrimp = document.getElementById("lastShrimpBread");
   let imageBg = document.getElementById("navigationServicesImageItem");
@@ -14,7 +157,6 @@
         titleMain.innerHTML = buttonsTabs[i].innerHTML;
         shrimp.innerHTML = buttonsTabs[i].innerHTML;
         let blockname = document.getElementById(attrib);
-        // slides = blockname.querySelectorAll(".slideServices");
 
         let imagepathbg = buttonsTabs[i].getAttribute("data-image");
         imageBg.style.background = `url('img/works/${imagepathbg}')`;
@@ -26,18 +168,6 @@
     }
   }
 
-  if (document.getElementById("sliderServicesMain")) {
-    sliderInit({
-      root: "#sliderServicesMain",
-    });
-  }
-
-  if (document.getElementById("sliderServicesTwelve")) {
-    sliderInit({
-      root: "#sliderServicesTwelve",
-    });
-  }
-
   if (window.innerWidth < 768) {
     for (let i = 0; i < buttonsTabs.length; i++) {
       buttonsTabs[i].addEventListener("click", function () {
@@ -45,7 +175,6 @@
         titleMain.innerHTML = buttonsTabs[i].innerHTML;
         shrimp.innerHTML = buttonsTabs[i].innerHTML;
         let blockname = document.getElementById(attrib);
-        // slidesMobile = blockname.querySelectorAll(".slideServicesMobile");
 
         let imagepathbg = buttonsTabs[i].getAttribute("data-image");
         imageBg.style.background = `url('img/works/${imagepathbg}')`;
@@ -57,119 +186,6 @@
     }
   }
 
-  function prevSlideServices(n, block) {
-    let blockname = document.getElementById(block);
-    slides = blockname.querySelectorAll(".slideServices");
-    index += n;
-    changeSlideServices();
-  }
-
-  function nextSlideServices(n, block) {
-    let blockname = document.getElementById(block);
-    slides = blockname.querySelectorAll(".slideServices");
-    index += n;
-    changeSlideServices();
-  }
-
-  changeSlideServices();
-
-  function changeSlideServices() {
-    if (index > slides.length - 1) index = 0;
-
-    if (index < 0) index = slides.length - 1;
-
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-
-      dots[i].classList.remove("activeServices");
-    }
-
-    slides[index].style.display = "block";
-    dots[index].classList.add("activeServices");
-  }
-
-  // mobile slider geodez soprovozhdenie
-  function sliderInit(rootElement) {
-    const root = document.querySelector(rootElement.root);
-    var slidesMobile = root.querySelectorAll(".slideServices");
-    var dotsMobile = root.querySelectorAll(".dotServices");
-    let wrapperButtons = root.querySelector(".wrapperControlsServices");
-    var indexMobile = 0;
-    console.log(wrapperButtons);
-    wrapperButtons.addEventListener("click", function (e) {
-      if (e.target.classList.contains("left")) {
-        // доделать проверки на крайние позиции
-        //   slidesMobile = root.querySelectorAll(".slideServicesMobile");
-        indexMobile += -1;
-        changeSlideServicesMobile();
-      } else if (e.target.classList.contains("right")) {
-        // доделать проверки на крайние позиции
-        //   slidesMobile = root.querySelectorAll(".slideServicesMobile");
-        indexMobile += 1;
-        changeSlideServicesMobile();
-      }
-    });
-
-    changeSlideServicesMobile();
-
-    function changeSlideServicesMobile() {
-      if (indexMobile > slidesMobile.length - 1) indexMobile = 0;
-
-      if (indexMobile < 0) indexMobile = slidesMobile.length - 1;
-
-      for (let i = 0; i < slidesMobile.length; i++) {
-        slidesMobile[i].style.display = "none";
-      }
-      slidesMobile[indexMobile].style.display = "block";
-      console.log(indexMobile);
-      dotsMobile[indexMobile].classList.add("activeServicesMobile");
-    }
-  }
-
-  sliderInit({
-    root: "#sliderServicesFirst",
-  });
-
-  sliderInit({
-    root: "#sliderServicesSecond",
-  });
-
-  sliderInit({
-    root: "#sliderServicesThirdItem",
-  });
-
-  sliderInit({
-    root: "#sliderServicesFour",
-  });
-
-  sliderInit({
-    root: "#sliderServicesFifthItem",
-  });
-
-  sliderInit({
-    root: "#sliderServicesSixth",
-  });
-
-  sliderInit({
-    root: "#sliderServicesSeven",
-  });
-
-  sliderInit({
-    root: "#sliderServicesEight",
-  });
-
-  sliderInit({
-    root: "#sliderServicesNine",
-  });
-
-  sliderInit({
-    root: "#sliderServicesTen",
-  });
-
-  sliderInit({
-    root: "#sliderServicesEleven",
-  });
-  
   //tabs services
 
   let buttondefault = document.getElementById("defaultOpenServices");

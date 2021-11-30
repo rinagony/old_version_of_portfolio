@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <rect id="rect-1" width="24" height="24" x="0" y="0"/>
+    <rect id="rect-2" width="24" height="24" x="0" y="0"/>
+    <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="userSpaceOnUse">
+      <rect width="24" height="24" x="0" y="0" fill="black"/>
+      <use fill="white" xlink:href="#rect-2"/>
+    </mask>
+    <path id="path-4" fill-rule="evenodd" d="M12.09537888 23.49484253c6.33769607 0 11.47541046-5.02731323 11.47541046-11.22885132 0-6.20150757-5.13771439-11.22885132-11.47541046-11.22885132-6.33769417 0-11.47540856 5.02734375-11.47540856 11.22885132.00722695 6.1986084 5.14071083 11.22180176 11.47540856 11.22885132z"/>
+    <mask id="mask-5" x="0" y="0" maskContentUnits="userSpaceOnUse" maskUnits="userSpaceOnUse">
+      <rect width="24" height="24" x="0" y="0" fill="black"/>
+      <use fill="white" xlink:href="#path-4"/>
+    </mask>
+  </defs>
+  <g>
+    <use fill="none" transform="matrix(-1 0 0 1 24 0)" xlink:href="#rect-2"/>
+    <g mask="url(#mask-3)" transform="matrix(-1 0 0 1 24 0)">
+      <g>
+        <use fill-opacity="0" stroke="rgb(32,162,106)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="4" mask="url(#mask-5)" xlink:href="#path-4"/>
+        <g>
+          <path fill="rgb(32,162,106)" fill-rule="evenodd" d="M6.98301043 13.26113164h10.22116245c.56166783 0 1.01698956-.44553892 1.01698956-.99513903 0-.5496001-.45532173-.99513902-1.01698956-.99513902H6.97824143c-.56166783 0-1.01698957.44553891-1.01698957.99513902 0 .5496001.45532174.99513903 1.01698957.99513903h.004769z"/>
+          <path fill="rgb(32,162,106)" fill-rule="evenodd" d="M10.39165425 16.59653899c.41056323-.00156256.7798975-.24453564.93632544-.61597826.15642795-.37144262.06926411-.79849126-.22097522-1.08264123l-2.68971684-2.63192689 2.6932936-2.63192689c.38150283-.39102916.37418699-1.00856764-.01647696-1.39083798-.39066395-.38227033-1.0217619-.38942899-1.421377-.01612294l-3.40864381 3.33540735c-.19119027.18630468-.29866691.43945532-.29866691.70348046s.10747664.51717578.2986669.70348046l3.40864382 3.33540735c.19011853.18741475.44906022.29246375.71892698.29165857z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

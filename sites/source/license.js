@@ -1,5 +1,71 @@
 
 (function () {
+
+    function sliderInitialisationLicense(options) {
+        console.log(options);
+        const root = document.querySelector(options.root);
+        const sliderLine = root.querySelector(".sliderLine");
+        const slides = root.querySelectorAll(".sliderLine > div");
+        const sliderControl = root.querySelector(".sliderControl");
+        let currentIndex = options.startIndex;
+        moveSlider();
+      
+        setTimeout(function () {
+          sliderLine.classList.add("animated");
+        }, 1500);
+        console.log(currentIndex);
+        console.log(sliderLine, sliderControl);
+      
+        if (options.autoplay == true) {
+          setInterval(function () {
+            if (currentIndex < slides.length) {
+              currentIndex++;
+            } else {
+              currentIndex = 1;
+            }
+            moveSlider();
+          }, options.autoplaydelay);
+        }
+      
+        sliderControl.addEventListener("click", function (e) {
+          if (e.target.classList.contains("rightSliderLicense")) {
+            if (currentIndex < slides.length) {
+              currentIndex++;
+              moveSlider();
+              console.log("кликнули далее");
+            } else if ((currentIndex = slides.length)) {
+              currentIndex = 1;
+              moveSlider();
+              console.log("lll");
+            }
+          } else if (e.target.classList.contains("leftSliderLicense")) {
+            if (currentIndex > 1) {
+              currentIndex--;
+              moveSlider();
+              console.log("кликнули далее");
+            } else{
+              currentIndex = slides.length;
+              moveSlider();
+              console.log("lll");
+            }
+          }
+      
+          console.log("currentIndex", currentIndex, slides.length);
+        });
+      
+        function moveSlider() {
+          let result = (currentIndex - 1) * 100;
+          sliderLine.style.transform = `translate(-${result}%, 0px)`;
+        }
+      }
+
+      sliderInitialisationLicense({
+        root: ".slider13",
+        startIndex: 1,
+        autoplay: false,
+        autoplaydelay: 4500,
+      });
+
     function openModal() {
 
         var modalTrigger = document.getElementsByClassName('licenseOpenImage');
