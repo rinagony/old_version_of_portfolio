@@ -5,6 +5,10 @@
     margin-left: auto;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 p, span {
     line-height: 21px;
 }
@@ -598,7 +602,7 @@ body, button, input {
         justify-content: center;
         align-items: center;
     }
-    
+
 
     .wrapperContactsHeader .wrapperPhoneSocialsHeader .wrapperSocialsHeader {
         justify-content: flex-start;
@@ -733,12 +737,12 @@ body, button, input {
 }
 
 @media (min-width: 472px) {
-    .sliderLine .itemColumnSliderServices >img {
+    .sliderLine .itemColumnSliderServices>img {
         width: auto;
         max-height: 330px;
     }
 
-    .sliderLine .itemColumnSliderServices > p {
+    .sliderLine .itemColumnSliderServices>p {
         max-width: 330px;
     }
 
@@ -747,7 +751,7 @@ body, button, input {
         margin-bottom: 1.5em;
     }
 
-    .wrapperTextSlider5 p{
+    .wrapperTextSlider5 p {
         max-width: 330px;
         margin: 0 auto;
     }
@@ -1993,10 +1997,10 @@ header {
     font-weight: 400;
 }
 
-.wrapperDescriptionServicesItem p{
+.wrapperDescriptionServicesItem p {
     font-size: 13px;
     line-height: 18px;
-    margin:0;
+    margin: 0;
 }
 
 .navigationServicesImage .btnLearnMore {
@@ -2567,7 +2571,7 @@ button.accordion.is-open {
     margin-bottom: 30px;
 }
 
-.listWorks__items__item img, .slider9 .singleItemSlider > img, .slider11 .singleItemSlider > img {
+.listWorks__items__item img, .slider9 .singleItemSlider>img, .slider11 .singleItemSlider>img {
     width: 125px;
     height: 125px;
 }
@@ -2746,7 +2750,7 @@ button.accordion.is-open {
     display: none;
 }
 
-.wrapperProjectServices h2, .wrapperKadastrServicesStadies h2{
+.wrapperProjectServices h2, .wrapperKadastrServicesStadies h2 {
     font-size: 20px;
 }
 
@@ -3100,4 +3104,8 @@ button.accordion.is-open {
 
 .wrapperNavigation ul li a:link {
     color: #20A26A;
+}
+
+.slider14 .rightSlider {
+    right: 0;
 }
