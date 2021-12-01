@@ -29,9 +29,11 @@ function sliderInitialisation(options) {
       if (currentIndex < slides.length) {
         currentIndex++;
         moveSlider();
+        changeHeight(currentIndex)
       } else if ((currentIndex = slides.length)) {
         currentIndex = 1;
         moveSlider();
+        changeHeight(currentIndex)
       }
     }
 
@@ -41,6 +43,14 @@ function sliderInitialisation(options) {
   function moveSlider() {
     let result = (currentIndex - 1) * 100;
     sliderLine.style.transform = `translate(-${result}%, 0px)`;
+  }
+
+  function changeHeight(currentIndex) {
+    let childs = sliderLine.children[currentIndex-1]
+    let heightChild = childs.children[0].offsetHeight;
+    let heightPX = heightChild.toString()
+    sliderLine.children[currentIndex-1].style.height = heightPX + 'px';
+    sliderLine.style.height = heightPX + 'px';
   }
 }
 
