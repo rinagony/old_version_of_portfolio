@@ -51,8 +51,8 @@ function sliderInitialisation(options) {
     let heightPX = heightChild.toString();
     sliderLine.children[currentIndex - 1].style.height = heightPX + "px";
     sliderLine.style.height = heightPX + "px";
-
-    if (!document.getElementsByClassName("publicationPage")) {
+    
+    if (!document.getElementById("defaultOpen")) {
       let num = 0;
       for (let i = 0; i < slides.length; i++) {
         if (num < slides[i].children[0].offsetHeight) {
