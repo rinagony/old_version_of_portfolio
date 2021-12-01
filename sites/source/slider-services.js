@@ -29,11 +29,11 @@ function sliderInitialisation(options) {
       if (currentIndex < slides.length) {
         currentIndex++;
         moveSlider();
-        changeHeight(currentIndex)
+        changeHeight(currentIndex);
       } else if ((currentIndex = slides.length)) {
         currentIndex = 1;
         moveSlider();
-        changeHeight(currentIndex)
+        changeHeight(currentIndex);
       }
     }
 
@@ -46,11 +46,22 @@ function sliderInitialisation(options) {
   }
 
   function changeHeight(currentIndex) {
-    let childs = sliderLine.children[currentIndex-1]
+    let childs = sliderLine.children[currentIndex - 1];
     let heightChild = childs.children[0].offsetHeight;
-    let heightPX = heightChild.toString()
-    sliderLine.children[currentIndex-1].style.height = heightPX + 'px';
-    sliderLine.style.height = heightPX + 'px';
+    let heightPX = heightChild.toString();
+    sliderLine.children[currentIndex - 1].style.height = heightPX + "px";
+    sliderLine.style.height = heightPX + "px";
+
+    if (!document.getElementsByClassName("publicationPage")) {
+      let num = 0;
+      for (let i = 0; i < slides.length; i++) {
+        if (num < slides[i].children[0].offsetHeight) {
+          num = slides[i].children[0].offsetHeight;
+        }
+      }
+      let heightTallStr = num.toString();
+      root.parentElement.style.height = heightTallStr + "px";
+    }
   }
 }
 
@@ -63,7 +74,7 @@ if (document.getElementById("aboutBlock")) {
   });
 }
 
-if(document.getElementById('sliderPublication')) {
+if (document.getElementById("sliderPublication")) {
   sliderInitialisation({
     root: ".slider14",
     startIndex: 1,
@@ -196,6 +207,8 @@ if (document.getElementById("firstservice")) {
 
   //tabs services
 
-  let buttondefault = document.getElementById("defaultOpenServices");
-  buttondefault.click();
+  if (document.getElementById("navigationServicesWrap")) {
+    let buttondefault = document.getElementById("defaultOpenServices");
+    buttondefault.click();
+  }
 })();

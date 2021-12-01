@@ -1893,6 +1893,12 @@ header {
     padding: 0 0.8em;
 }
 
+.slider14 .sliderControl {
+    width: auto;
+    height: auto;
+    position: static;
+}
+
 .aboutItemBottomSlider {
     background: #F0FBF5;
     padding: 1.2em;
@@ -2294,7 +2300,11 @@ header {
 }
 
 #sliderPublication .rightSlider {
-    top: 40%;
+    top: 41%;
+}
+
+.slider1 .titleBlockAboutSlider p {
+    max-width: 220px;
 }
 
 /* .slidercontainer .sliderControl .rightSliderSpec {

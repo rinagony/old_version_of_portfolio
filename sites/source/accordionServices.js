@@ -16,20 +16,20 @@
           removeIcon();
         }
         content.style.maxHeight = content.scrollHeight + "px";
-        // scrollToContent(content)
+        scrollToContent(content)
         accordion.style.color = "#828282";
         parented.firstChild.src = "img/services/menos.svg";
       }
     };
   });
 
-  // function scrollToContent(content) {
-  //   setTimeout(function(){ 
-  //     content.scrollIntoView({
-  //       behavior: "smooth",
-  //     });
-  //    }, 300);
-  // }
+  function scrollToContent(content) {
+    setTimeout(function(){ 
+      content.scrollIntoView({
+        behavior: "smooth",
+      });
+     }, 300);
+  }
   
   function removeIcon() {
     for (let i = 0; i < accordionBtns.length; i++) {
