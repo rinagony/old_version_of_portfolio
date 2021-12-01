@@ -29,11 +29,9 @@ function sliderInitialisation(options) {
       if (currentIndex < slides.length) {
         currentIndex++;
         moveSlider();
-        console.log("кликнули далее");
       } else if ((currentIndex = slides.length)) {
         currentIndex = 1;
         moveSlider();
-        console.log("lll");
       }
     }
 

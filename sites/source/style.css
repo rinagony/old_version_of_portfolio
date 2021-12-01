@@ -345,6 +345,10 @@ body, button, input {
         text-align: center;
     }
 
+    .showSlide .itemColumnSliderServices p {
+        font-size: 16px;
+    }
+
     .container .wrapperDescription .wrapperDescriptionItem p, .container .wrapperDescription .wrapperDescriptionItemSpecial p {
         font-size: 24px;
     }
@@ -360,6 +364,10 @@ body, button, input {
 
     .formBlockLeft {
         width: 35%;
+    }
+
+    .wrapperServicesItems__accordion-content__wrapper>p {
+        font-size: 16px;
     }
 
     .wrapperAboutItemAllMobile {
@@ -405,6 +413,10 @@ body, button, input {
 
     .wrapperServicesItems .videoServicesItem__description {
         margin-top: 0;
+    }
+
+    .slider5 .wrapperTextSlider5 {
+        font-size: 16px;
     }
 
     .wrapperProjectServices .wrapperProjectServices__wrapperInfoZemleustr {
@@ -477,7 +489,7 @@ body, button, input {
         text-align: left;
     }
 
-    #thirdservice .wrapperProjectServices h2 {
+    #thirdservice .wrapperProjectServices h2, #secondservice .wrapperKadastrServicesStadies h2 {
         font-size: 24px;
     }
 
@@ -1638,8 +1650,7 @@ header {
 }
 
 .wrapperDescriptionItemSpecial {
-    margin-top: 1.5em;
-    padding-right: 1em;
+    margin-top: 30px;
 }
 
 .wrapperDescriptionItemSpecial p {
@@ -1828,6 +1839,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: #fff;
 }
 
 .aboutItemTopSlider img {
@@ -2019,7 +2031,7 @@ header {
 }
 
 .itemColumnSliderServices p {
-    font-size: 16px;
+    font-size: 13px;
 }
 
 .itemColumnSliderServicesMobile {
@@ -2361,7 +2373,7 @@ header {
 
 .modal__close {
     position: absolute;
-    top: -20px;
+    top: 10px;
     right: -5px;
     border: none;
     outline: none;
@@ -2390,7 +2402,7 @@ header {
 .modal__container img {
     height: 100%;
     width: inherit;
-    margin-top: 2em;
+    margin-top: 3em;
 }
 
 .servicesSimpleProjects img {
@@ -2541,7 +2553,11 @@ button.accordion.is-open {
     width: 130px;
 }
 
-.listWorks__items__item img {
+#fifthservice h2, #fourthservice h2, #thirdservice h2, .wrapperKadastrServicesStadies h2, #secondservice .wrapperProjectServices h2 {
+    margin-bottom: 30px;
+}
+
+.listWorks__items__item img, .slider9 .singleItemSlider > img, .slider11 .singleItemSlider > img {
     width: 100px;
     height: 100px;
 }
@@ -2573,13 +2589,6 @@ button.accordion.is-open {
     text-align: center;
 }
 
-.wrapperServicesItems__accordion-content__wrapper>p {
-    font-size: 16px;
-}
-
-.wrapperServicesItems__accordion-content__wrapper {
-    font-size: 16px;
-}
 
 .wrapperServicesItems {
     margin-top: 30px;
@@ -2617,6 +2626,11 @@ button.accordion.is-open {
 
 .descriptionServices #sliderServicesThirdItem {
     display: block;
+}
+
+.titleServices {
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 
 #secondservice .wrapperKadastrServicesStadies .accordion-content__listWorks__items__items {
@@ -2722,8 +2736,8 @@ button.accordion.is-open {
     display: none;
 }
 
-.wrapperProjectServices h2 {
-    font-size: 16px;
+.wrapperProjectServices h2, .wrapperKadastrServicesStadies h2{
+    font-size: 20px;
 }
 
 .wrapperKadastrServicesStadies__listWorks {
@@ -2765,10 +2779,6 @@ button.accordion.is-open {
 #zemleustrWorksServices .servicesSimpleProjects img {
     max-width: 100px;
     max-height: 100px;
-}
-
-#thirdservice h2 {
-    margin-bottom: 2em;
 }
 
 #zemleustrWorksServices .servicesSimpleProjects p {
@@ -2877,6 +2887,10 @@ button.accordion.is-open {
     position: relative;
 }
 
+.slider1 .showSlide {
+    background: #F0FBF5;
+}
+
 .showSlideLicense {
     overflow: hidden;
     min-width: 100%;
@@ -2948,6 +2962,10 @@ button.accordion.is-open {
     align-items: center;
     background: none;
     border: none;
+}
+
+.wrapperTextSlider5 {
+    font-size: 13px;
 }
 
 .wrapperBtnServicesSendMessage a {
@@ -3030,4 +3048,13 @@ button.accordion.is-open {
 
 #descriptionBlock .wrapperDescriptionItemSpecial p {
     line-height: 22px;
+}
+
+.slider1 .sliderControl .rightSlider {
+    top: 40%;
+}
+
+
+.wrapperNavigation ul li a:link {
+    color: #20A26A;
 }
