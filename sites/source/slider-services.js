@@ -52,16 +52,16 @@ function sliderInitialisation(options) {
     sliderLine.children[currentIndex - 1].style.height = heightPX + "px";
     sliderLine.style.height = heightPX + "px";
     
-    if (!document.getElementById("defaultOpen")) {
-      let num = 0;
-      for (let i = 0; i < slides.length; i++) {
-        if (num < slides[i].children[0].offsetHeight) {
-          num = slides[i].children[0].offsetHeight;
-        }
-      }
-      let heightTallStr = num.toString();
-      root.parentElement.style.height = heightTallStr + "px";
-    }
+    // if (!document.getElementById("defaultOpen")) {
+    //   let num = 0;
+    //   for (let i = 0; i < slides.length; i++) {
+    //     if (num < slides[i].children[0].offsetHeight) {
+    //       num = slides[i].children[0].offsetHeight;
+    //     }
+    //   }
+    //   let heightTallStr = num.toString();
+    //   root.parentElement.style.height = heightTallStr + "px";
+    // }
   }
 }
 
