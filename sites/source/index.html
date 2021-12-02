@@ -12,6 +12,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;500;600;700&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -325,7 +328,101 @@
                     </div>
                 </div>
                 <div class="wrapperAboutItemAllMobile">
-                    <div class="slidercontainer slider1">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="aboutItemSlider">
+                                    <div class="aboutItemTopSlider">
+                                        <img src="img/about/illustr1.svg" alt="">
+                                        <p class="titleBlockAboutSlider">Геодезические работы</p>
+                                    </div>
+                                    <div class="aboutItemBottomSlider">
+                                        <div class="aboutItemBottomBlockSlider">
+                                            <img src="img/about/check.png" alt="">
+                                            <p>Геодезическое сопровождение строительства.</p>
+                                        </div>
+                                        <div class="aboutItemBottomBlockSlider">
+                                            <img src="img/about/check.png" alt="">
+                                            <p>Создание геодезических сетей специального назначения, в том числе сетей
+                                                дифференциальных геодезических станций.</p>
+                                        </div>
+                                        <div class="aboutItemBottomBlockSlider">
+                                            <img src="img/about/check.png" alt="">
+                                            <p>Создание Цифровой Модели Рельефа для дорожной техники.</p>
+                                        </div>
+                                        <div class="aboutItemBottomBlockSlider">
+                                            <img src="img/about/check.png" alt="">
+                                            <p>Инженерно-геодезические изыскания.</p>
+                                        </div>
+                                        <div class="aboutItemBottomBlockSlider">
+                                            <img src="img/about/check.png" alt="">
+                                            <p>Вынос границ участка в натуру.</p>
+                                        </div>
+                                        <div class="aboutItemBottomBlockSlider">
+                                            <img src="img/about/check.png" alt="">
+                                            <p>Геодезическая съемка с беспилотного летательного аппарата.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="aboutItemSlider">
+                                    <div class="aboutItemTopSlider">
+                                        <img src="img/about/illustr3.svg" alt="">
+                                        <p class="titleBlockAboutSlider">Землеустроительные работы</p>
+                                    </div>
+                                    <div class="aboutItemBottomSlider">
+                                        <div class="aboutItemBottomBlockSlider">
+                                            <img src="img/about/check.png" alt="">
+                                            <p>Подготовка документов по описанию местоположения объектов землеустройства
+                                                (карты (планы) объектов землеустройства).</p>
+                                        </div>
+                                        <div class="aboutItemBottomBlockSlider">
+                                            <img src="img/about/check.png" alt="">
+                                            <p>Изучение состояния земель (почвенные, геоботанические и другие
+                                                обследования и
+                                                изыскания).</p>
+                                        </div>
+                                        <div class="aboutItemBottomBlockSlider">
+                                            <img src="img/about/check.png" alt="">
+                                            <p>Подготовка текстовых и графических описаний границ населенных пунктов,
+                                                границ
+                                                зон с особыми условиями использования (охранные зоны и др.)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="aboutItemSlider">
+                                    <div class="aboutItemTopSlider">
+                                        <img src="img/about/illustr2.svg" alt="">
+                                        <p class="titleBlockAboutSlider">Кадастровые работы</p>
+                                    </div>
+                                    <div class="aboutItemBottomSlider">
+                                        <div class="aboutItemBottomBlockSlider">
+                                            <img src="img/about/check.png" alt="">
+                                            <p>Подготовка документов, необходимых для постановки на кадастровый учет
+                                                земельных
+                                                участков, зданий, строений, сооружений: межевых планов, технических
+                                                планов,
+                                                актов обследования.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            ...
+                        </div>
+                        <div class="swiper-button-prev">
+                            <img src="img/right.svg" alt="">
+                        </div>
+                        <div class="swiper-button-next">
+                            <img src="img/left.svg" alt="">
+                        </div>
+                    </div>
+
+                    <!-- <div class="slidercontainer slider1">
                         <div class="sliderLine">
                             <div class="showSlide">
                                 <div class="aboutItemSlider">
@@ -459,7 +556,7 @@
                             <button class="leftSlider"></button>
                             <button class="rightSlider"></button>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -595,7 +692,22 @@
         </div>
     </footer>
 
-    
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoHeight: true,
+            autoWidth: true,
+            // Optional parameters
+            loop: true,
+            speed: 100,
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        
+    </script>
     <script src="script.js"></script>
     <script src="slider-services.js"></script>
 </body>
