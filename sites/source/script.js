@@ -38,34 +38,7 @@ if (window.innerWidth > 768) {
     document.getElementById("defaultOpen").click();
   }
 } else {
-  let slidesPublic = document.querySelectorAll(".slidePublic");
-  let dotsPublic = document.querySelectorAll(".dotPublic");
-  let indexPublic = 0;
-
-  function prevSlidePublic(n) {
-    indexPublic += n;
-    changeSlidePublic();
-  }
-
-  function nextSlidePublic(n) {
-    indexPublic += n;
-    changeSlidePublic();
-  }
-
-  changeSlidePublic();
-
-  function changeSlidePublic() {
-    if (indexPublic > slidesPublic.length - 1) indexPublic = 0;
-
-    if (indexPublic < 0) indexPublic = slidesPublic.length - 1;
-
-    for (let i = 0; i < slidesPublic.length; i++) {
-      slidesPublic[i].style.display = "none";
-
-      dotsPublic[i].classList.remove("activePublic");
-    }
-
-    slidesPublic[indexPublic].style.display = "block";
-    dotsPublic[indexPublic].classList.add("activePublic");
+  if (document.getElementById("defaultOpenMob")) {
+    document.getElementById("defaultOpenMob").click();
   }
 }

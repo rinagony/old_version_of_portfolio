@@ -5,7 +5,12 @@ function sliderInitialisation(options) {
   const slides = root.querySelectorAll(".sliderLine > div");
   const sliderControl = root.querySelector(".sliderControl");
   let currentIndex = options.startIndex;
+  let publication = false;
   moveSlider();
+
+  if (document.getElementById("sliderPublication")) {
+    publication = true;
+  }
 
   setTimeout(function () {
     sliderLine.classList.add("animated");
@@ -35,9 +40,17 @@ function sliderInitialisation(options) {
         moveSlider();
         changeHeight(currentIndex);
       }
+    } else if (e.target.classList.contains("leftSlider")) {
+      if (currentIndex > 1) {
+        currentIndex--;
+        moveSlider();
+        changeHeight(currentIndex);
+      } else {
+        currentIndex = slides.length;
+        moveSlider();
+        changeHeight(currentIndex);
+      }
     }
-
-    console.log("currentIndex", currentIndex, slides.length);
   });
 
   function moveSlider() {
@@ -51,17 +64,57 @@ function sliderInitialisation(options) {
     let heightPX = heightChild.toString();
     sliderLine.children[currentIndex - 1].style.height = heightPX + "px";
     sliderLine.style.height = heightPX + "px";
-    
-    // if (!document.getElementById("defaultOpen")) {
-    //   let num = 0;
-    //   for (let i = 0; i < slides.length; i++) {
-    //     if (num < slides[i].children[0].offsetHeight) {
-    //       num = slides[i].children[0].offsetHeight;
-    //     }
-    //   }
-    //   let heightTallStr = num.toString();
-    //   root.parentElement.style.height = heightTallStr + "px";
-    // }
+  }
+
+  let startPoint;
+  let moved = false;
+  function touch(e) {
+    e.preventDefault();
+    startPoint = e.changedTouches[0].pageX;
+  }
+  function move(e) {
+    if (moved) {
+      return;
+    }
+    e.preventDefault();
+    if (e.changedTouches[0].pageX > startPoint + sliderLine.offsetWidth / 4) {
+      if (currentIndex > 1) {
+        currentIndex--;
+        moveSlider();
+        moved = true;
+        changeHeight(currentIndex);
+      } else {
+        currentIndex = slides.length;
+        moveSlider();
+        moved = true;
+        changeHeight(currentIndex);
+      }
+    }
+    if (e.changedTouches[0].pageX < startPoint - sliderLine.offsetWidth / 4) {
+      if (currentIndex < slides.length) {
+        currentIndex++;
+        moveSlider();
+        moved = true;
+        changeHeight(currentIndex);
+      } else if ((currentIndex = slides.length)) {
+        currentIndex = 1;
+        moveSlider();
+        moved = true;
+        changeHeight(currentIndex);
+      }
+    }
+  }
+
+  if (publication) {
+    return;
+  } else {
+    sliderLine.addEventListener("touchmove", move);
+    sliderLine.addEventListener("touchstart", touch);
+    sliderLine.addEventListener("touchend", () => {
+      setTimeout(() => {
+        moved = !moved;
+      }, 200);
+    });
   }
 }
 
@@ -168,40 +221,42 @@ if (document.getElementById("firstservice")) {
   let shrimp = document.getElementById("lastShrimpBread");
   let imageBg = document.getElementById("navigationServicesImageItem");
   var index = 0;
+  if (buttonsTabs) {
+    if (window.innerWidth > 768) {
+      for (let i = 0; i < buttonsTabs.length; i++) {
+        buttonsTabs[i].addEventListener("click", function () {
+          let attrib = buttonsTabs[i].getAttribute("data-tab");
+          titleMain.innerHTML = buttonsTabs[i].innerHTML;
+          shrimp.innerHTML = buttonsTabs[i].innerHTML;
+          let blockname = document.getElementById(attrib);
 
-  if (window.innerWidth > 768) {
-    for (let i = 0; i < buttonsTabs.length; i++) {
-      buttonsTabs[i].addEventListener("click", function () {
-        let attrib = buttonsTabs[i].getAttribute("data-tab");
-        titleMain.innerHTML = buttonsTabs[i].innerHTML;
-        shrimp.innerHTML = buttonsTabs[i].innerHTML;
-        let blockname = document.getElementById(attrib);
+          let imagepathbg = buttonsTabs[i].getAttribute("data-image");
+          imageBg.style.background = `url('img/works/${imagepathbg}')`;
 
-        let imagepathbg = buttonsTabs[i].getAttribute("data-image");
-        imageBg.style.background = `url('img/works/${imagepathbg}')`;
-
-        imageBg.style.backgroundSize = "cover";
-        imageBg.style.backgroundRepeat = "no-repeat";
-        index = 0;
-      });
+          imageBg.style.backgroundSize = "cover";
+          imageBg.style.backgroundRepeat = "no-repeat";
+          index = 0;
+        });
+      }
     }
   }
+  if (buttonsTabs) {
+    if (window.innerWidth < 768) {
+      for (let i = 0; i < buttonsTabs.length; i++) {
+        buttonsTabs[i].addEventListener("click", function () {
+          let attrib = buttonsTabs[i].getAttribute("data-tabmob");
+          titleMain.innerHTML = buttonsTabs[i].innerHTML;
+          shrimp.innerHTML = buttonsTabs[i].innerHTML;
+          let blockname = document.getElementById(attrib);
 
-  if (window.innerWidth < 768) {
-    for (let i = 0; i < buttonsTabs.length; i++) {
-      buttonsTabs[i].addEventListener("click", function () {
-        let attrib = buttonsTabs[i].getAttribute("data-tabmob");
-        titleMain.innerHTML = buttonsTabs[i].innerHTML;
-        shrimp.innerHTML = buttonsTabs[i].innerHTML;
-        let blockname = document.getElementById(attrib);
+          let imagepathbg = buttonsTabs[i].getAttribute("data-image");
+          imageBg.style.background = `url('img/works/${imagepathbg}')`;
 
-        let imagepathbg = buttonsTabs[i].getAttribute("data-image");
-        imageBg.style.background = `url('img/works/${imagepathbg}')`;
-
-        imageBg.style.backgroundSize = "cover";
-        imageBg.style.backgroundRepeat = "no-repeat";
-        indexMobile = 0;
-      });
+          imageBg.style.backgroundSize = "cover";
+          imageBg.style.backgroundRepeat = "no-repeat";
+          indexMobile = 0;
+        });
+      }
     }
   }
 

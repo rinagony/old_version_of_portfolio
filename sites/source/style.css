@@ -723,17 +723,6 @@ body, button, input {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-
-    .descriptionServices .slidercontainer .sliderControl .rightSlider {
-        content: url('img/left.svg');
-        right: 4%;
-        width: 40px;
-    }
-
-    .sliderControl .rightSlider {
-        top: 33%;
-        right: 2%;
-    }
 }
 
 @media (min-width: 472px) {
@@ -2039,6 +2028,8 @@ header {
 .wrapperColumnsSliderServices {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 2em;
+    justify-items: center;
 }
 
 .wrapperColumnsSliderServices .itemColumnSliderServices {
@@ -2205,8 +2196,7 @@ header {
 }
 
 .publicationPage {
-    padding-top: 1em;
-    padding-bottom: 4em;
+    padding-bottom: 50px;
 }
 
 /* Tabs publication */
@@ -2244,6 +2234,22 @@ header {
 
 .tabcontent {
     width: 100%;
+}
+
+.slider5 .sliderControl .leftSlider {
+    left: 1%;
+}
+
+.slider5 .sliderControl .rightSlider {
+    right: 1%;
+}
+
+.slider6 .leftSlider, .slider6 .rightSlider{
+    top: 32%;
+}
+
+.slider3 .leftSlider, .slider3 .rightSlider {
+    top: 9em;
 }
 
 .imagePublication {
@@ -2299,7 +2305,7 @@ header {
     align-items: center;
 }
 
-#sliderPublication .rightSlider {
+#sliderPublication .rightSlider, #sliderPublication .leftSlider {
     top: 41%;
 }
 
@@ -2897,6 +2903,10 @@ button.accordion.is-open {
     content: url('img/left.svg');
 }
 
+.leftSlider:after {
+    content: url('img/right.svg');
+}
+
 .leftSliderLicense:after {
     content: url('img/licenseRight.svg');
 }
@@ -2920,6 +2930,17 @@ button.accordion.is-open {
     min-width: 100%;
 }
 
+.sliderControl {
+    right: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
 .sliderControlLicense {
     top: 0;
     height: 100%;
@@ -2931,16 +2952,12 @@ button.accordion.is-open {
     display: flex;
 }
 
-.sliderControl {
-    top: 0;
+.slider13 .sliderControl {
     /* top: 35%; */
     /* right: 0; */
-    position: absolute;
-    height: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
-    width: 100%;
 }
 
 
@@ -2984,28 +3001,52 @@ button.accordion.is-open {
     overflow: hidden;
 }
 
-.rightSlider {
+.wrapperMobileServicesFirstTab  {
+    margin-bottom: 30px;
+}
+
+.leftSlider {
     cursor: pointer;
     position: absolute;
     display: flex;
-    top: 26%;
-    right: 2%;
+    top: 30%;
+    left: 0;
     align-items: center;
     background: none;
     border: none;
 }
 
-.slider9 .rightSlider {
-    top: 23%;
+.rightSlider {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 30%;
+    right: 0;
 }
 
-.slider1 .rightSlider {
+.slider9 .rightSlider,  .slider11 .rightSlider, .slider12 .rightSlider{
+    top: 50px;
+}
+
+
+.slider9 .leftSlider, .slider11 .leftSlider, .slider12 .leftSlider {
+    top: 50px;
+}
+
+.slider1 .rightSlider, .slider1 .leftSlider {
     top: 0;
     margin-top: 225px;
 }
 
 .slider1 .sliderControl {
     height: auto;
+}
+
+.slider13 .sliderControl {
+    right: 0;
 }
 
 .slider1 .aboutItemTopSlider {
@@ -3032,6 +3073,7 @@ button.accordion.is-open {
 
 .wrapperTextSlider5 {
     font-size: 13px;
+    margin-bottom: 30px;
 }
 
 .wrapperBtnServicesSendMessage a {
@@ -3068,8 +3110,6 @@ button.accordion.is-open {
 .wrapperShadowBlock {
     box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
     padding-top: 2em;
-    padding-right: 2em;
-    padding-left: 2em;
     margin: 0.5em;
 }
 
@@ -3116,9 +3156,9 @@ button.accordion.is-open {
     line-height: 22px;
 }
 
-.slider1 .sliderControl .rightSlider {
+/* .slider1 .sliderControl .rightSlider {
     top: 40%;
-}
+} */
 
 
 .wrapperNavigation ul li a:link {
