@@ -7,6 +7,7 @@
 
 html {
     scroll-behavior: smooth;
+    transition: 0.2s ease-in-out;
 }
 
 p, span {
@@ -757,7 +758,7 @@ header {
     overflow: hidden;
     height: 50px;
     width: 100%;
-    z-index: 1;
+    z-index: 1000;
     top: -10px;
     -webkit-transition: all 0.4s ease-out, background 1s ease-out;
     -o-transition: all 0.4s ease-out, background 1s ease-out;
@@ -1831,7 +1832,6 @@ header {
 
 .aboutItemTopSlider {
     display: flex;
-    padding: 0.8em;
     flex-direction: column;
     width: 100%;
     flex-direction: column;
@@ -1891,8 +1891,9 @@ header {
 .aboutItemBottomSlider {
     background: #F0FBF5;
     width: 100%;
-    padding-bottom: 1em;
+    height: 100%;
     display: flex;
+    padding: 1em 0;
     flex-direction: column;
     align-items: flex-start;
 }
@@ -1907,7 +1908,7 @@ header {
     padding: 0 30px;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 .wrapperBreadShrimps {
@@ -2185,21 +2186,20 @@ header {
     font-size: 16px;
 }
 
-.swiper-button-next, .swiper-button-prev {
-    width: auto;
-    height: auto;
+.swiper-pagination-bullet {
+    --swiper-theme-color: #20A26A;
 }
 
 .container .swiper-button-prev:after, .container .swiper-rtl .swiper-button-next:after {
     content: none;
 }
 
-.container .swiper-button-next, .container .swiper-rtl .swiper-button-prev, .container .swiper-button-prev, .container .swiper-rtl .swiper-button-next  {
-    top: 239px;
-}
-
 .container .swiper-button-next:after, .container .swiper-rtl .swiper-button-prev:after {
     content: none;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 0 !important;
 }
 
 
@@ -2316,7 +2316,7 @@ header {
 .aboutItemSliderPublic button {
     background: inherit;
     border: none;
-    margin-top: 2em;
+    margin-bottom: 2em;
     font-size: 13px;
 }
 
@@ -2568,7 +2568,7 @@ button.accordion {
     width: 100%;
 }
 
-#slider9 .itemColumnSliderServices img {
+.swiper9 .itemColumnSliderServices img {
     width: auto;
 }
 
@@ -2610,7 +2610,7 @@ button.accordion.is-open {
     margin-bottom: 30px;
 }
 
-.listWorks__items__item img, .slider9 .singleItemSlider>img, .slider11 .singleItemSlider>img {
+.listWorks__items__item img, .slider9 .singleItemSlider>img, .swiper11 .singleItemSlider>img {
     width: 125px;
     height: 125px;
 }
@@ -3072,8 +3072,12 @@ button.accordion.is-open {
     right: 0;
 }
 
-#aboutBlock .aboutItemTopSlider {
+/* #aboutBlock .aboutItemTopSlider {
     height: 213px;
+} */
+
+.swiper-wrapper {
+    max-height: 100%;
 }
 
 .leftSliderLicense {

@@ -1,3 +1,179 @@
+const swiper1 = new Swiper(".swiper1", {
+  // Optional parameters
+  spaceBetween: 20,
+  autoHeight: true,
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination1",
+    clickable: true,
+  },
+});
+
+const swiper2 = new Swiper(".swiper2", {
+  // Optional parameters
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination2",
+    clickable: true,
+  },
+});
+
+const swiper3 = new Swiper(".swiper3", {
+  // Optional parameters
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination3",
+    clickable: true,
+  },
+});
+
+const swiper4 = new Swiper(".swiper4", {
+  // Optional parameters
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination4",
+    clickable: true,
+  },
+});
+
+const swiper5 = new Swiper(".swiper5", {
+  // Optional parameters
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination5",
+    clickable: true,
+  },
+});
+
+const swiper7 = new Swiper(".swiper7", {
+  // Optional parameters
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination7",
+    clickable: true,
+  },
+});
+
+const swiper8 = new Swiper(".swiper8", {
+  // Optional parameters
+  loop: true,
+  autoHeight: true,
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination8",
+    clickable: true,
+  },
+});
+
+const swiper9 = new Swiper(".swiper9", {
+  // Optional parameters
+  loop: true,
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination9",
+    clickable: true,
+  },
+});
+
+const swiper10 = new Swiper(".swiper10", {
+  // Optional parameters
+  loop: true,
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination10",
+    clickable: true,
+  },
+});
+
+const swiper11 = new Swiper(".swiper11", {
+  // Optional parameters
+  loop: true,
+  autoHeight: true,
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination11",
+    clickable: true,
+  },
+});
+
+const swiper12 = new Swiper(".swiper12", {
+  // Optional parameters
+  loop: true,
+  autoHeight: true,
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination12",
+    clickable: true,
+  },
+});
+
+const swiper13 = new Swiper(".swiper13", {
+  // Optional parameters
+  loop: true,
+  autoHeight: true,
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination13",
+    clickable: true,
+  },
+});
+// const swiper2 = new Swiper(".swiper2", {
+//   autoHeight: true,
+//   autoWidth: true,
+//   // Optional parameters
+//   loop: true,
+//   speed: 100,
+//   // Navigation arrows
+//   pagination: {
+//     el: '.swiper-pagination',
+//   },
+//   // navigation: {
+//   //   nextEl: ".swiper-button-next2",
+//   //   prevEl: ".swiper-button-prev2",
+//   // },
+//   scrollbar: {
+//     el: '.swiper-scrollbar',
+//   },
+// });
+
+// const swiper = new Swiper(".swiper", {
+//   autoHeight: true,
+//   autoWidth: true,
+//   // Optional parameters
+//   loop: true,
+//   speed: 100,
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// });
+
+// const swiper3 = new Swiper(".swiper3", {
+//   autoHeight: true,
+//   autoWidth: true,
+//   // Optional parameters
+//   loop: true,
+//   speed: 100,
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: ".swiper-button-next3",
+//     prevEl: ".swiper-button-prev3",
+//   },
+// });
+
 (function () {
   const header = document.querySelector(".headerMob");
   const icon = document.querySelector(".icon-container");

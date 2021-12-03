@@ -12,6 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -290,11 +292,13 @@
                             </div>
 
                             <div class="wrapperServicesItems__accordion-content__listWorks">
-                                <h2  class="titleServices">Состав работ</h2>
+                                <h2 class="titleServices">Состав работ</h2>
                                 <div class="accordion-content__listWorks__items">
-                                    <div class="slidercontainer slider2">
-                                        <div class="sliderLine">
-                                            <div class="showSlide">
+                                    <div class="swiper swiper2">
+                                        <!-- Additional required wrapper -->
+                                        <div class="swiper-wrapper">
+                                            <!-- Slides -->
+                                            <div class="swiper-slide">
                                                 <div class="slideServices__itemSlide">
                                                     <div class="listWorks__items__item">
                                                         <img src="img/services/SostavRabot/person1.svg" alt="">
@@ -302,8 +306,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-
-                                            <div class="showSlide">
+                                            <div class="swiper-slide">
                                                 <div class="slideServices__itemSlide">
                                                     <div class="listWorks__items__item">
                                                         <img src="img/services/SostavRabot/person2.svg" alt="">
@@ -311,8 +314,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-
-                                            <div class="showSlide">
+                                            <div class="swiper-slide">
                                                 <div class="slideServices__itemSlide">
                                                     <div class="listWorks__items__item">
                                                         <img src="img/services/SostavRabot/person3.svg" alt="">
@@ -320,8 +322,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-
-                                            <div class="showSlide">
+                                            <div class="swiper-slide">
                                                 <div class="slideServices__itemSlide">
                                                     <div class="listWorks__items__item">
                                                         <img src="img/services/SostavRabot/person4.svg" alt="">
@@ -329,8 +330,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-
-                                            <div class="showSlide">
+                                            <div class="swiper-slide">
                                                 <div class="slideServices__itemSlide">
                                                     <div class="listWorks__items__item">
                                                         <img src="img/services/SostavRabot/person5.svg" alt="">
@@ -341,8 +341,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-
-                                            <div class="showSlide">
+                                            <div class="swiper-slide">
                                                 <div class="slideServices__itemSlide">
                                                     <div class="listWorks__items__item">
                                                         <img src="img/services/SostavRabot/person6.svg" alt="">
@@ -350,13 +349,11 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            ...
                                         </div>
-
-                                        <div class="sliderControl">
-                                            <button class="leftSlider"></button>
-                                            <button class="rightSlider"></button>
-                                        </div>
+                                        <div class="swiper-pagination swiper-pagination2"></div>
                                     </div>
+
                                     <div class="accordion-content__listWorks__items__items">
                                         <div class="listWorks__items__item">
                                             <img src="img/services/SostavRabot/person1.svg" alt="">
@@ -468,7 +465,82 @@
                                 </div>
                                 <div class="wrapperBtnServicesSendMessageSpecial"></div>
                                 <div class="wrapperMobileServicesFirstTab">
-                                    <div class="slidercontainer slider4">
+
+                                    <!-- <div class="swiper swiper3">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="slideServices__itemSlide">
+                                                    <div class="listWorks__items__item">
+                                                        <img src="img/services/SostavRabot/person1.svg" alt="">
+                                                        <p>Cоздание геодезической разбивочной основы</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="slideServices__itemSlide">
+                                                    <div class="listWorks__items__item">
+                                                        <img src="img/services/SostavRabot/person2.svg" alt="">
+                                                        <p>Выявление несоответствий в проектной документации</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="slideServices__itemSlide">
+                                                    <div class="listWorks__items__item">
+                                                        <img src="img/services/SostavRabot/person3.svg" alt="">
+                                                        <p>Вынос в натуру основных осей и элементов сооружений</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            ...
+                                        </div>
+                                    </div> -->
+                                    <div class="swiper swiper3">
+                                        <!-- Additional required wrapper -->
+                                        <div class="swiper-wrapper">
+                                            <!-- Slides -->
+                                            <div class="swiper-slide">
+                                                <div class="aboutItemSliderServices">
+                                                    <div class="itemColumnSliderServices singleItemSlider">
+                                                        <img src="img/services/geodezProjects/1.jpg" alt="">
+                                                        <p>Сопровождение строительства многоэтажного дома по ул.
+                                                            Башкирская,
+                                                            угол Поддубного и пр. Металлургов в Краснооктябрьском районе
+                                                            г.
+                                                            Волгограда, 2016-2018
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="aboutItemSliderServices">
+                                                    <div class="itemColumnSliderServices singleItemSlider">
+                                                        <img src="img/services/geodezProjects/2.jpg" alt="">
+                                                        <p>Строительство здания насосной и регулирующей емкости в
+                                                            Урюпинском
+                                                            районе Волгоградской области</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="aboutItemSliderServices">
+                                                    <div class="itemColumnSliderServices singleItemSlider">
+                                                        <img src="img/services/project2.jpg" alt="">
+                                                        <p>Топографическая съемка 1:500 участка прохождения трассы
+                                                            двухцепная ВЛ 110
+                                                            кВ Волгоградская ГРЭС-Кировская-Сарепта и съемка каждой
+                                                            опоры (высота
+                                                            подвески проводов), 2019
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            ...
+                                        </div>
+                                        <div class="swiper-pagination swiper-pagination3"></div>
+                                    </div>
+
+                                    <!-- <div class="slidercontainer slider4">
                                         <div class="sliderLine">
                                             <div class="showSlide">
                                                 <div class="aboutItemSliderServices">
@@ -514,7 +586,7 @@
                                             <button class="leftSlider"></button>
                                             <button class="rightSlider"></button>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -574,8 +646,43 @@
                                 </div>
 
                             </div>
+                            <div class="swiper swiper4">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="aboutItemSliderServices">
+                                            <div class="singleItemSlider">
+                                                <img src="img/services/geodezProjects/4.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="aboutItemSliderServices">
+                                            <div class="singleItemSlider">
+                                                <img src="img/services/geodezProjects/5.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="aboutItemSliderServices">
+                                            <div class="singleItemSlider">
+                                                <img src="img/services/geodezProjects/5.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    ...
+                                </div>
+                                <div class="swiper-pagination swiper-pagination4"></div>
+                            </div>
+                            <p>ООО «НПП «Геоэксперт» предлагает услуги по подготовке ЦМР, на основе проектной
+                                документации,
+                                для системы управления дорожной техникой. Дополнительно производим расчет
+                                объемов
+                                земляных
+                                работ. </p>
 
-                            <div class="slidercontainer slider5">
+                            <!-- <div class="slidercontainer slider5">
                                 <div class="sliderLine">
                                     <div class="showSlide">
                                         <div class="aboutItemSliderServices">
@@ -614,7 +721,7 @@
                                         земляных
                                         работ. </p>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="accordion accordionItem">
@@ -696,8 +803,50 @@
                                     </div>
                                 </div>
 
+                                <div class="swiper swiper5">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <div class="aboutItemSliderServices">
+                                                <div class="itemColumnSliderServices singleItemSlider">
+                                                    <img src="./img/services/shoot/1.jpg" alt="">
+                                                    <p>Строительство мелиоративной системы в Урюпинском районе
+                                                        Волгоградской
+                                                        области
+                                                        —
+                                                        съёмка с квадрокоптера</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="aboutItemSliderServices">
+                                                <div class="itemColumnSliderServices singleItemSlider">
+                                                    <img src="./img/services/shoot/2.jpg" alt="">
+                                                    <p>Строительство оросительной сети в Палласовском районе
+                                                        Волгоградской
+                                                        области —
+                                                        съёмка с квадрокоптера</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="aboutItemSliderServices">
+                                                <div class="itemColumnSliderServices singleItemSlider">
+                                                    <img src="./img/services/shoot/3.jpg" alt="">
+                                                    <p>Геодезическое сопровождение строительства многоквартирных домов в
+                                                        г.
+                                                        Волгограде —
+                                                        съёмка с квадрокоптера</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        ...
+                                    </div>
+                                    <div class="swiper-pagination swiper-pagination5"></div>
+                                </div>
 
-                                <div class="slidercontainer slider6">
+                                <!-- <div class="slidercontainer slider6">
                                     <div class="sliderLine">
                                         <div class="showSlide">
                                             <div class="aboutItemSliderServices">
@@ -741,7 +890,7 @@
                                         <button class="leftSlider"></button>
                                         <button class="rightSlider"></button>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -806,7 +955,48 @@
                         </div>
                     </div>
 
-                    <div class="slidercontainer slider7">
+                    <div class="swiper swiper7">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="slideServices__itemSlide">
+                                    <div class="listWorks__items__item">
+                                        <img src="img/services/kadastrovie/1.svg" alt="">
+                                        <p>Обращение к кадастровому инженеру </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slideServices__itemSlide">
+                                    <div class="listWorks__items__item">
+                                        <img src="img/services/kadastrovie/2.svg" alt="">
+                                        <p>подготовка кадастровым инженером документов</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slideServices__itemSlide">
+                                    <div class="listWorks__items__item">
+                                        <img src="img/services/kadastrovie/3.svg" alt="">
+                                        <p>кадастровый учет</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slideServices__itemSlide">
+                                    <div class="listWorks__items__item">
+                                        <img src="img/services/kadastrovie/4.svg" alt="">
+                                        <p>регистрация прав</p>
+                                    </div>
+                                </div>
+                            </div>
+                            ...
+                        </div>
+                        <div class="swiper-pagination swiper-pagination7"></div>
+                    </div>
+
+                    <!-- <div class="slidercontainer slider7">
                         <div class="sliderLine">
                             <div class="showSlide">
                                 <div class="slideServices__itemSlide">
@@ -849,7 +1039,7 @@
                             <button class="leftSlider"></button>
                             <button class="rightSlider"></button>
                         </div>
-                    </div>
+                    </div> -->
 
                     <p class="wrapperKadastrServicesStadies__descroptionText">В отношении земельных участков кадастровым
                         инженером подготавливается межевой план, в отношении
@@ -880,7 +1070,49 @@
                         </div>
                     </div>
 
-                    <div class="slidercontainer slider8">
+                    <div class="swiper swiper8">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="aboutItemSliderServices">
+                                    <div class="itemColumnSliderServices singleItemSlider">
+                                        <img src="./img/services/kadastrovie/proj1.jpg" alt="">
+                                        <p>Оказание услуг по изготовлению технических планов на объекты городской
+                                            инфраструктуры в
+                                            целях управления и распоряжения муниципальной собственностью, 2018 год</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="aboutItemSliderServices">
+                                    <div class="itemColumnSliderServices singleItemSlider">
+                                        <img src="./img/services/kadastrovie/proj2.jpg" alt="">
+                                        <p>Выполнение кадастровых работ на автомобильную дорогу «3-я Продольная
+                                            магистраль».
+                                            Волгоград, 2019 год</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="aboutItemSliderServices">
+                                    <div class="itemColumnSliderServices singleItemSlider">
+                                        <img src="./img/services/kadastrovie/proj3.jpg" alt="">
+                                        <p>«3-я Продольная магистраль». Волгоград, 2019 год. Подготовлен технический
+                                            план
+                                            для
+                                            внесения в ЕГРН сведений о местоположении автомобильной дороги. Подготовлено
+                                            текстовое и
+                                            графическое и графическое описание придорожной полосы.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            ...
+                        </div>
+                        <div class="swiper-pagination swiper-pagination8"></div>
+                    </div>
+
+                    <!-- <div class="slidercontainer slider8">
                         <div class="sliderLine">
                             <div class="showSlide">
                                 <div class="aboutItemSliderServices">
@@ -923,7 +1155,7 @@
                             <button class="leftSlider"></button>
                             <button class="rightSlider"></button>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="wrapperBtnServicesSendMessage">
                         <a href="index.html#contactWithUs" class="btnLearnMore">отправить заявку</a>
                     </div>
@@ -1001,7 +1233,70 @@
                     </div>
 
                     <div class="wrapperSliderServiesMobile">
-                        <div class="slidercontainer slider9">
+
+                        <div class="swiper swiper9">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="aboutItemSliderServices">
+                                        <div class="itemColumnSliderServices singleItemSlider">
+                                            <img src="./img/services/zemleustroy/1.svg" alt="">
+                                            <p>Почвенные, геоботанические и другие обследования и изыскания - проводятся
+                                                в
+                                                целях
+                                                получения информации о состоянии земель, в том числе почвы, а также в
+                                                целях
+                                                выявления
+                                                земель, подверженных водной и ветровой эрозии, селям, подтоплению,
+                                                заболачиванию,
+                                                вторичному засолению, иссушению, уплотнению, загрязнению отходами
+                                                производства и
+                                                потребления, радиоактивными и химическими веществами, заражению и другим
+                                                негативным
+                                                воздействиям</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="aboutItemSliderServices">
+                                        <div class="itemColumnSliderServices singleItemSlider">
+                                            <img src="./img/services/zemleustroy/2.svg" alt="">
+                                            <p>Оценка качества земель - проводятся в целях получения информации о
+                                                состоянии
+                                                земель, в
+                                                том числе почвы, а также в целях выявления земель, подверженных водной и
+                                                ветровой
+                                                эрозии, селям, подтоплению, заболачиванию, вторичному засолению,
+                                                иссушению,
+                                                уплотнению,
+                                                загрязнению отходами производства и потребления, радиоактивными и
+                                                химическими
+                                                веществами, заражению и другим негативным воздействиям</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="aboutItemSliderServices">
+                                        <div class="itemColumnSliderServices singleItemSlider">
+                                            <img src="./img/services/zemleustroy/3.svg" alt="">
+                                            <p>инвентаризация земель - проводится для выявления неиспользуемых,
+                                                нерационально
+                                                используемых или используемых не по целевому назначению и не в
+                                                соответствии
+                                                с
+                                                разрешенным использованием земельных участков, других характеристик
+                                                земель.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                ...
+                            </div>
+                            <div class="swiper-pagination swiper-pagination9"></div>
+                        </div>
+
+                        <!-- <div class="slidercontainer slider9">
                             <div class="sliderLine">
                                 <div class="showSlide">
                                     <div class="aboutItemSliderServices">
@@ -1064,7 +1359,7 @@
                                 <button class="leftSlider"></button>
                                 <button class="rightSlider"></button>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="wrapperProjectServices__wrapperInfoZemleustr">
                         <p>Подготовка текстовых и графических описаний границ населенных пунктов, границ зон с особыми
@@ -1101,7 +1396,51 @@
                             </div>
                         </div>
 
-                        <div class="slidercontainer slider10">
+                        <div class="swiper swiper10">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="aboutItemSliderServices">
+                                        <div class="itemColumnSliderServices singleItemSlider">
+                                            <img src="./img/services/zemleustroy/proj1.jpg" alt="">
+                                            <p>Выполнение комплекса технологических, картографических работ по описанию
+                                                границ
+                                                населенных пунктов Среднеахтубинского, Городищенского, Ольховского,
+                                                Клецкого,
+                                                Серафимовичского районов Волгоградской области</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="aboutItemSliderServices">
+                                        <div class="itemColumnSliderServices singleItemSlider">
+                                            <img src="./img/services/zemleustroy/proj2.jpg" alt="">
+                                            <p>Выполнение комплекса технологических, картографических работ по описанию
+                                                границ
+                                                населенных пунктов Среднеахтубинского, Городищенского, Ольховского,
+                                                Клецкого,
+                                                Серафимовичского районов Волгоградской области</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="aboutItemSliderServices">
+                                        <div class="itemColumnSliderServices singleItemSlider">
+                                            <img src="./img/services/zemleustroy/proj3.jpg" alt="">
+                                            <p>Установление охранных зон объектов электросетевого хозяйства в отношении
+                                                62
+                                                объектов
+                                                в г. Волжский</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                ...
+                            </div>
+                            <div class="swiper-pagination swiper-pagination10"></div>
+                        </div>
+
+                        <!-- <div class="slidercontainer slider10">
                             <div class="sliderLine">
                                 <div class="showSlide">
                                     <div class="aboutItemSliderServices">
@@ -1146,7 +1485,7 @@
                                 <button class="leftSlider"></button>
                                 <button class="rightSlider"></button>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="wrapperBtnServicesSendMessage">
                         <a href="index.html#contactWithUs" class="btnLearnMore">отправить заявку</a>
@@ -1194,7 +1533,62 @@
                             </div>
                         </div>
 
-                        <div class="slidercontainer slider11">
+                        <div class="swiper swiper11">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="aboutItemSliderServices">
+                                        <div class="itemColumnSliderServices singleItemSlider">
+                                            <img src="./img/services/zemledelie/1.svg" alt="">
+                                            <p>Изучение состояния земель, индексов вегетации с помощью дистанционного
+                                                зондирования
+                                                земли (ДЗЗ), географических информационных систем (GIS)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="aboutItemSliderServices">
+                                        <div class="itemColumnSliderServices singleItemSlider">
+                                            <img src="./img/services/zemledelie/2.svg" alt="">
+                                            <p>Применение технологий глобального позиционирования (GPS) – параллельное
+                                                вождение.
+                                                Данная технология позволяет проводить полевые работы максимально точно,
+                                                без
+                                                перекрытий, позволяет проводить работы в ночное время - сокращается
+                                                расход топлива,
+                                                семян и удобрений</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="aboutItemSliderServices">
+                                        <div class="itemColumnSliderServices singleItemSlider">
+                                            <img src="./img/services/zemledelie/3.svg" alt="">
+                                            <p>Технологии оценки урожайности </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="aboutItemSliderServices">
+                                        <div class="itemColumnSliderServices singleItemSlider">
+                                            <img src="./img/services/zemledelie/4.svg" alt="">
+                                            <p>технология переменного нормирования (Variable Rate Technology). Согласно
+                                                этой
+                                                технологии предусматривается корректировка нормы внесения питательных
+                                                веществ и
+                                                средств защиты растений в зависимости от ситуации на каждом отдельном
+                                                участке поля
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                ...
+                            </div>
+                            <div class="swiper-pagination swiper-pagination11"></div>
+                        </div>
+
+                        <!-- <div class="slidercontainer slider11">
                             <div class="sliderLine">
                                 <div class="showSlide">
                                     <div class="aboutItemSliderServices">
@@ -1250,7 +1644,7 @@
                                 <button class="leftSlider"></button>
                                 <button class="rightSlider"></button>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <p>Мировой опыт освоения методологии точного земледелия свидетельствует о высоком качестве и
                         производительности труда, экономии трудовых ресурсов, семенного материала, удобрений, средств
@@ -1364,6 +1758,55 @@
                         </div>
                     </div>
 
+                    <div class="swiper swiper12">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="slideServices__itemSlide">
+                                    <div class="listWorks__items__item">
+                                        <img src="img/services/expertiza/1.svg" alt="">
+                                        <p>Возникновение земельного спора</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slideServices__itemSlide">
+                                    <div class="listWorks__items__item">
+                                        <img src="img/services/expertiza/2.svg" alt="">
+                                        <p>Попытка разрешить спор в досудебном порядке</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slideServices__itemSlide">
+                                    <div class="listWorks__items__item">
+                                        <img src="img/services/expertiza/3.svg" alt="">
+                                        <p>Обращение к специалисту за заключением</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slideServices__itemSlide">
+                                    <div class="listWorks__items__item">
+                                        <img src="img/services/expertiza/4.svg" alt="">
+                                        <p>При невозможности разрешения спора в досудебном порядке, обращение в суд</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slideServices__itemSlide">
+                                    <div class="listWorks__items__item">
+                                        <img src="img/services/expertiza/5.svg" alt="">
+                                        <p>судебная землеустроительная экспертиза</p>
+                                    </div>
+                                </div>
+                            </div>
+                            ...
+                        </div>
+                        <div class="swiper-pagination swiper-pagination12"></div>
+                    </div>
+<!-- 
                     <div class="slidercontainer slider12">
                         <div class="sliderLine">
                             <div class="showSlide">
@@ -1416,7 +1859,7 @@
                             <button class="leftSlider"></button>
                             <button class="rightSlider"></button>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="wrapperBtnServicesSendMessage">
@@ -1519,7 +1962,6 @@
             </div>
         </div>
     </footer>
-    
     <script src="accordionServices.js"></script>
     <script src="script.js"></script>
     <script src="slider-services.js"></script>

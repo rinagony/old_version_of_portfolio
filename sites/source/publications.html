@@ -12,6 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -488,7 +490,58 @@
                 </div>
             </div>
             <div class="wrapperpublicationsPageMob" id="sliderPublication">
-                <div class="slidercontainer slider14">
+                <div class="swiper swiper13">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="aboutItemSliderPublic">
+                                <button class="tablink" onclick="openPage('publicationmob1', this)" id="defaultOpenMob">
+                                    Роль инженерно-геодезических работ при проведении судебных землеустроительных
+                                    экспертиз
+                                </button>
+                                <button class="tablink" onclick="openPage('publicationmob2', this)">
+                                    Особенности исполнения судебных решений по земельно-кадастровым спорам с
+                                    использованием
+                                    результатов судебной землеустроительной экспертизы
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="aboutItemSliderPublic">
+                                <button class="tablink" onclick="openPage('publicationmob3', this)">
+                                    Анализ нормативных актов, регламентирующих точность геодезических данных для
+                                    судебных
+                                    землеустроительных экспертиз
+                                </button>
+                                <button class="tablink" onclick="openPage('publicationmob4', this)">
+                                    Судебная землеустроительная экспертиза: проблемы и задачи этапа становления
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="aboutItemSliderPublic">
+                                <button class="tablink" onclick="openPage('publicationmob5', this)">
+                                    Типичные экспертные ошибки, допускаемые при проведении судебных землеустроительных
+                                    экспертиз
+                                </button>
+                                <button class="tablink" onclick="openPage('publicationmob6', this)">
+                                    Как поставить на кадастровый учет машино-место
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="aboutItemSliderPublic">
+                                <button class="tablink" onclick="openPage('publicationmob7', this)">
+                                    Как поставить на кадастровый учет территорию объекта культурного наследия
+                                </button>
+                            </div>
+                        </div>
+                        ...
+                    </div>
+                    <div class="swiper-pagination swiper-pagination13"></div>
+                </div>
+                <!-- <div class="slidercontainer slider14">
                     <div class="sliderLine">
                         <div class="showSlide">
                             <div class="aboutItemSliderPublic">
@@ -539,7 +592,7 @@
                         <button class="leftSlider"></button>
                         <button class="rightSlider"></button>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="wrapperPublicationsMobileContent">
                     <div id="publicationmob1" class="tabcontent">
@@ -879,7 +932,7 @@
         </div>
     </footer>
 
-    
+
     <script src="script.js"></script>
     <script src="slider-services.js"></script>
 </body>
