@@ -133,7 +133,6 @@ const swiper13 = new Swiper(".swiper13", {
 const swiper14 = new Swiper(".swiper14", {
   // Optional parameters
   loop: true,
-  autoHeight: true,
   // If we need pagination
   pagination: {
     el: ".swiper-pagination14",
