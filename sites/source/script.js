@@ -129,6 +129,17 @@ const swiper13 = new Swiper(".swiper13", {
     clickable: true,
   },
 });
+
+const swiper14 = new Swiper(".swiper14", {
+  // Optional parameters
+  loop: true,
+  autoHeight: true,
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination14",
+    clickable: true,
+  },
+});
 // const swiper2 = new Swiper(".swiper2", {
 //   autoHeight: true,
 //   autoWidth: true,
@@ -173,6 +184,16 @@ const swiper13 = new Swiper(".swiper13", {
 //     prevEl: ".swiper-button-prev3",
 //   },
 // });
+
+document.querySelectorAll('.accordion').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+
 
 (function () {
   const header = document.querySelector(".headerMob");
