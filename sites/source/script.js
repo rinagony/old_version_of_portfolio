@@ -184,15 +184,6 @@ const swiper14 = new Swiper(".swiper14", {
 //   },
 // });
 
-document.querySelectorAll('.accordion').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-      });
-  });
-});
-
 
 (function () {
   const header = document.querySelector(".headerMob");

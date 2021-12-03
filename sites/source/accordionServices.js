@@ -24,11 +24,9 @@
   });
 
   function scrollToContent(content) {
-    setTimeout(function(){ 
       content.scrollIntoView({
         behavior: "smooth",
       });
-     }, 300);
   }
   
   function removeIcon() {
