@@ -202,6 +202,18 @@ const swiper15 = new Swiper(".swiper15", {
 // });
 
 
+// $(function () {
+//   $('.wrapperMenuPages a').each(function () {
+//       var location = window.location.href;
+//       var link = this.href;
+//       if (location == link) {
+//           $(this).addClass('activeLinkMenuPages');
+//       }
+//   });
+// });
+
+
+
 (function () {
   const header = document.querySelector(".headerMob");
   const icon = document.querySelector(".icon-container");
@@ -245,4 +257,19 @@ if (window.innerWidth > 768) {
   if (document.getElementById("defaultOpenMob")) {
     document.getElementById("defaultOpenMob").click();
   }
+}
+
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault()
+
+        const blockID = anchor.getAttribute('href').substr(1)
+
+        document.getElementById(blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+    })
 }
