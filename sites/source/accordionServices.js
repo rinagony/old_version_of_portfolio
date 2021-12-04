@@ -16,9 +16,7 @@
           removeIcon();
         }
         content.style.maxHeight = content.scrollHeight + "px";
-        content.scrollIntoView({
-          behavior: "smooth",
-        });
+        content.scrollIntoView({ behavior: 'smooth', block: 'start'});
         accordion.style.color = "#828282";
         parented.firstChild.src = "img/services/menos.svg";
       }
