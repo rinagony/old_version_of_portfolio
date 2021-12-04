@@ -16,18 +16,14 @@
           removeIcon();
         }
         content.style.maxHeight = content.scrollHeight + "px";
-        scrollToContent(content)
+        content.scrollIntoView({
+          behavior: "smooth",
+        });
         accordion.style.color = "#828282";
         parented.firstChild.src = "img/services/menos.svg";
       }
     };
   });
-
-  function scrollToContent(content) {
-      content.scrollIntoView({
-        behavior: "smooth",
-      });
-  }
   
   function removeIcon() {
     for (let i = 0; i < accordionBtns.length; i++) {

@@ -156,51 +156,6 @@ const swiper15 = new Swiper(".swiper15", {
     prevEl: '.swiper-button-prev15',
   },
 });
-// const swiper2 = new Swiper(".swiper2", {
-//   autoHeight: true,
-//   autoWidth: true,
-//   // Optional parameters
-//   loop: true,
-//   speed: 100,
-//   // Navigation arrows
-//   pagination: {
-//     el: '.swiper-pagination',
-//   },
-//   // navigation: {
-//   //   nextEl: ".swiper-button-next2",
-//   //   prevEl: ".swiper-button-prev2",
-//   // },
-//   scrollbar: {
-//     el: '.swiper-scrollbar',
-//   },
-// });
-
-// const swiper = new Swiper(".swiper", {
-//   autoHeight: true,
-//   autoWidth: true,
-//   // Optional parameters
-//   loop: true,
-//   speed: 100,
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
-
-// const swiper3 = new Swiper(".swiper3", {
-//   autoHeight: true,
-//   autoWidth: true,
-//   // Optional parameters
-//   loop: true,
-//   speed: 100,
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: ".swiper-button-next3",
-//     prevEl: ".swiper-button-prev3",
-//   },
-// });
-
 
 // $(function () {
 //   $('.wrapperMenuPages a').each(function () {
