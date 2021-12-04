@@ -14,7 +14,7 @@ const swiper1 = new Swiper(".swiper1", {
 const swiper2 = new Swiper(".swiper2", {
   // Optional parameters
   loop: true,
-
+  autoHeight: true,
   // If we need pagination
   pagination: {
     el: ".swiper-pagination2",
@@ -25,7 +25,7 @@ const swiper2 = new Swiper(".swiper2", {
 const swiper3 = new Swiper(".swiper3", {
   // Optional parameters
   loop: true,
-
+  autoHeight: true,
   // If we need pagination
   pagination: {
     el: ".swiper-pagination3",
@@ -36,7 +36,7 @@ const swiper3 = new Swiper(".swiper3", {
 const swiper4 = new Swiper(".swiper4", {
   // Optional parameters
   loop: true,
-
+  autoHeight: true,
   // If we need pagination
   pagination: {
     el: ".swiper-pagination4",
@@ -47,7 +47,6 @@ const swiper4 = new Swiper(".swiper4", {
 const swiper5 = new Swiper(".swiper5", {
   // Optional parameters
   loop: true,
-
   // If we need pagination
   pagination: {
     el: ".swiper-pagination5",
@@ -58,7 +57,7 @@ const swiper5 = new Swiper(".swiper5", {
 const swiper7 = new Swiper(".swiper7", {
   // Optional parameters
   loop: true,
-
+  autoHeight: true,
   // If we need pagination
   pagination: {
     el: ".swiper-pagination7",
@@ -80,6 +79,7 @@ const swiper8 = new Swiper(".swiper8", {
 const swiper9 = new Swiper(".swiper9", {
   // Optional parameters
   loop: true,
+  autoHeight: true,
   // If we need pagination
   pagination: {
     el: ".swiper-pagination9",
@@ -90,6 +90,7 @@ const swiper9 = new Swiper(".swiper9", {
 const swiper10 = new Swiper(".swiper10", {
   // Optional parameters
   loop: true,
+  autoHeight: true,
   // If we need pagination
   pagination: {
     el: ".swiper-pagination10",
@@ -133,10 +134,26 @@ const swiper13 = new Swiper(".swiper13", {
 const swiper14 = new Swiper(".swiper14", {
   // Optional parameters
   loop: true,
+  autoHeight: true,
   // If we need pagination
   pagination: {
     el: ".swiper-pagination14",
     clickable: true,
+  },
+});
+
+const swiper15 = new Swiper(".swiper15", {
+  // Optional parameters
+  loop: true,
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination15",
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next15',
+    prevEl: '.swiper-button-prev15',
   },
 });
 // const swiper2 = new Swiper(".swiper2", {

@@ -179,7 +179,6 @@
     //     moved = !moved;
     //   }, 200);
     // });
-  }
 
   // sliderInitialisationLicense({
   //   root: ".slider13",

@@ -357,6 +357,10 @@ body, button, input {
         font-size: 24px;
     }
 
+    .swiper2, .swiper3, .swiper4, .paragraphSwiper4, .swiper5, .swiper7, .swiper8, .swiper10, .swiper11, .swiper12 {
+        display: none;
+    }
+
     .wrapperForm .formBlockLeft h3, .wrapperForm .formBlockRight h3 {
         font-size: 36px;
         text-align: center;
@@ -743,6 +747,16 @@ body, button, input {
     .wrapperTextSlider5 p {
         max-width: 330px;
         margin: 0 auto;
+    }
+
+    .swiper3 .aboutItemSliderServices, .swiper5 .aboutItemSliderServices, .swiper8 .aboutItemSliderServices, .swiper10 .aboutItemSliderServices {
+        margin: 0 auto;
+        max-width: 350px;
+    }
+
+    .swiper9 .aboutItemSliderServices, .swiper11 .aboutItemSliderServices {
+        margin: 0 auto;
+        max-width: 370px;
     }
 }
 
@@ -2198,7 +2212,7 @@ header {
     content: none;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
     bottom: 0 !important;
 }
 
@@ -2697,6 +2711,7 @@ button.accordion.is-open {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .accordion-content__BlockServicesSimpleProjects {
@@ -2715,9 +2730,14 @@ button.accordion.is-open {
 
 .singleItemSlider {
     display: flex;
+    margin-bottom: 10px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.swiper4 .singleItemSlider {
+    margin-bottom: 20px;
 }
 
 .wrapperServicesItems__accordion-content__projects {
@@ -2752,6 +2772,18 @@ button.accordion.is-open {
     font-size: 13px;
     margin-top: 0;
     line-height: 21px;
+}
+
+.swiper15 .swiper-button-next:after {
+    content: url('./img/left.svg');
+}
+
+.swiper15 .swiper-button-prev:after {
+    content: url('./img/right.svg');
+}
+
+.swiper15 .swiper-horizontal>.swiper-pagination-bullets, .swiper15 .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper15 .swiper-pagination-custom, .swiper15 .swiper-pagination-fraction {
+    bottom: 10px !important;
 }
 
 .videoServicesItem__description {
@@ -3081,6 +3113,10 @@ button.accordion.is-open {
 
 .leftSliderLicense {
     left: 0;
+}
+
+.swiper1 {
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
 }
 
 .rightSliderLicense {
