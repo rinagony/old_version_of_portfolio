@@ -175,7 +175,7 @@ const swiper15 = new Swiper(".swiper15", {
   };
 
   var hash = window.location.hash;
-  if(hash == "#defaultOpenServices") {
+  if (hash == "#defaultOpenServices") {
     document.querySelector(hash).click();
   } else if (hash == "#secondOpenServices") {
     document.querySelector(hash).click();
@@ -185,6 +185,30 @@ const swiper15 = new Swiper(".swiper15", {
     document.querySelector(hash).click();
   } else if (hash == "#fifthOpenServices") {
     document.querySelector(hash).click();
+  } else if (hash == "#defaultOpenServicesOne") {
+    document.getElementById("defaultOpenServices").click();
+    let element = document.getElementById("defaultOpenServicesOne");
+    accordeonMode(element);
+  } else if (hash == "#defaultOpenServicesTwo") {
+    document.getElementById("defaultOpenServices").click();
+    let element = document.getElementById("defaultOpenServicesTwo");
+    accordeonMode(element);
+  } else if (hash == "#defaultOpenServicesThree") {
+    document.getElementById("defaultOpenServices").click();
+    let element = document.getElementById("defaultOpenServicesThree");
+    accordeonMode(element);
+  } else if (hash == "#defaultOpenServicesFour") {
+    document.getElementById("defaultOpenServices").click();
+    let element = document.getElementById("defaultOpenServicesFour");
+    accordeonMode(element);
+  } else if (hash == "#defaultOpenServicesFive") {
+    document.getElementById("defaultOpenServices").click();
+    let element = document.getElementById("defaultOpenServicesFive");
+    accordeonMode(element);
+  } else if (hash == "#defaultOpenServicesSix") {
+    document.getElementById("defaultOpenServices").click();
+    let element = document.getElementById("defaultOpenServicesSix");
+    accordeonMode(element);
   } else {
     document.getElementById("defaultOpenServices").click();
   }
@@ -193,6 +217,38 @@ const swiper15 = new Swiper(".swiper15", {
     document.getElementById("defaultOpenMob").click();
   }
 })();
+
+function accordeonMode(element) {
+  const accordionContent = document.getElementsByClassName("accordion-content");
+  const accordionBtns = document.querySelectorAll(".accordion");
+  element.onclick = function () {
+    this.classList.toggle("is-open");
+    let content = this.nextElementSibling;
+    let parented = element.children[0];
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+      element.style.color = "#333";
+      parented.firstChild.src = "img/services/plus.svg";
+    } else {
+      for (let i = 0; i < accordionContent.length; i++) {
+        accordionContent[i].style.maxHeight = null;
+        removeIcon();
+      }
+      content.style.maxHeight = content.scrollHeight + "px";
+      content.scrollIntoView({ behavior: "smooth", block: "start" });
+      element.style.color = "#828282";
+      parented.firstChild.src = "img/services/menos.svg";
+    }
+  };
+
+  function removeIcon() {
+    for (let i = 0; i < accordionBtns.length; i++) {
+      let parented = accordionBtns[i].children[0];
+      parented.firstChild.src = "img/services/plus.svg";
+    }
+  }
+  element.click();
+}
 
 function openPage(pageName, elmnt) {
   let titleMain = document.getElementById("titleServicesMain");

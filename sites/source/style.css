@@ -674,6 +674,10 @@ body, button, input {
         font-size: 16px;
     }
 
+    .accordion-content {
+        padding-bottom: 15px;
+    }
+
     .aboutItem .aboutItemTop a{
         flex-direction: row;
     }
@@ -3028,4 +3032,24 @@ button.accordion.is-open {
 
 #lastAboutItem {
     display: none;
+}
+
+.aboutItemBottomBlock a {
+    text-decoration: none;
+    color: #222222;
+    margin-top: 11px;
+}
+
+.aboutItemBottomBlock a:focus, .aboutItemBottomBlock a:hover, .aboutItemBottomBlock a:active, .aboutItemBottomBlockSlider a:focus, .aboutItemBottomBlockSlider a:hover, .aboutItemBottomBlockSlider a:active,  {
+    color: #20A26A;
+    transition: 0.3s ease-out;
+}
+
+#firstBlockAbout .aboutItemBottomBlock{
+    margin-top: 11.5px;
+}
+
+.aboutItemBottomBlockSlider a {
+    text-decoration: none;
+    color: #222222;
 }
