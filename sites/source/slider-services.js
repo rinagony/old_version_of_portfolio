@@ -1,55 +1,58 @@
-(function () {
-  let buttonsTabs = document.getElementsByClassName("tablink");
-  let titleMain = document.getElementById("titleServicesMain");
-  let shrimp = document.getElementById("lastShrimpBread");
-  let imageBg = document.getElementById("navigationServicesImageItem");
-  var index = 0;
-  if (buttonsTabs) {
-    if (window.innerWidth > 768) {
-      for (let i = 0; i < buttonsTabs.length; i++) {
-        buttonsTabs[i].addEventListener("click", function () {
-          let attrib = buttonsTabs[i].getAttribute("data-tab");
-          titleMain.innerHTML = buttonsTabs[i].innerHTML;
-          shrimp.innerHTML = buttonsTabs[i].innerHTML;
-          let blockname = document.getElementById(attrib);
+// (function () {
 
-          let imagepathbg = buttonsTabs[i].getAttribute("data-image");
-          imageBg.style.background = `url('img/works/${imagepathbg}')`;
+// })();
 
-          imageBg.style.backgroundSize = "cover";
-          imageBg.style.backgroundRepeat = "no-repeat";
-          index = 0;
-        });
-      }
-    }
-  }
-  if (buttonsTabs) {
-    if (window.innerWidth < 768) {
-      for (let i = 0; i < buttonsTabs.length; i++) {
-        buttonsTabs[i].addEventListener("click", function () {
-          let attrib = buttonsTabs[i].getAttribute("data-tabmob");
-          titleMain.innerHTML = buttonsTabs[i].innerHTML;
-          shrimp.innerHTML = buttonsTabs[i].innerHTML;
-          let blockname = document.getElementById(attrib);
+  // let buttonsTabs = document.getElementsByClassName("tablink");
+  // let titleMain = document.getElementById("titleServicesMain");
+  // let shrimp = document.getElementById("lastShrimpBread");
+  // let imageBg = document.getElementById("navigationServicesImageItem");
+  // var index = 0;
+  // if (buttonsTabs) {
+  //   if (window.innerWidth > 768) {
+  //     for (let i = 0; i < buttonsTabs.length; i++) {
+  //       buttonsTabs[i].addEventListener("click", function () {
+  //         let attrib = buttonsTabs[i].getAttribute("data-tab");
+  //         titleMain.innerHTML = buttonsTabs[i].innerHTML;
+  //         shrimp.innerHTML = buttonsTabs[i].innerHTML;
+  //         let blockname = document.getElementById(attrib);
 
-          let imagepathbg = buttonsTabs[i].getAttribute("data-image");
-          imageBg.style.background = `url('img/works/${imagepathbg}')`;
+  //         let imagepathbg = buttonsTabs[i].getAttribute("data-image");
+  //         imageBg.style.background = `url('img/works/${imagepathbg}')`;
 
-          imageBg.style.backgroundSize = "cover";
-          imageBg.style.backgroundRepeat = "no-repeat";
-          indexMobile = 0;
-        });
-      }
-    }
-  }
+  //         imageBg.style.backgroundSize = "cover";
+  //         imageBg.style.backgroundRepeat = "no-repeat";
+  //         index = 0;
+  //       });
+  //     }
+  //   }
+  // }
+  // if (buttonsTabs) {
+  //   if (window.innerWidth < 768) {
+  //     for (let i = 0; i < buttonsTabs.length; i++) {
+  //       buttonsTabs[i].addEventListener("click", function () {
+  //         let attrib = buttonsTabs[i].getAttribute("data-tabmob");
+  //         titleMain.innerHTML = buttonsTabs[i].innerHTML;
+  //         shrimp.innerHTML = buttonsTabs[i].innerHTML;
+  //         let blockname = document.getElementById(attrib);
+
+  //         let imagepathbg = buttonsTabs[i].getAttribute("data-image");
+  //         imageBg.style.background = `url('img/works/${imagepathbg}')`;
+
+  //         imageBg.style.backgroundSize = "cover";
+  //         imageBg.style.backgroundRepeat = "no-repeat";
+  //         indexMobile = 0;
+  //       });
+  //     }
+  //   }
+  // }
 
   //tabs services
 
-  if (document.getElementById("navigationServicesWrap")) {
-    let buttondefault = document.getElementById("defaultOpenServices");
-    buttondefault.click();
-  }
-})();
+  // if (document.getElementById("navigationServicesWrap")) {
+  //   let buttondefault = document.getElementById("defaultOpenServices");
+  //   buttondefault.click();
+  // }
+
 
 // function sliderInitialisation(options) {
 //   console.log(options);

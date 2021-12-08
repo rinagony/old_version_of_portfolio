@@ -152,8 +152,8 @@ const swiper15 = new Swiper(".swiper15", {
   },
 
   navigation: {
-    nextEl: '.swiper-button-next15',
-    prevEl: '.swiper-button-prev15',
+    nextEl: ".swiper-button-next15",
+    prevEl: ".swiper-button-prev15",
   },
 });
 
@@ -167,8 +167,6 @@ const swiper15 = new Swiper(".swiper15", {
 //   });
 // });
 
-
-
 (function () {
   const header = document.querySelector(".headerMob");
   const icon = document.querySelector(".icon-container");
@@ -176,8 +174,18 @@ const swiper15 = new Swiper(".swiper15", {
     header.classList.toggle("menu-open");
   };
 
-  const btnTab = document.getElementById("");
-  if (document.getElementById("defaultOpenServices")) {
+  var hash = window.location.hash;
+  if(hash == "#defaultOpenServices") {
+    document.querySelector(hash).click();
+  } else if (hash == "#secondOpenServices") {
+    document.querySelector(hash).click();
+  } else if (hash == "#thirdOpenServices") {
+    document.querySelector(hash).click();
+  } else if (hash == "#fourthOpenServices") {
+    document.querySelector(hash).click();
+  } else if (hash == "#fifthOpenServices") {
+    document.querySelector(hash).click();
+  } else {
     document.getElementById("defaultOpenServices").click();
   }
 
@@ -187,8 +195,10 @@ const swiper15 = new Swiper(".swiper15", {
 })();
 
 function openPage(pageName, elmnt) {
+  let titleMain = document.getElementById("titleServicesMain");
+  let shrimp = document.getElementById("lastShrimpBread");
+  let imageBg = document.getElementById("navigationServicesImageItem");
   let i, tabcontent, tablinks;
-  console.log(elmnt);
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
@@ -202,6 +212,14 @@ function openPage(pageName, elmnt) {
   document.getElementById(pageName).style.display = "block";
 
   elmnt.style.color = "#828282";
+  titleMain.innerHTML = elmnt.innerHTML;
+  shrimp.innerHTML = elmnt.innerHTML;
+
+  let imagepathbg = elmnt.getAttribute("data-image");
+  imageBg.style.background = `url('img/works/${imagepathbg}')`;
+
+  imageBg.style.backgroundSize = "cover";
+  imageBg.style.backgroundRepeat = "no-repeat";
 }
 
 if (window.innerWidth > 768) {
@@ -214,17 +232,17 @@ if (window.innerWidth > 768) {
   }
 }
 
-const anchors = document.querySelectorAll('a[href*="#"]')
+const anchors = document.querySelectorAll('a[href*="#"]');
 
-for (let anchor of anchors) {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault()
+// for (let anchor of anchors) {
+//   anchor.addEventListener("click", function (e) {
+//     e.preventDefault();
 
-        const blockID = anchor.getAttribute('href').substr(1)
+//     const blockID = anchor.getAttribute("href").substr(1);
 
-        document.getElementById(blockID).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        })
-    })
-}
+//     document.getElementById(blockID).scrollIntoView({
+//       behavior: "smooth",
+//       block: "start",
+//     });
+//   });
+// }
