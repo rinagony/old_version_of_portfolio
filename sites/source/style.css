@@ -718,7 +718,7 @@ body, button, input {
     }
 
     .aboutItem #aboutItemTopThird {
-        padding: 1.9em 1em;
+        padding: 1.86em 1em;
     }
 
     .slideServices .aboutItemSliderServices .wrapperColumnsSliderServices .itemColumnSliderServices img, .slideServices .aboutItemSliderServices .wrapperColumnsSliderServices .itemColumnSliderServices p {
@@ -3040,7 +3040,7 @@ button.accordion.is-open {
     margin-top: 11px;
 }
 
-.aboutItemBottomBlock a:focus, .aboutItemBottomBlock a:hover, .aboutItemBottomBlock a:active, .aboutItemBottomBlockSlider a:focus, .aboutItemBottomBlockSlider a:hover, .aboutItemBottomBlockSlider a:active,  {
+.aboutItemBottomBlock a:focus, .aboutItemBottomBlock a:hover, .aboutItemBottomBlock a:active, .aboutItemBottomBlockSlider a:focus, .aboutItemBottomBlockSlider a:hover, .aboutItemBottomBlockSlider a:active  {
     color: #20A26A;
     transition: 0.3s ease-out;
 }

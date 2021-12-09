@@ -234,7 +234,7 @@ function accordeonMode(element) {
         accordionContent[i].style.maxHeight = null;
         removeIcon();
       }
-      content.style.maxHeight = content.scrollHeight + "px";
+      content.style.maxHeight = content.scrollHeight + 100 + "px";
       content.scrollIntoView({ behavior: "smooth", block: "start" });
       element.style.color = "#828282";
       parented.firstChild.src = "img/services/menos.svg";
